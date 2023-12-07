@@ -9,6 +9,7 @@
 
 body{
     background-color: var(--myWhite);
+    
 }
 
 /* Classi Color-Text Root */
@@ -36,4 +37,35 @@ body{
 /* Gestione dei fonts */
 .fontMontserrat{
     font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------
+ SETTAGGI NAVBAR
+ ---------------------------------*/
+.bgNavbar{
+    background-color: var(--myWhite);
+    box-shadow: 0px 0px 5px black;
+}
+
+.nav-link{
+    color: var(--myPurple);
+}
+
+.nav-link:hover{
+    color: rgba(160, 0, 240, 0.581);
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-item{
+    color: var(--myPurple);
+    background-color: transparent;
+}
+
+.dropdown-item:hover{
+    color: rgba(160, 0, 240, 0.581);
+    background-color: transparent;
 }
