@@ -1,6 +1,6 @@
 /*--------------------------------
- SETTAGGI GENERALI STILE PRESTO.IT
- ---------------------------------*/
+SETTAGGI GENERALI STILE PRESTO.IT
+---------------------------------*/
 :root{
     --myWhite: rgb(255, 255, 255);
     --myOrange: rgb(255, 183, 0);
@@ -40,8 +40,8 @@ body{
 }
 
 /*--------------------------------
- SETTAGGI NAVBAR
- ---------------------------------*/
+SETTAGGI NAVBAR
+---------------------------------*/
 .bgNavbar{
     background-color: var(--myWhite);
     box-shadow: 0px 0px 5px black;
@@ -56,7 +56,7 @@ body{
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-     color: var(--myPurple);
+    color: var(--myPurple);
 }
 .nav-link:focus {
     color: var(--myPurple);
@@ -75,4 +75,21 @@ body{
 .dropdown-item:hover{
     color: rgba(160, 0, 240, 0.581);
     background-color: transparent;
+}
+
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .linkContainer{
+        position: relative;
+        right: 15vh;
+    }
+    .formNavbar{
+        position: relative;
+        left: 15vh;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 15vh;
+    }
 }
