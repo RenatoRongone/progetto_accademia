@@ -1,6 +1,6 @@
 /*--------------------------------
- SETTAGGI GENERALI STILE PRESTO.IT
- ---------------------------------*/
+SETTAGGI GENERALI STILE PRESTO.IT
+---------------------------------*/
 :root{
     --myWhite: rgb(255, 255, 255);
     --myOrange: rgb(255, 183, 0);
@@ -9,7 +9,7 @@
 
 body{
     background-color: var(--myWhite);
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Classi Color-Text Root */
@@ -40,8 +40,20 @@ body{
 }
 
 /*--------------------------------
- SETTAGGI NAVBAR
- ---------------------------------*/
+SETTAGGI NAVBAR
+---------------------------------*/
+.navbarCustom{
+    /* position: relative; */
+}
+
+.dropdownCustom{
+    margin-right: 50px;
+
+}
+
+
+
+
 .bgNavbar{
     background-color: var(--myWhite);
     box-shadow: 0px 0px 5px black;
@@ -56,7 +68,7 @@ body{
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-     color: var(--myPurple);
+    color: var(--myPurple);
 }
 .nav-link:focus {
     color: var(--myPurple);
