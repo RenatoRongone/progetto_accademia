@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<x-layout>
 
-    @vite (['resources/css/app.css' , 'resources/js/app.js'])
-</head>
-<body>
+
+    <h1 class="textMyPurple fontMontserrat">CIAO BENVENUTI SU PRESTO.IT</h1>
+    <p class="fontMontserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo, dolorem maxime similique obcaecati alias eaque velit saepe ab necessitatibus ex accusamus at, hic porro eligendi, accusantium doloremque. Consectetur, saepe!</p>
+    <h1 class="textMyOrange">CIAO</h1>
     <div class="row">
-        <div class="col-12">
-            <h1 class="text-center display-1">Ciao</h1>
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="col-12 bgMyPurple">
+            <h1 class="textMyWhite">CIAO</h1>
         </div>
     </div>
-</body>
-</html>
+    <div class="row">
+        <div class="col-12 bgMyOrange">
+            <h1 class="textMyWhite">CIAO</h1>
+        </div>
+    </div>
+</x-layout>

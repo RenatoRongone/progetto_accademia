@@ -1,0 +1,39 @@
+/*--------------------------------
+ SETTAGGI GENERALI STILE PRESTO.IT
+ ---------------------------------*/
+:root{
+    --myWhite: rgb(255, 255, 255);
+    --myOrange: rgb(255, 183, 0);
+    --myPurple: rgb(160, 0, 240);
+}
+
+body{
+    background-color: var(--myWhite);
+}
+
+/* Classi Color-Text Root */
+.textMyWhite{
+    color: var(--myWhite);
+}
+.textMyOrange{
+    color: var(--myOrange);
+}
+.textMyPurple{
+    color: var(--myPurple);
+}
+
+/* Classi BGColor Root */
+.bgMyWhite{
+    background-color: var(--myWhite);
+}
+.bgMyOrange{
+    background-color: var(--myOrange);
+}
+.bgMyPurple{
+    background-color: var(--myPurple);
+}
+
+/* Gestione dei fonts */
+.fontMontserrat{
+    font-family: 'Montserrat', sans-serif;
+}
