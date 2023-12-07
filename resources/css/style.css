@@ -9,7 +9,7 @@
 
 body{
     background-color: var(--myWhite);
-    
+
 }
 
 /* Classi Color-Text Root */
@@ -53,6 +53,13 @@ body{
 
 .nav-link:hover{
     color: rgba(160, 0, 240, 0.581);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+     color: var(--myPurple);
+}
+.nav-link:focus {
+    color: var(--myPurple);
 }
 
 .dropdown-menu{

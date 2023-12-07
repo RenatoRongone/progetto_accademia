@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-sm navbar-dark bgNavbar">
     <div class="container-fluid ms-md-5">
-        <a class="navbar-brand" href="#">logo</a>
+        <a class="navbar-brand textMyPurple" href="#">logo</a>
         <form role="search">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#prestoNavbar" aria-controls="prestoNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="prestoNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-md-5">
                 <li class="nav-item">
@@ -27,4 +27,4 @@
             </ul>
         </div>
     </div>
-</nav> 
+</nav>
