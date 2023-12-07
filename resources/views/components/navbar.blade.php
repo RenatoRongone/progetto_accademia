@@ -8,13 +8,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-<<<<<<< HEAD
-        <div class="collapse position-relative  navbar-collapse" id="prestoNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-md-5 linkContainer">
-=======
-        <div class="collapse bg-success navbar-collapse" id="prestoNavbar">
-            <ul class="navbar-nav w-75 dropdownCustom mb-2 mb-sm-0 me-md-0">
->>>>>>> 292d930ef782fa1a4686cf52642b897a6637b3ee
+        <div class="collapse navbar-collapse position-relative" id="prestoNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-md-0 linkContainer">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
@@ -33,9 +28,14 @@
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">User</a>
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                         <li><a class="dropdown-item" href="#">Profilo</a></li>
-                        <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        <li><a class="dropdown-item" href="#">Accedi</a></li>
-                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                        <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
+                        <li><a class="dropdown-item" href="{{route('login')}}">Accedi</a></li>
+                        <li>
+                            <form method="POST" action="/logout">
+                                @csrf
+                                <button type="submit" class="dropdown-item">Esci</button>
+                            </form>
+                        </li>
                     </ul>
                 </li>
             </ul>
