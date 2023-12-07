@@ -49,7 +49,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function announcements() : HasMany{
-        return $this->HasMany(Announcement::class);
+    public function announcements(){
+        return $this->hasMany(Announcement::class);
     }
 }

@@ -15,7 +15,8 @@ class Category extends Model
         'name'
     ];
 
-    public function announcements() : HasMany{
+    public function announcements(){
         return $this->hasMany(Announcement::class);
     }
+
 }
