@@ -16,6 +16,9 @@ body{
 .textMyWhite{
     color: var(--myWhite);
 }
+.textMyBlack{
+    color: black;
+}
 .textMyOrange{
     color: var(--myOrange);
 }
@@ -26,6 +29,9 @@ body{
 /* Classi BGColor Root */
 .bgMyWhite{
     background-color: var(--myWhite);
+}
+.bgMyBlack{
+    background-color: black;
 }
 .bgMyOrange{
     background-color: var(--myOrange);
@@ -44,47 +50,145 @@ SETTAGGI NAVBAR
 ---------------------------------*/
 
 .bgNavbar{
-    background-color: var(--myWhite);
-    box-shadow: 0px 0px 5px black;
+    background-color: var(--myPurple);
 }
 
 .nav-link{
-    color: var(--myPurple);
+    color: var(--myWhite);
 }
 
 .nav-link:hover{
-    color: rgba(160, 0, 240, 0.581);
+    color: rgba(255, 255, 255, 0.623);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--myPurple);
+    color: var(--myWhite);
 }
 .nav-link:focus {
-    color: var(--myPurple);
+    color: var(--myWhite);
 }
 
+
 .dropdown-menu{
-    background-color: transparent;
+    background-color: var(--myPurple);
     border: none;
 }
 
-.dropdown-item{
-    color: var(--myPurple);
-    background-color: transparent;
+.dropdown-menu[data-bs-popper] {
+    top: 70%;
+    left: 2%;
+    margin-top: var(--bs-dropdown-spacer);
 }
 
+.dropdown-item{
+    color: var(--myWhite);
+    background-color: none;
+    font-size: 1.7vh;
+    font-weight: 500;
+}
+
+
 .dropdown-item:hover{
-    color: rgba(160, 0, 240, 0.581);
+    color: rgba(255, 255, 255, 0.596);
     background-color: transparent;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    background-color: var(--myPurple);
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+a.nav-link{
+    font-weight: 500;
+    font-size: 2.3vh;
+}
+/*--------------------------------
+SETTAGGI SEZIONE LISTA CATEGORIE
+---------------------------------*/
+a.textMyBlack:hover{
+    color: var(--myPurple);
+}
+.spacer{
+    height: 4vh;
+    background-color: var(--myPurple);
+    padding: 4vh;
+}
+
+
+/*--------------------------------
+SETTAGGI HEADER WELCOME
+---------------------------------*/
+.bgHeader{
+    height: 70vh;
+    background: linear-gradient(rgba(160, 0, 240, 0.37) , rgba(0, 0, 0, 0.404)) ,  url('https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+}
+.myBtn{
+    background-color: var(--myOrange);
+    color: white;
+    font-weight:500;
+    padding: 1vh 5vh;
+}
+.myBtn:hover{
+    background-color: rgb(219, 159, 5);
+    color: white;
+    font-weight:500;
+    padding: 1vh 5vh;
 }
 
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .linkContainer{
         position: relative;
         right: 15vh;
+
     }
+    .itemLang{
+        position: relative;
+        right: 1%;
+        }
+
+    .formNavbar{
+        position: relative;
+        left: 14vh;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 14vh;
+    }
+}
+
+@media (min-width: 868px) and (max-width:1200px) {
+    .linkContainer{
+        position: relative;
+        right: 5vh;
+    }
+    .itemLang{
+        position: relative;
+        right: 7%;
+        }
+    .formNavbar{
+        position: relative;
+        left: 14vh;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 14vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width:868px) {
+    .linkContainer{
+        position: relative;
+        right: 0vh;
+    }
+
     .formNavbar{
         position: relative;
         left: 15vh;

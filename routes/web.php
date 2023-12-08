@@ -8,4 +8,4 @@ use App\Http\Controllers\AnnouncementController;
 // ROTTA WELCOME
 Route::get('/', [PublicController::class, 'welcome'])->name('welcome');
 
-Route::get('/presto/crea-annunci', [AnnouncementController::class, 'create_announcements'])->name('create_announcements');
+Route::get('/crea-annunci', [AnnouncementController::class, 'create_announcements'])->middleware('auth')->name('create_announcements');

@@ -20,7 +20,7 @@
                         <input name="surname" type="text" class="form-control" id="surname">
                     </div>
                     <div class="mb-3">
-                        <label for="birth" class="form-label">Data di nascita</label>
+                        <label for="birth" class="form-label">Data di Nascita</label>
                         <input name="birth" type="date" class="form-control" id="birth">
                     </div>
                     <div class="mb-3">
@@ -31,7 +31,7 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="telephone" class="form-label">Numero di telefono</label>
+                        <label for="telephone" class="form-label">Numero di Telefono</label>
                         <input name="telephone" type="text" class="form-control" id="telephone">
                     </div>
                     <div class="mb-3">
@@ -43,10 +43,10 @@
                         <input name="password" type="password" class="form-control" id="password">
                     </div>
                     <div class="mb-3">
-                        <label for="password_confirmation" class="form-label">Conferma password</label>
+                        <label for="password_confirmation" class="form-label">Conferma Password</label>
                         <input name="password_confirmation" type="password" class="form-control" id="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Registrati</button>
                 </form>
             </div>
         </div>
