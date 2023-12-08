@@ -1,6 +1,6 @@
 <nav class="navbar navbarCustom navbar-expand-sm navbar-dark bgNavbar">
     <div class="container-fluid ms-md-0">
-        <a class="navbar-brand textMyPurple" href="#">logo</a>
+        <a class="navbar-brand textMyPurple" href="{{route('welcome')}}">logo</a>
         <form role="search" class="formNavbar">
             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
         </form>
@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse position-relative" id="prestoNavbar">
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-md-0 linkContainer">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="{{route('welcome')}}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
