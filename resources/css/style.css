@@ -10,7 +10,7 @@ SETTAGGI GENERALI STILE PRESTO.IT
 body{
     background-color: var(--myWhite);
     font-family: 'Montserrat', sans-serif;
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /* Classi Color-Text Root */
@@ -145,29 +145,14 @@ SETTAGGI HEADER WELCOME
 /*--------------------------------
 SETTAGGI FOOTER COMPONENTS
 ---------------------------------*/
-.footer-link{
-    font-size: 85%;
-}
-.footerLink:hover{
-    color: var(--myPurple);
-}
 
-.infoLogoFooter{
-    font-size: 60%;
-}
-
-.listItemsFooter{
-    list-style-type: none;
-    font-size: 100%;
-    margin-bottom: 5%;
-}
 
 /*--------------------------------
 MEDIA QUERIES
 --------------------------------*/
 /* XXL Displays */
-@media screen and (min-width: 1400px) {
-}
+/* @media screen and (min-width: 1400px) {
+} */
 
 /*XL Displays*/
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -223,124 +208,12 @@ MEDIA QUERIES
         position: relative;
         left: 0%;
     }
-    .footerLink{
-        margin-top: 1%;
-        margin-bottom: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    .listItemsFooter{
-        font-size: 85%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-    .logoFooter{
-        margin-top: 0;
-    }
-    .infoLogoFooter{
-        font-size: 50%;
-        word-wrap: normal;
-        margin: 0 auto;
-        margin-top:0%;
-    }
-    .divSocial{
-        margin-right: 1.7vh;
-    }
-    .socialicon{
-        font-size: 2.7vh;
-    }
-    .appleStoreIcon{
-        font-size: 2.7vh;
-    }
-    .androidStoreIcon{
-        font-size: 2.7vh;
-        margin-top: 0.63vh;
-    }
 }
 
 /* SM Displays */
-@media (min-width: 576px) and (max-width:767px){
-    .footerLink{
-        margin-left: 2.7vh;
-    }
-    ul.listItemsFooter{
-        font-size: 81%;
-        padding: 0;
-        margin-left: 3.5%;
-        margin-top: 1%;
-    }
-    .logoFooter{
-        margin-left: 3.3%;
-        margin-top: 1%;
-    }
-    .infoLogoFooter{
-        word-wrap: normal;
-        margin-top: 2%;
-        margin-bottom: 6%;
-        margin-left: 3.5%;
-    }
-    .socialicon{
-        font-size: 80%;
-        margin-left:0%
-    }
-    .appStoreIcon{
-        font-size: 150%;
-        margin-top: 1vh;
-        margin-bottom: 1.5vh;
-    }
-    .appleStoreIcon{
-        font-size: 150%;
-        font-weight: bold;
-        margin-left: 3vh;
-    }
-    .androidStoreIcon{
-        font-size: 130%;
-        font-weight: bold;
-        margin-left: 3vh;
-        margin-bottom: 2.7vh;
-    }
+/* @media (min-width: 576px) and (max-width:767px){
+} */
 
-}
 /* XS Displays */
-@media (min-width: 0px) and (max-width:575px){
-    .footerLink{
-        margin-left: 2.7vh;
-    }
-    ul.listItemsFooter{
-        font-size: 81%;
-        padding: 0;
-        margin-left: 4%;
-        margin-top: 1%;
-    }
-    .logoFooter{
-        margin-left: 3.3%;
-        margin-top: 1%;
-    }
-    .infoLogoFooter{
-        word-wrap: normal;
-        margin-top: 2%;
-        margin-bottom: 6%;
-        margin-left: 3.5%;
-    }
-    .socialicon{
-        font-size: 80%;
-        margin-left:0%
-    }
-    .appStoreIcon{
-        font-size: 150%;
-        margin-top: 1vh;
-        margin-bottom: 1.5vh;
-    }
-    .appleStoreIcon{
-        font-size: 150%;
-        font-weight: bold;
-        margin-left: 3vh;
-    }
-    .androidStoreIcon{
-        font-size: 130%;
-        font-weight: bold;
-        margin-left: 3vh;
-        margin-bottom: 2.7vh;
-    }
-
-}
+/*  @media (min-width: 0px) and (max-width:575px){
+}  */

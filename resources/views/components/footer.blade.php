@@ -1,77 +1,64 @@
-<footer class="container-fluid d-flex flex-column justify-content-center">
-    <div class="row mt-3 justify-content-around bgMyWhite">
-        <div class="col-12 col-md-3 col-lg-2 col-xl-3 col-xxl-3">
-            <div>
-                <h6 class="fontMontserrat textMyBlack text-sm-start logoFooter"> Presto.itlogo</h6>
-            </div>
-            <div>
-                <p class="fontMontserrat textMyBlack footerLink text-sm-start infoLogoFooter">
-                    Copyright © 2023 Presto.it © dei rispettivi proprietari
-                </p>
-            </div>
+<footer class="container-fluid">
+    <div class="row bg-warning">
+        <div class="col-12 col-md-3 bg-info">
+            <h6>Presto.itLogo</h6>
         </div>
-        <div class="col-12 col-md-3 col-lg-2 col-xl-3 col-xxl-3">
-            <div>
-                <h6 class="fontMontserrat textMyBlack footerLink text-sm-start"> Presto</h6>
-            </div>
-            <div>
-                <ul class="fontMontserrat textMyBlack text-sm-start listItemsFooter">
-                    <li>Chi siamo</li>
-                    <li>Come funziona</li>
-                    <li>Stampa</li>
-                    <li>Lavoro</li>
-                </ul>
-            </div>
+        <div class="col-12 col-md-3 bg-danger">
+            <h6>Presto</h6>
+            <ul>
+                <li>Chi siamo</li>
+                <li>Come funziona</li>
+                <li>Stampa</li>
+                <li>Lavora con Noi</li>
+            </ul>
         </div>
-        <div class="col-12 col-md-3 col-lg-2 col-xl-3 col-xxl-3">
-            <div>
-                <h6 class="fontMontserrat textMyBlack footerLink text-sm-start">Supporto</h6>
-            </div>
-            <div>
-                <ul class="fontMontserrat textMyBlack text-sm-start listItemsFooter">
-                    <li>Domande frequenti</li>
-                    <li>Regole di pubblicazione</li>
-                    <li>Consigli per la sicurezza</li>
-                </ul>
-            </div>
+        <div class="col-12 col-md-3 bg-success">
+            <h6>Supporto</h6>
+            <ul>
+                <li>Domande frequenti</li>
+                <li>Regoli di pubblicazione</li>
+                <li>Consigli per la sicurezza</li>
+            </ul>
         </div>
-        <div class="col-12 col-md-3 col-lg-2 col-xl-3 col-xxl-3">
-            <div>
-                <h6 class="fontMontserrat textMyBlack footerLink text-sm-start">Legale</h6>
-            </div>
-            <div>
-                <ul class="fontMontserrat textMyBlack text-sm-start listItemsFooter">
-                    <li>Note legali</li>
-                    <li>Termini e condizioni</li>
-                    <li>Privacy policy</li>
-                    <li>Cookie policy</li>
-                </ul>
-            </div>
+        <div class="col-12 col-md-3 bg-warning">
+            <h6>Legale</h6>
+            <ul>
+                <li>Note legali</li>
+                <li>Termini e condizioni</li>
+                <li>Privacy policy</li>
+                <li>Cookie policy</li>
+            </ul>
         </div>
     </div>
-    <div class="row justify-content-center bgMyWhite py-3 py-md-1">
-        <div class="col-12 d-flex col-md-3 d-md-flex">
-            <div class="me-md-1">
-                <i class="fa-brands fa-apple appleStoreIcon"></i>
-            </div>
-            <div class="listItemsFooter ms-md-3">
-                <span class="fontMontserrat textMyBlack text-sm-start spanIconApple">Apple Store</span>
-            </div>
+    
+    <div class="row">
+        <div class="col-12 col-md-4 bgMyOrange">
+            <i class="fa-brands fa-apple"></i>
+            <p class="d-inline">Apple Store</p>
         </div>
-        <div class="col-12 d-flex col-md-3 d-md-flex">
-            <div class="me-md-1">
-                <i class="fa-brands fa-google-play androidStoreIcon"></i>
-            </div>
-            <div class="listItemsFooter ms-md-3">
-                <span class="fontMontserrat textMyBlack text-sm-start spanIconAndroid">Google Play</span>
-            </div>
+        <div class="col-12 col-md-4 bgMyPurple">
+            <i class="fa-brands fa-google-play"></i>
+            <p class="d-inline">Google Play</p>
         </div>
-        <div class="col-12 col-md-6 d-md-flex justify-content-md-end">
-            <div class="divSocial">
-                <span class="socialicon textMyBlack"><i class="fa-brands fa-facebook"></i></span>
-                <span class="socialicon textMyBlack"><i class="fa-brands fa-x-twitter"></i></span>
-                <span class="socialicon textMyBlack"><i class="fa-brands fa-instagram"></i></span>
-            </div>
+        <div class="col-12 col-md-4 bg-info">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 col-md-6 bgMyOrange">
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-stripe"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+        </div>
+        <div class="col-12 col-md-6 bg-danger">
+            <h6>Azienda certificata B Corporation®</h6>
+            <p>Questa azienda rispetta i più alti standard verificati di performance sociale e ambientale, trasparenza e responsabilità.</p>
+            <p>copyright dio merda</p>
         </div>
     </div>
 </footer>
