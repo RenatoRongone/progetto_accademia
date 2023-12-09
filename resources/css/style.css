@@ -48,7 +48,6 @@ body{
 /*--------------------------------
 SETTAGGI NAVBAR
 ---------------------------------*/
-
 .bgNavbar{
     background-color: var(--myPurple);
 }
@@ -141,19 +140,40 @@ SETTAGGI HEADER WELCOME
     padding: 1vh 5vh;
 }
 
+/*--------------------------------
+SETTAGGI FOOTER
+---------------------------------*/
+footer{
+    height: 15vh;
+}
 
-/* Media Queries */
-@media (min-width: 1200px) {
+.footerLink:hover{
+    color: var(--myPurple);
+}
+
+.infoLogoFooter{
+    font-size: 1vh;
+}
+
+.listItemsFooter{
+    list-style-type: none;
+    font-size: 1.12vh;
+    margin-bottom: 1.8vh;
+}
+
+/*--------------------------------
+MEDIA QUERIES 
+--------------------------------*/
+/* xxl displays */
+@media (min-width: 1400px) {
     .linkContainer{
         position: relative;
         right: 15vh;
-
     }
     .itemLang{
         position: relative;
         right: 1%;
-        }
-
+    }
     .formNavbar{
         position: relative;
         left: 14vh;
@@ -162,8 +182,102 @@ SETTAGGI HEADER WELCOME
         position: relative;
         left: 14vh;
     }
+    .footerLink{
+        margin-top: 3.6vh;
+        margin-left: 2.7vh;
+    }
+    .logoFooter{
+        margin-top: 3.6vh;
+        margin-bottom: 0vh;
+    }
+    .infoLogoFooter{
+        word-wrap: normal;
+    }
+    .listItemsFooter{
+        font-size: 1.12vh;
+        margin-bottom: 2.1vh;
+    }
+    .socialicon{
+        font-size: 2.25vh;
+        margin-bottom: 1.8vh;
+        margin-left: 1.7vh;
+    }
+    .appStoreIcon{
+        margin-top: 1vh;
+        margin-bottom: 1.8vh;
+    }
+    .appleStoreIcon{
+        font-size: 2.7vh;
+        font-weight: bold;
+        margin-left: 2.34vh;
+    }
+    .androidStoreIcon{
+        font-size: 2vh;
+        font-weight: bold;
+        margin-top: 1.6vh;
+        margin-left: 4.1vh;
+        margin-right: 51.55vh;
+    }
 }
 
+/* xl displays */
+@media (min-width: 1200px) {
+    .linkContainer{
+        position: relative;
+        right: 15vh;
+    }
+    .itemLang{
+        position: relative;
+        right: 1%;
+    }
+    .formNavbar{
+        position: relative;
+        left: 14vh;
+    }
+    .navbar-brand {
+        position: relative;
+        left: 14vh;
+    }
+    .footerLink{
+        margin-top: 3.6vh;
+        margin-left: 2.7vh;
+    }
+    .logoFooter{
+        margin-top: 3.6vh;
+        margin-bottom: 0vh;
+    }
+    .infoLogoFooter{
+        word-wrap: normal;
+    }
+    .listItemsFooter{
+        font-size: 1.12vh;
+        margin-bottom: 2.1vh;
+    }
+    .socialicon{
+        font-size: 2.25vh;
+        margin-bottom: 1.8vh;
+        margin-left: 1.7vh;
+    }
+    .appStoreIcon{
+        margin-top: 1vh;
+        margin-bottom: 1.8vh;
+    }
+    .appleStoreIcon{
+        font-size: 2.7vh;
+        font-weight: bold;
+        margin-left: 9vh;
+    }
+    .androidStoreIcon{
+        font-size: 2vh;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-top: 1.6vh;
+        margin-left: 2vh;
+        margin-right: 17.6vh;
+    }
+}
+
+/* lg displays */
 @media (min-width: 868px) and (max-width:1200px) {
     .linkContainer{
         position: relative;
@@ -172,7 +286,7 @@ SETTAGGI HEADER WELCOME
     .itemLang{
         position: relative;
         right: 7%;
-        }
+    }
     .formNavbar{
         position: relative;
         left: 14vh;
@@ -181,14 +295,52 @@ SETTAGGI HEADER WELCOME
         position: relative;
         left: 14vh;
     }
+    .footerLink{
+        margin-top: 3.6vh;
+        margin-left: 2.7vh;
+    }
+    .listItemsFooter{
+        font-size: 1.12vh;
+        margin-bottom: 2.1vh;
+    }
+    .logoFooter{
+        margin-top: 3.6vh;
+        margin-bottom: 0.9vh;
+    }
+    .infoLogoFooter{
+        word-wrap: normal;
+    }
+    .socialicon{
+        font-size: 2.25vh;
+        margin-top: 2.3vh;
+        margin-bottom: 1.8vh;
+        margin-left: 1.5vh;
+        margin-right: 1.44vh;
+    }
+    .appStoreIcon{
+        margin-top: 1.4vh;
+        margin-bottom: 1.8vh;
+    }
+    .appleStoreIcon{
+        font-size: 2.7vh;
+        font-weight: bold;
+        margin-left: 1.05vh;
+        margin-right: 1.8vh;
+    }
+    .androidStoreIcon{
+        font-size: 2vh;
+        font-weight: bold;
+        margin-top: 2.04vh;
+        margin-right: 21.7vh;
+    }
 }
 
+/* md displays */
 @media (min-width: 768px) and (max-width:868px) {
     .linkContainer{
         position: relative;
         right: 0vh;
     }
-
     .formNavbar{
         position: relative;
         left: 15vh;
@@ -196,5 +348,83 @@ SETTAGGI HEADER WELCOME
     .navbar-brand {
         position: relative;
         left: 15vh;
+    }
+    .footerLink{
+        font-size: 1.35vh;
+        margin-top: 3.6vh;
+        margin-bottom: 0.9vh;
+        margin-left: 2vh;
+        margin-right: 2vh; 
+    }
+    .listItemsFooter{
+        font-size: 1.12vh;
+        margin-bottom: 2.1vh;
+        margin-left: 0.1vh;
+    }
+    .logoFooter{
+        margin-top: 3.6vh;
+    }
+    .infoLogoFooter{
+        font-size: 0.96vh;
+        word-wrap: normal;
+        margin: 0 auto;
+        margin-top: 1.15vh;
+    }
+    .socialicon{
+        font-size: 2.25vh;
+        margin-right: 1.4vh;
+    }
+    .appStoreIcon{
+        margin-top: 0.5vh;
+    }
+    .appleStoreIcon{
+        font-size: 2.7vh;
+        font-weight: bold;
+        margin-right: 6.4vh;
+    }
+    .androidStoreIcon{
+        font-size: 2vh;
+        font-weight: bold;
+        margin-top: 1.63vh;
+        margin-left: 0.9vh;
+        margin-right: 6.25vh;
+    }
+}
+
+/* sm displays */
+@media (min-width: 575px) and (max-width:768px){
+    .footerLink{
+        margin-left: 2.7vh;
+    }
+    .listItemsFooter{
+        font-size: 1.12vh;
+        margin-bottom: 2.1vh;
+    }
+    .logoFooter{
+        margin-top: 3.6vh;
+        margin-bottom: 0.9vh;
+    }
+    .infoLogoFooter{
+        word-wrap: normal;
+        margin-bottom: 3.6vh;
+    }
+    .socialicon{
+        font-size: 2.25vh;
+        margin-left: 1.5vh;
+    }
+    .appStoreIcon{
+        margin-top: 1vh;
+        margin-bottom: 1.5vh;
+    }
+    .appleStoreIcon{
+        font-size: 2.7vh;
+        font-weight: bold;
+        margin-left: 3vh;
+    }
+    .androidStoreIcon{
+        font-size: 2vh;
+        font-weight: bold;
+        margin-left: 3vh;
+        margin-bottom: 2.7vh;
     }
 }

@@ -19,13 +19,13 @@
             </div>
             <div class="col-3">
                 <a class="textMyBlack text-decoration-none" href="#">
-                    Console e Videogiochi
+                    Wellness
                 </a>
             </div>
         </div>
     </section>
-
-
+    
+    
     {{-- Sezione del BackGround Header --}}
     <header class="container-fluid bgHeader d-flex justify-content-center ">
         <div class="row align-items-center">
@@ -38,4 +38,6 @@
                 </div>
             </div>
         </header>
+        <!-- Main --> 
+        <x-footer></x-footer>
     </x-layout>
