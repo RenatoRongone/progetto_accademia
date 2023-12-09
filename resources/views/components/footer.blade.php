@@ -2,10 +2,10 @@
     <div class="row mt-3 justify-content-around bgMyWhite">
         <div class="col-12 col-md-3 col-lg-2 col-xl-3 col-xxl-3">
             <div>
-                <h6 class="fontMontserrat textMyBlack footerLink text-sm-start logoFooter"> Presto.itlogo</h6>
+                <h6 class="fontMontserrat textMyBlack text-sm-start logoFooter"> Presto.itlogo</h6>
             </div>
             <div>
-                <p class="fontMontserrat textMyBlack footerLink text-sm-start infoLogoFooter my-lg-0 ">
+                <p class="fontMontserrat textMyBlack footerLink text-sm-start infoLogoFooter">
                     Copyright © 2023 Presto.it © dei rispettivi proprietari
                 </p>
             </div>
@@ -55,7 +55,7 @@
                 <i class="fa-brands fa-apple appleStoreIcon"></i>
             </div>
             <div class="listItemsFooter ms-md-3">
-                <span class="fontMontserrat textMyBlack text-sm-start listItemsFooter">Apple Store</span>
+                <span class="fontMontserrat textMyBlack text-sm-start spanIconApple">Apple Store</span>
             </div>
         </div>
         <div class="col-12 d-flex col-md-3 d-md-flex">
@@ -63,7 +63,7 @@
                 <i class="fa-brands fa-google-play androidStoreIcon"></i>
             </div>
             <div class="listItemsFooter ms-md-3">
-                <span class="fontMontserrat textMyBlack text-sm-start listItemsFooter">Google Play</span>
+                <span class="fontMontserrat textMyBlack text-sm-start spanIconAndroid">Google Play</span>
             </div>
         </div>
         <div class="col-12 col-md-6 d-md-flex justify-content-md-end">

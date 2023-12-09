@@ -3,29 +3,29 @@
     <section class="container-fluid p-3">
         <div class="row text-center textMyBlack fw-medium ">
             <div class="col-3">
-                <a class="textMyBlack text-decoration-none" href="#">
+                <a class="textMyBlack categorie text-decoration-none" href="#">
                     Tutte le categorie
                 </a>
             </div>
             <div class="col-3">
-                <a class="textMyBlack text-decoration-none" href="#">
+                <a class="textMyBlack categorie text-decoration-none" href="#">
                     Auto e Moto
                 </a>
             </div>
             <div class="col-3">
-                <a class="textMyBlack text-decoration-none" href="#">
+                <a class="textMyBlack categorie text-decoration-none" href="#">
                     Cinema e Libri
                 </a>
             </div>
             <div class="col-3">
-                <a class="textMyBlack text-decoration-none" href="#">
+                <a class="textMyBlack categorie text-decoration-none" href="#">
                     Wellness
                 </a>
             </div>
         </div>
     </section>
-    
-    
+
+
     {{-- Sezione del BackGround Header --}}
     <header class="container-fluid bgHeader d-flex justify-content-center ">
         <div class="row align-items-center">
@@ -38,6 +38,6 @@
                 </div>
             </div>
         </header>
-        <!-- Main --> 
+        <!-- Main -->
         <x-footer></x-footer>
     </x-layout>

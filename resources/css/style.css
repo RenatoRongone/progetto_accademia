@@ -10,7 +10,7 @@ SETTAGGI GENERALI STILE PRESTO.IT
 body{
     background-color: var(--myWhite);
     font-family: 'Montserrat', sans-serif;
-    
+     overflow-x: hidden;
 }
 
 /* Classi Color-Text Root */
@@ -70,7 +70,7 @@ SETTAGGI NAVBAR
 
 
 .dropdown-menu{
-    background-color: var(--myPurple);
+    background-color: transparent;
     border: none;
 }
 
@@ -113,9 +113,12 @@ a.textMyBlack:hover{
     color: var(--myPurple);
 }
 .spacer{
-    height: 4vh;
+    height: 30%;
     background-color: var(--myPurple);
-    padding: 4vh;
+    padding: 2.5%;
+}
+.categorie{
+    font-size: 85%;
 }
 
 
@@ -123,7 +126,8 @@ a.textMyBlack:hover{
 SETTAGGI HEADER WELCOME
 ---------------------------------*/
 .bgHeader{
-    height: 70vh;
+    padding: 10%;
+    height: 100%;
     background: linear-gradient(rgba(160, 0, 240, 0.37) , rgba(0, 0, 0, 0.404)) ,  url('https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center;
     background-size: cover;
@@ -132,44 +136,44 @@ SETTAGGI HEADER WELCOME
     background-color: var(--myOrange);
     color: white;
     font-weight:500;
-    padding: 1vh 5vh;
+    padding: 2% 5%;
 }
 .myBtn:hover{
     background-color: rgb(219, 159, 5);
-    color: white;
-    font-weight:500;
-    padding: 1vh 5vh;
 }
 
 /*--------------------------------
-SETTAGGI FOOTER
+SETTAGGI FOOTER COMPONENTS
 ---------------------------------*/
-footer{
-    height: 15vh;
+.footer-link{
+    font-size: 85%;
 }
-
 .footerLink:hover{
     color: var(--myPurple);
 }
 
 .infoLogoFooter{
-    font-size: 70%;
+    font-size: 60%;
 }
 
 .listItemsFooter{
     list-style-type: none;
     font-size: 100%;
-    margin-bottom: 1.8vh;
+    margin-bottom: 5%;
 }
 
 /*--------------------------------
 MEDIA QUERIES
 --------------------------------*/
-/* xxl displays */
-@media (min-width: 1400px) {
+/* XXL Displays */
+@media screen and (min-width: 1400px) {
+}
+
+/*XL Displays*/
+@media (min-width: 1200px) and (max-width: 1399px) {
     .linkContainer{
         position: relative;
-        right: 15vh;
+        right: 8%;
     }
     .itemLang{
         position: relative;
@@ -177,39 +181,19 @@ MEDIA QUERIES
     }
     .formNavbar{
         position: relative;
-        left: 14vh;
+        left: 6%;
     }
     .navbar-brand {
         position: relative;
-        left: 14vh;
+        left: 6%;
     }
 }
 
-/* xl displays */
-@media (min-width: 1200px) {
+/* LG Displays */
+@media (min-width: 992px) and (max-width:1199px) {
     .linkContainer{
         position: relative;
-        right: 15vh;
-    }
-    .itemLang{
-        position: relative;
-        right: 1%;
-    }
-    .formNavbar{
-        position: relative;
-        left: 14vh;
-    }
-    .navbar-brand {
-        position: relative;
-        left: 14vh;
-    }
-}
-
-/* lg displays */
-@media (min-width: 868px) and (max-width:1200px) {
-    .linkContainer{
-        position: relative;
-        right: 5vh;
+        right: 8%;
     }
     .itemLang{
         position: relative;
@@ -217,48 +201,47 @@ MEDIA QUERIES
     }
     .formNavbar{
         position: relative;
-        left: 14vh;
+        left: 6%;
     }
     .navbar-brand {
         position: relative;
-        left: 14vh;
+        left: 6%;
     }
 }
 
-/* md displays */
-@media (min-width: 768px) and (max-width:868px) {
+/* MD Displays */
+@media (min-width: 768px) and (max-width:991px) {
     .linkContainer{
         position: relative;
-        right: 0vh;
+        right: 0%;
     }
     .formNavbar{
         position: relative;
-        left: 15vh;
+        left: 0%
     }
     .navbar-brand {
         position: relative;
-        left: 15vh;
+        left: 0%;
     }
     .footerLink{
-        font-size: 100%;
-        margin-top: 3.6vh;
-        margin-bottom: 0.9vh;
-        margin-left: 2vh;
-        margin-right: 2vh;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .listItemsFooter{
-        font-size: 100%;
-        margin-top: 0.76vh;
-        margin-bottom: 2.1vh;
+        font-size: 85%;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
     .logoFooter{
-        margin-top: 3.6vh;
+        margin-top: 0;
     }
     .infoLogoFooter{
-        font-size: 0.96vh;
+        font-size: 50%;
         word-wrap: normal;
         margin: 0 auto;
-        margin-top: 1.15vh;
+        margin-top:0%;
     }
     .divSocial{
         margin-right: 1.7vh;
@@ -275,40 +258,89 @@ MEDIA QUERIES
     }
 }
 
-/* sm displays */
-@media (min-width: 575px) and (max-width:768px){
+/* SM Displays */
+@media (min-width: 576px) and (max-width:767px){
     .footerLink{
         margin-left: 2.7vh;
     }
-    .listItemsFooter{
+    ul.listItemsFooter{
         font-size: 81%;
-        margin-bottom: 2.1vh;
+        padding: 0;
+        margin-left: 3.5%;
+        margin-top: 1%;
     }
     .logoFooter{
-        margin-top: 3.6vh;
-        margin-bottom: 0.9vh;
+        margin-left: 3.3%;
+        margin-top: 1%;
     }
     .infoLogoFooter{
         word-wrap: normal;
-        margin-bottom: 3.6vh;
+        margin-top: 2%;
+        margin-bottom: 6%;
+        margin-left: 3.5%;
     }
     .socialicon{
-        font-size: 2.25vh;
-        margin-left: 1.5vh;
+        font-size: 80%;
+        margin-left:0%
     }
     .appStoreIcon{
+        font-size: 150%;
         margin-top: 1vh;
         margin-bottom: 1.5vh;
     }
     .appleStoreIcon{
-        font-size: 180%;
+        font-size: 150%;
         font-weight: bold;
         margin-left: 3vh;
     }
     .androidStoreIcon{
-        font-size: 148%;
+        font-size: 130%;
         font-weight: bold;
         margin-left: 3vh;
         margin-bottom: 2.7vh;
     }
+
+}
+/* XS Displays */
+@media (min-width: 0px) and (max-width:575px){
+    .footerLink{
+        margin-left: 2.7vh;
+    }
+    ul.listItemsFooter{
+        font-size: 81%;
+        padding: 0;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    .logoFooter{
+        margin-left: 3.3%;
+        margin-top: 1%;
+    }
+    .infoLogoFooter{
+        word-wrap: normal;
+        margin-top: 2%;
+        margin-bottom: 6%;
+        margin-left: 3.5%;
+    }
+    .socialicon{
+        font-size: 80%;
+        margin-left:0%
+    }
+    .appStoreIcon{
+        font-size: 150%;
+        margin-top: 1vh;
+        margin-bottom: 1.5vh;
+    }
+    .appleStoreIcon{
+        font-size: 150%;
+        font-weight: bold;
+        margin-left: 3vh;
+    }
+    .androidStoreIcon{
+        font-size: 130%;
+        font-weight: bold;
+        margin-left: 3vh;
+        margin-bottom: 2.7vh;
+    }
+
 }
