@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="row justify-content-center bgMyWhite py-3 py-md-1">
-        <div class="col-12 col-md-3 d-md-flex">
+        <div class="col-12 d-flex col-md-3 d-md-flex">
             <div class="me-md-1">
                 <i class="fa-brands fa-apple appleStoreIcon"></i>
             </div>
@@ -58,7 +58,7 @@
                 <span class="fontMontserrat textMyBlack text-sm-start listItemsFooter">Apple Store</span>
             </div>
         </div>
-        <div class="col-12 col-md-3 d-md-flex">
+        <div class="col-12 d-flex col-md-3 d-md-flex">
             <div class="me-md-1">
                 <i class="fa-brands fa-google-play androidStoreIcon"></i>
             </div>

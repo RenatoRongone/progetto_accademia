@@ -10,7 +10,7 @@ SETTAGGI GENERALI STILE PRESTO.IT
 body{
     background-color: var(--myWhite);
     font-family: 'Montserrat', sans-serif;
-
+    
 }
 
 /* Classi Color-Text Root */
@@ -83,7 +83,7 @@ SETTAGGI NAVBAR
 .dropdown-item{
     color: var(--myWhite);
     background-color: none;
-    font-size: 1.7vh;
+    font-size: 70%;
     font-weight: 500;
 }
 
@@ -153,12 +153,12 @@ footer{
 }
 
 .infoLogoFooter{
-    font-size: 1vh;
+    font-size: 70%;
 }
 
 .listItemsFooter{
     list-style-type: none;
-    font-size: 1.12vh;
+    font-size: 100%;
     margin-bottom: 1.8vh;
 }
 
@@ -183,42 +183,6 @@ MEDIA QUERIES
         position: relative;
         left: 14vh;
     }
-    /*  .footerLink{
-        margin-top: 3.6vh;
-        margin-left: 2.7vh;
-    }
-    .logoFooter{
-        margin-top: 3.6vh;
-        margin-bottom: 0vh;
-    }
-    .infoLogoFooter{
-        word-wrap: normal;
-    }
-    .listItemsFooter{
-        font-size: 1.12vh;
-        margin-bottom: 2.1vh;
-    }
-    .socialicon{
-        font-size: 2.25vh;
-        margin-bottom: 1.8vh;
-        margin-left: 1.7vh;
-    }
-    .appStoreIcon{
-        margin-top: 1vh;
-        margin-bottom: 1.8vh;
-    }
-    .appleStoreIcon{
-        font-size: 2.7vh;
-        font-weight: bold;
-        margin-left: 2.34vh;
-    }
-    .androidStoreIcon{
-        font-size: 2vh;
-        font-weight: bold;
-        margin-top: 1.6vh;
-        margin-left: 4.1vh;
-        margin-right: 51.55vh;
-    } */
 }
 
 /* xl displays */
@@ -239,43 +203,6 @@ MEDIA QUERIES
         position: relative;
         left: 14vh;
     }
-    /* .footerLink{
-        margin-top: 3.6vh;
-        margin-left: 2.7vh;
-    }
-    .logoFooter{
-        margin-top: 3.6vh;
-        margin-bottom: 0vh;
-    }
-    .infoLogoFooter{
-        word-wrap: normal;
-    }
-    .listItemsFooter{
-        font-size: 1.12vh;
-        margin-bottom: 2.1vh;
-    }
-    .socialicon{
-        font-size: 2.25vh;
-        margin-bottom: 1.8vh;
-        margin-left: 1.7vh;
-    }
-    .appStoreIcon{
-        margin-top: 1vh;
-        margin-bottom: 1.8vh;
-    }
-    .appleStoreIcon{
-        font-size: 2.7vh;
-        font-weight: bold;
-        margin-left: 9vh;
-    }
-    .androidStoreIcon{
-        font-size: 2vh;
-        font-weight: bold;
-        margin: 0 auto;
-        margin-top: 1.6vh;
-        margin-left: 2vh;
-        margin-right: 17.6vh;
-    } */
 }
 
 /* lg displays */
@@ -296,44 +223,6 @@ MEDIA QUERIES
         position: relative;
         left: 14vh;
     }
-    /*   .footerLink{
-        margin-top: 3.6vh;
-        margin-left: 2.7vh;
-    }
-    .listItemsFooter{
-        font-size: 1.12vh;
-        margin-bottom: 2.1vh;
-    }
-    .logoFooter{
-        margin-top: 3.6vh;
-        margin-bottom: 0.9vh;
-    }
-    .infoLogoFooter{
-        word-wrap: normal;
-    }
-    .socialicon{
-        font-size: 2.25vh;
-        margin-top: 2.3vh;
-        margin-bottom: 1.8vh;
-        margin-left: 1.5vh;
-        margin-right: 1.44vh;
-    }
-    .appStoreIcon{
-        margin-top: 1.4vh;
-        margin-bottom: 1.8vh;
-    }
-    .appleStoreIcon{
-        font-size: 2.7vh;
-        font-weight: bold;
-        margin-left: 1.05vh;
-        margin-right: 1.8vh;
-    }
-    .androidStoreIcon{
-        font-size: 2vh;
-        font-weight: bold;
-        margin-top: 2.04vh;
-        margin-right: 21.7vh;
-    } */
 }
 
 /* md displays */
@@ -351,14 +240,14 @@ MEDIA QUERIES
         left: 15vh;
     }
     .footerLink{
-        font-size: 1.35vh;
+        font-size: 100%;
         margin-top: 3.6vh;
         margin-bottom: 0.9vh;
         margin-left: 2vh;
         margin-right: 2vh;
     }
     .listItemsFooter{
-        font-size: 1.12vh;
+        font-size: 100%;
         margin-top: 0.76vh;
         margin-bottom: 2.1vh;
     }
@@ -392,7 +281,7 @@ MEDIA QUERIES
         margin-left: 2.7vh;
     }
     .listItemsFooter{
-        font-size: 1.12vh;
+        font-size: 81%;
         margin-bottom: 2.1vh;
     }
     .logoFooter{
@@ -412,12 +301,12 @@ MEDIA QUERIES
         margin-bottom: 1.5vh;
     }
     .appleStoreIcon{
-        font-size: 2.7vh;
+        font-size: 180%;
         font-weight: bold;
         margin-left: 3vh;
     }
     .androidStoreIcon{
-        font-size: 2vh;
+        font-size: 148%;
         font-weight: bold;
         margin-left: 3vh;
         margin-bottom: 2.7vh;
