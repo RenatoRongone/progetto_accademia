@@ -145,7 +145,10 @@ SETTAGGI HEADER WELCOME
 /*--------------------------------
 SETTAGGI FOOTER COMPONENTS
 ---------------------------------*/
-
+ul{
+    list-style: none;
+    color: black;
+}
 
 /*--------------------------------
 MEDIA QUERIES
