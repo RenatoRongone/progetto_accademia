@@ -10,6 +10,7 @@ SETTAGGI GENERALI STILE PRESTO.IT
 body{
     background-color: var(--myWhite);
     font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Classi Color-Text Root */
@@ -103,7 +104,7 @@ SETTAGGI NAVBAR
 }
 a.nav-link{
     font-weight: 500;
-    font-size: 2.3vh;
+    font-size: 100%
 }
 /*--------------------------------
 SETTAGGI SEZIONE LISTA CATEGORIE
@@ -162,7 +163,7 @@ footer{
 }
 
 /*--------------------------------
-MEDIA QUERIES 
+MEDIA QUERIES
 --------------------------------*/
 /* xxl displays */
 @media (min-width: 1400px) {
@@ -354,7 +355,7 @@ MEDIA QUERIES
         margin-top: 3.6vh;
         margin-bottom: 0.9vh;
         margin-left: 2vh;
-        margin-right: 2vh; 
+        margin-right: 2vh;
     }
     .listItemsFooter{
         font-size: 1.12vh;
