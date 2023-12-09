@@ -104,7 +104,13 @@ SETTAGGI NAVBAR
 }
 a.nav-link{
     font-weight: 500;
-    font-size: 100%
+    font-size: 100%;
+    color:white;
+}
+button.nav-link{
+    font-weight: 500;
+    font-size: 100%;
+    color:white;
 }
 /*--------------------------------
 SETTAGGI SEZIONE LISTA CATEGORIE
@@ -132,6 +138,7 @@ SETTAGGI HEADER WELCOME
     background-position: center;
     background-size: cover;
 }
+
 .myBtn{
     background-color: var(--myOrange);
     color: white;
@@ -149,7 +156,9 @@ ul{
     list-style: none;
     color: black;
 }
-
+.flags{
+    height: 2.5vh;
+}
 /*--------------------------------
 MEDIA QUERIES
 --------------------------------*/

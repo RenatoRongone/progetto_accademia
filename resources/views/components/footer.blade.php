@@ -1,28 +1,29 @@
 <footer class="container-fluid">
-    <div class="row bg-warning">
-        <div class="col-12 px-4 py-5 col-md-3 px-md-0 py-md-0 bg-info">
+    <div class="row">
+        <div class="col-12 px-4 py-5 col-md-3 px-md-4 py-md-4">
             <h6 class="textMyBlack">Presto.itLogo</h6>
         </div>
-        <div class="col-12 px-4 col-md-3 px-md-0 bg-danger">
+        <div class="col-12 px-4 col-md-3 p-md-4">
             <h6 class="textMyBlack">Presto</h6>
-            <ul>
+            <ul class="px-0">
                 <li>Chi siamo</li>
                 <li>Come funziona</li>
                 <li>Stampa</li>
                 <li>Lavora con Noi</li>
             </ul>
         </div>
-        <div class="col-12 px-4 col-md-3 px-md-0 bg-success">
+        <div class="col-12 px-4 col-md-3 p-md-4">
             <h6 class="textMyBlack">Supporto</h6>
-            <ul>
+            <ul class="px-0">
                 <li>Domande frequenti</li>
                 <li>Regoli di pubblicazione</li>
                 <li>Consigli per la sicurezza</li>
+                <li>Assistenza Chat</li>
             </ul>
         </div>
-        <div class="col-12 px-4 col-md-3 px-md-0 bg-warning">
+        <div class="col-12 px-4 col-md-3 p-md-4">
             <h6 class="textMyBlack">Legale</h6>
-            <ul>
+            <ul class="px-0">
                 <li>Note legali</li>
                 <li>Termini e condizioni</li>
                 <li>Privacy policy</li>
@@ -30,35 +31,46 @@
             </ul>
         </div>
     </div>
-    
-    <div class="row">
-        <div class="col-12 px-4 pt-3 pb-2 col-md-4 px-md-0 pt-md-0 pb-md-0 bgMyOrange">
+
+    <div class="row ">
+        <div class="col-12 px-4 pt-3 pb-2 col-md-4 px-md-4 pt-md-0 pb-md-0">
             <i class="fa-brands fa-apple textMyBlack"></i>
-            <p class="d-inline">Apple Store</p>
+            <p class="d-inline ms-1">Apple Store</p>
+            <div>
+                <i class="fa-brands fa-google-play textMyBlack"></i>
+                <p class="d-inline">Google Play</p>
+            </div>
         </div>
-        <div class="col-12 px-4 col-md-4 px-md-0 bgMyPurple">
-            <i class="fa-brands fa-google-play textMyBlack"></i>
-            <p class="d-inline">Google Play</p>
-        </div>
-        <div class="col-12 p-4 col-md-4 p-md-0 bg-info">
-            <i class="fa-brands fa-facebook textMyBlack"></i>
-            <i class="fa-brands fa-x-twitter textMyBlack"></i>
-            <i class="fa-brands fa-instagram textMyBlack"></i>
+        <div class="col-12 px-4 py-3 col-md-8 text-md-end px-md-4 py-md-0">
+            <div class="mt-md-4">
+                <i class="fa-brands fa-facebook textMyBlack"></i>
+                <i class="fa-brands fa-x-twitter textMyBlack"></i>
+                <i class="fa-brands fa-instagram textMyBlack"></i>
+            </div>
         </div>
     </div>
-    
+
     <div class="row">
-        <div class="col-12 px-4 col-md-6 px-md-0 bgMyOrange">
+        <div class="col-12 col-md-6 px-4 py-3 px-md-4 py-md-3">
             <i class="fa-brands fa-cc-paypal textMyBlack"></i>
             <i class="fa-brands fa-cc-stripe textMyBlack"></i>
             <i class="fa-brands fa-cc-visa textMyBlack"></i>
             <i class="fa-brands fa-cc-mastercard textMyBlack"></i>
             <i class="fa-brands fa-cc-amex textMyBlack"></i>
+            <div class="mt-4">
+                <h6 class="mb-4">Lingua</h6>
+                <a href="" class="text-decoration-none">
+                    <img src="https://cdn.icon-icons.com/icons2/45/PNG/64/italy_flags_flag_8964.png" class="flags" alt="italian flag">
+                </a>
+                <a href="" class="text-decoration-none">
+                    <img src="https://cdn.icon-icons.com/icons2/45/PNG/64/uk_flags_flag_8834.png" class="flags" alt="english flag">
+                </a>
+            </div>
         </div>
-        <div class="col-12 p-4 col-md-6 p-md-0 bg-danger">
+        <div class="col-12 p-4 col-md-6 p-md-3">
             <h6 class="textMyBlack">Azienda certificata B Corporation®</h6>
             <p class="textMyBlack">Questa azienda rispetta i più alti standard verificati di performance sociale e ambientale, trasparenza e responsabilità.</p>
-            <p class="textMyBlack">copyright dio merda</p>
+            <p class="textMyBlack">Copyright • DevelQuack 2023</p>
         </div>
     </div>
 </footer>
