@@ -1,5 +1,5 @@
-<div class="col-6">
-    <form wire:submit.prevent='store'>
+<div class="col-6 d-flex justify-content-center">
+    <form wire:submit.prevent='store' class="createAnnouncementsForm shadow">
         <div class="mb-3">
             <label for="title" class="form-label">Titolo</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model='title'>
@@ -34,6 +34,8 @@
             @enderror
         </div>
         {{-- aggiungere input immagine --}}
-        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-5 px-4">Crea Annuncio</button>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">Crea Annuncio</button>
+        </div>
     </form>
 </div>

@@ -5,7 +5,7 @@
                 <h1 class="text-center">Accedi</h1>
             </div>
         </div>
-
+        
         <div class="row justify-content-center text-center error align-items-center ">
             <div class="col-12">
                 @if ($errors->any())
@@ -19,7 +19,7 @@
                 @endif
             </div>
         </div>
-
+        
         <div class="row justify-content-center loginBackground mt-2">
             <div class="col-6 py-0 d-flex justify-content-center">
                 <form method="POST" action="/login" class="loginForm shadow">
@@ -51,5 +51,5 @@
             </div>
         </div>
     </div>
-
+    
 </x-layout>

@@ -6,7 +6,6 @@ SETTAGGI GENERALI STILE PRESTO.IT
     --myOrange: rgb(255, 183, 0);
     --myPurple: rgb(160, 0, 240);
 }
-
 body{
     background-color: var(--myWhite);
     font-family: 'Montserrat', sans-serif;
@@ -52,15 +51,12 @@ SETTAGGI NAVBAR
 .bgNavbar{
     background-color: var(--myPurple);
 }
-
 .nav-link{
     color: var(--myWhite);
 }
-
 .nav-link:hover{
     color: rgba(255, 255, 255, 0.623);
 }
-
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: var(--myWhite);
 }
@@ -70,27 +66,21 @@ SETTAGGI NAVBAR
 .logoNavbar{
     height: 8vh;
 }
-
-
 .dropdown-menu{
     background-color: transparent;
     border: none;
 }
-
 .dropdown-menu[data-bs-popper] {
     top: 70%;
     left: 2%;
     margin-top: var(--bs-dropdown-spacer);
 }
-
 .dropdown-item{
     color: var(--myWhite);
     background-color: none;
     font-size: 70%;
     font-weight: 500;
 }
-
-
 .dropdown-item:hover{
     color: rgba(255, 255, 255, 0.596);
     background-color: transparent;
@@ -130,7 +120,6 @@ a.textMyBlack:hover{
     font-size: 85%;
 }
 
-
 /*--------------------------------
 SETTAGGI HEADER WELCOME
 ---------------------------------*/
@@ -141,7 +130,6 @@ SETTAGGI HEADER WELCOME
     background-position: center;
     background-size: cover;
 }
-
 .myBtnWelcome{
     background-color: var(--myOrange);
     color: white;
@@ -151,7 +139,6 @@ SETTAGGI HEADER WELCOME
 .myBtnWelcome:hover{
     background-color: rgb(219, 159, 5);
 }
-
 .hiddenAnimation{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -163,11 +150,9 @@ SETTAGGI LOGIN
 .loginHeight{
     height: 80vh;
 }
-
 .loginBackground{
     background-color: var(--myWhite);
 }
-
 .loginForm{
     min-width: 45vh;
     max-width: 45vh;
@@ -175,20 +160,15 @@ SETTAGGI LOGIN
     border-radius: 3%;
     padding: 2.5vh;
 }
-
-
-
 .form-control.is-invalid:focus {
     border-color: var(--bs-form-invalid-border-color);
     box-shadow: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='100' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");;
 }
-
 input[type="checkbox"]:checked{
     background-color: var(--myPurple);
     color: var(--myPurple);
 }
-
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
@@ -196,19 +176,16 @@ input[type="checkbox"]:checked{
     outline: 0;
     box-shadow: none;
 }
-
 .form-check-input:focus {
     border-color:var(--bs-border-color);
     outline: 0px;
     box-shadow: none;
 }
-
 .btnLogin:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
     border: 1px solid var(--myPurple);
 }
-
 .fs-7{
     font-size: 80%;
 }
@@ -219,11 +196,9 @@ SETTAGGI REGISTER
 .registerHeight{
     min-height: 80vh;
 }
-
 .registerBackground{
     background-color: var(--myWhite);
 }
-
 .registerForm{
     width: 100%;
     border: 2.5px solid var(--myPurple);
@@ -234,12 +209,10 @@ select{
     border-color:var(--bs-border-color);
     height: 5vh;
 }
-
 .error{
     position:relative;
     right: 2vh;
 }
-
 .is-invalid{
     border: 2px solid var(--myPurple);
     border-color: var(--myPurple) !important;
@@ -247,11 +220,9 @@ select{
 .errorRegister{
     font-size: 75%;
 }
-
 .passwordContainer{
     position: relative;
 }
-
 .openEyeIcon{
     height: 3vh;
     width: 3vh;
@@ -263,7 +234,6 @@ select{
     left: 86%;
     cursor: pointer;
 }
-
 .closedEyeIcon{
     height: 3vh;
     width: 3vh;
@@ -276,6 +246,26 @@ select{
     cursor: pointer;
 }
 
+/*--------------------------------
+SETTAGGI CREATE ANNOUNCEMENTS
+---------------------------------*/
+.createAnnouncementsHeight{
+    min-height: 80vh;
+}
+.createAnnouncementsBackground{
+    background-color: var(--myWhite);
+}
+.createAnnouncementsForm{
+    width: 100%;
+    border: 2.5px solid var(--myPurple);
+    border-radius: 3%;
+    padding: 2.5vh;
+}
+.form-control.is-invalid:focus {
+    border-color: var(--bs-form-invalid-border-color);
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='100' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");;
+}
 
 /*--------------------------------
 SETTAGGI MAIN COMPONENTS
@@ -285,7 +275,6 @@ SETTAGGI MAIN COMPONENTS
     width: 100%;
     height: 100%;
 }
-
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -294,7 +283,6 @@ SETTAGGI MAIN COMPONENTS
     justify-content: center;
     align-items: center;
 }
-
 .swiper-slide img {
     display: block;
     height: 70vh;
