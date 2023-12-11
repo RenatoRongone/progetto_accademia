@@ -28,6 +28,10 @@
     @vite (['resources/css/app.css' , 'resources/js/form.js'])
     @endif
 
+    @if(Route::is('login'))
+    @vite (['resources/css/app.css' , 'resources/js/login.js'])
+    @endif
+
 </head>
 <body>
     <x-navbar></x-navbar>

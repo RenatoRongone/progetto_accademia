@@ -28,9 +28,10 @@
                         <label for="email" class="form-label">Email</label>
                         <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 passwordContainer">
                         <label for="password" class="form-label">Password</label>
                         <input name="password" type="password" class="form-control" id="password">
+                        <span class="openEyeIcon" id='eyeIcon'></span>
                     </div>
                     <div class="mb-3 form-check">
                         <input name="remember" type="checkbox" class="form-check-input" id="remember">
