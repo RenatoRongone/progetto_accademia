@@ -1,6 +1,8 @@
 <nav class="navbar navbarCustom navbar-expand-sm navbar-dark bgNavbar p-3">
     <div class="container-fluid ms-md-0">
-        <a class="navbar-brand textMyWhite" href="{{route('welcome')}}">LOGO</a>
+        <a class="navbar-brand textMyWhite" href="{{route('welcome')}}">
+        <img src="https://uc05fcb856dc8d6e45d45791b774.previews.dropboxusercontent.com/p/thumb/ACFMmY5CTYJ60X87zm-IkyqnTuCEWCegxd4pdu8AtfVWn1tDXMnLAMJYhN9AIrd4OnBLUf5VD7vDVHMOBwUmA8Ae-umlw5NtktwfsJtTBWVCr3BF9H-0Ce8j41DQGUwhGYA5FGUp0BVDt1Q2ClSFmhrITrqxV7wRdZW6ycxLXg5bKaBdPzvXTcl7TRHA2YI8wIecWOko9js2VVPhxv8tqIo0y2ixV5rX-gBP0waKIe3pJqYuQgl6Au6O1Idte3UucTmq5B8nkDyXNCt1gwFhzTmmYmN8gu1pn7_XSVSYLT9fn5-E_tL3Cgsoa-Ej0wBQkI4zogsFdubVE6UYjXyqNa5SkrsrZ-QCI4aeRfs0c_Ddpw/p.png" alt="" class="logoNavbar">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#prestoNavbar" aria-controls="prestoNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

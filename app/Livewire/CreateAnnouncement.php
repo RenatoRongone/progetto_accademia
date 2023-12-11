@@ -45,9 +45,8 @@ class CreateAnnouncement extends Component
             'description'=>$this->description,
             'user_id'=> Auth::user()->id,
         ]);
-        session()->flash('message', 'Annuncio pubblicato correttamente');
         $this->reset();
-
+        return redirect(route('welcome'))->with('message' ,'Annuncio pubblicato correttamente' );
     }
 
     public function render()

@@ -26,6 +26,16 @@
         </section>
 
 
+        <div class="row">
+            <div class="col-12">
+                @if (session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+                @endif
+            </div>
+        </div>
+
         {{-- Sezione del BackGround Header --}}
         <header class="container-fluid bgHeader d-flex justify-content-center ">
             <div class="row align-items-center">

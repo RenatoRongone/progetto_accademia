@@ -1,14 +1,5 @@
 <div class="col-6">
     <form wire:submit.prevent='store'>
-        <div class="row">
-            <div class="col-12">
-                @if (session()->has('message'))
-                <div class="alert alert-success">
-                    {{ session('message') }}
-                </div>
-                @endif
-            </div>
-        </div>
         <div class="mb-3">
             <label for="title" class="form-label">Titolo</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model='title'>

@@ -6,17 +6,22 @@
             </div>
         </div>
 
-        <div class="row justify-content-center loginBackground mt-2">
-            <div class="col-6 py-0 d-flex justify-content-center">
+        <div class="row justify-content-center text-center error align-items-center ">
+            <div class="col-12">
                 @if ($errors->any())
-                <div class="alert alert-danger">
+                <div class="">
                     <ul>
                         @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
+                        <li class="mt-2 textMyPurple">{{ $error }}</li>
                         @endforeach
                     </ul>
                 </div>
                 @endif
+            </div>
+        </div>
+
+        <div class="row justify-content-center loginBackground mt-2">
+            <div class="col-6 py-0 d-flex justify-content-center">
                 <form method="POST" action="/login" class="loginForm shadow">
                     @csrf
                     <div class="mb-3">

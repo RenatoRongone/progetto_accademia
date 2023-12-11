@@ -67,6 +67,9 @@ SETTAGGI NAVBAR
 .nav-link:focus {
     color: var(--myWhite);
 }
+.logoNavbar{
+    height: 8vh;
+}
 
 
 .dropdown-menu{
@@ -169,6 +172,33 @@ SETTAGGI LOGIN
     padding: 2.5vh;
 }
 
+
+
+.form-control.is-invalid:focus {
+    border-color: var(--bs-form-invalid-border-color);
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='100' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");;
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--myPurple);
+    color: var(--myPurple);
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-border-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    border-color:var(--bs-border-color);
+    outline: 0px;
+    box-shadow: none;
+}
+
 .btnLogin:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
@@ -177,6 +207,41 @@ SETTAGGI LOGIN
 
 .fs-7{
     font-size: 80%;
+}
+
+/*--------------------------------
+SETTAGGI REGISTER
+---------------------------------*/
+.registerHeight{
+    min-height: 80vh;
+}
+
+.registerBackground{
+    background-color: var(--myWhite);
+}
+
+.registerForm{
+    width: 100%;
+    border: 2.5px solid var(--myPurple);
+    border-radius: 3%;
+    padding: 2.5vh;
+}
+select{
+    border-color:var(--bs-border-color);
+    height: 5vh;
+}
+
+.error{
+    position:relative;
+    right: 2vh;
+}
+
+.is-invalid{
+    border: 2px solid var(--myPurple);
+    border-color: var(--myPurple) !important;
+}
+.errorRegister{
+    font-size: 75%;
 }
 
 /*--------------------------------
@@ -213,6 +278,9 @@ ul{
 }
 .flags{
     height: 2.5vh;
+}
+.logoFooter{
+    height: 5vh;
 }
 /*--------------------------------
 MEDIA QUERIES
