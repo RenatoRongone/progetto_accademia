@@ -19,4 +19,9 @@ class AnnouncementController extends Controller
     public function show_category(Category $category){
         return view ('announcements.show_category', compact('category'));
     }
+
+    public function index_category(){
+        $announcements = Announcement::orderBy('created_at', 'desc')->get();
+        return view('announcements.index_category', compact('announcements'));
+    }
 }

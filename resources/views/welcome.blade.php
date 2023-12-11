@@ -8,10 +8,12 @@
                         Dropdown button
                     </button>
                     <ul class="dropdown-menu">
+                        <li><a href="{{route('index_category')}}">Tutte le categorie</a></li>
                         @foreach($categories as $category)
                         <li><a class="dropdown-item" href="{{route('show_category', compact('category'))}}">{{$category->name}}</a></li>
                         @endforeach
                     </ul>
+
                 </div>
             </div>
         </section>
