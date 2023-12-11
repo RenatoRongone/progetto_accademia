@@ -139,14 +139,44 @@ SETTAGGI HEADER WELCOME
     background-size: cover;
 }
 
-.myBtn{
+.myBtnWelcome{
     background-color: var(--myOrange);
     color: white;
     font-weight:500;
     padding: 2% 5%;
 }
-.myBtn:hover{
+.myBtnWelcome:hover{
     background-color: rgb(219, 159, 5);
+}
+
+
+/*--------------------------------
+SETTAGGI LOGIN
+---------------------------------*/
+.loginHeight{
+    height: 90vh;
+}
+
+.loginBackground{
+    background-color: var(--myWhite);
+}
+
+.loginForm{
+    min-width: 45vh;
+    max-width: 45vh;
+    border: 2.5px solid var(--myPurple);
+    border-radius: 3%;
+    padding: 2.5vh;
+}
+
+.btnLogin:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1px solid var(--myPurple);
+}
+
+.fs-7{
+    font-size: 80%;
 }
 
 /*--------------------------------
