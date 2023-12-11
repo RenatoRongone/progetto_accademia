@@ -63,16 +63,18 @@
                     </div>
 
                     <div class="row mt-3">
-                        <div class="col-6">
+                        <div class="col-6 passwordContainer">
                             <label for="password" class="form-label">Password</label>
                             <input name="password" type="password" class="form-control @error('password') is-invalid  @enderror" id="password">
+                            <span class="openEyeIcon" id='eyeIcon'></span>
                             @error('password')
                             <p class="textMyPurple errorRegister">{{$message}}</p>
                             @enderror
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 passwordContainer">
                             <label for="password_confirmation" class="form-label">Conferma Password</label>
                             <input name="password_confirmation" type="password" class="form-control @error('password_confirmation') is-invalid  @enderror" id="password_confirmation">
+                            <span class="openEyeIcon" id='eyeIcon_confirmation'></span>
                             @error('password_confirmation')
                             <p class="textMyPurple errorRegister">{{$message}}</p>
                             @enderror

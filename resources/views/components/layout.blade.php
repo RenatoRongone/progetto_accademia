@@ -20,6 +20,14 @@
         @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
     @endif
 
+    @if(Route::is('welcome'))
+        @vite (['resources/css/app.css' , 'resources/js/main.js'])
+    @endif
+
+    @if(Route::is('register'))
+    @vite (['resources/css/app.css' , 'resources/js/form.js'])
+    @endif
+
 </head>
 <body>
     <x-navbar></x-navbar>

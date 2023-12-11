@@ -26,15 +26,7 @@
         </section>
 
 
-        <div class="row">
-            <div class="col-12">
-                @if (session()->has('message'))
-                <div class="alert alert-success">
-                    {{ session('message') }}
-                </div>
-                @endif
-            </div>
-        </div>
+
 
         {{-- Sezione del BackGround Header --}}
         <header class="container-fluid bgHeader d-flex justify-content-center ">
@@ -50,11 +42,22 @@
             </header>
             <!-- Main -->
 
+            {{-- Messaggio creazione annuncio --}}
+            <div class="row py-3">
+                <div class="col-12">
+                    @if (session()->has('message'))
+                    <div class="alert textMyWhite text-center bgMyOrange" id="successMessage">
+                        {{ session('message') }}
+                    </div>
+                    @endif
+                </div>
+            </div>
+
             <main>
                 <section class=" container-fluid ">
-                    <div class="row">
+                    <div class="row p-md-5 justify-content-center">
                         @foreach ($announcements as $announcement)
-                        <div class="col-12 col-md-3 bg-info ">
+                        <div class="col-12 col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card" style="width: 18rem;">
                                 <img src="http://picsum.photos/200" class="card-img-top" alt="...">
                                 <div class="card-body">

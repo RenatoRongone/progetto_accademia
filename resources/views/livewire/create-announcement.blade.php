@@ -34,6 +34,6 @@
             @enderror
         </div>
         {{-- aggiungere input immagine --}}
-        <button type="submit" class="btn btn-primary">Crea Annuncio</button>
+        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-5 px-4">Crea Annuncio</button>
     </form>
 </div>

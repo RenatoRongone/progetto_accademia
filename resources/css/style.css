@@ -152,6 +152,10 @@ SETTAGGI HEADER WELCOME
     background-color: rgb(219, 159, 5);
 }
 
+.hiddenAnimation{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 
 /*--------------------------------
 SETTAGGI LOGIN
@@ -243,6 +247,35 @@ select{
 .errorRegister{
     font-size: 75%;
 }
+
+.passwordContainer{
+    position: relative;
+}
+
+.openEyeIcon{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 63%;
+    left: 86%;
+    cursor: pointer;
+}
+
+.closedEyeIcon{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-slash-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 63%;
+    left: 86%;
+    cursor: pointer;
+}
+
 
 /*--------------------------------
 SETTAGGI MAIN COMPONENTS
