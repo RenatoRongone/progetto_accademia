@@ -5,8 +5,8 @@
                 <h1 class="text-center">Accedi</h1>
             </div>
         </div>
-        
-        <div class="row justify-content-center loginBackground">
+
+        <div class="row justify-content-center loginBackground mt-2">
             <div class="col-6 py-0 d-flex justify-content-center">
                 @if ($errors->any())
                 <div class="alert alert-danger">
@@ -20,28 +20,30 @@
                 <form method="POST" action="/login" class="loginForm shadow">
                     @csrf
                     <div class="mb-3">
-                        <label for="email" class="form-label">email</label>
+                        <label for="email" class="form-label">Email</label>
                         <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">password</label>
+                        <label for="password" class="form-label">Password</label>
                         <input name="password" type="password" class="form-control" id="password">
                     </div>
                     <div class="mb-3 form-check">
                         <input name="remember" type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label" for="remember">ricordami</label>
+                        <label class="form-check-label" for="remember">Ricordami</label>
                     </div>
                     <div class="my-4">
                         <p class="textMyBlack text-start fs-7">
-                            Non sei registrato? <a href="{{route("register")}}">Crea un account !</a>
+                            Non sei registrato?
+                            <a class="text-decoration-none textMyPurple" href="{{route("register")}}">Crea un account !
+                            </a>
                         </p>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">accedi</button>
+                        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">Accedi</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
+
 </x-layout>

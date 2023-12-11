@@ -2,23 +2,30 @@
     {{-- Sezione della SubNavbar --}}
     <section class="container-fluid p-3">
         <div class="row text-center textMyBlack fw-medium ">
-            <div class="col-12 col-md-3 bg-info">
+            <div class="col-12 col-md-3 d-flex">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{route('index_category')}}">Tutte le categorie</a></li>
+                    <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mostra Categorie
+                    </a>
+                    <ul class="dropdown-menu bg-light">
+                        <li>
+                            <a class="textMyBlack text-decoration-none" href="{{route('index_category')}}">
+                                Tutte le categorie
+                            </a>
+                        </li>
                         @foreach($categories as $category)
-                        <li><a class="dropdown-item" href="{{route('show_category', compact('category'))}}">{{$category->name}}</a></li>
+                        <li>
+                            <a class="textMyBlack text-decoration-none " href="{{route('show_category', compact('category'))}}">{{$category->name}}
+                            </a>
+                        </li>
                         @endforeach
                     </ul>
 
                 </div>
             </div>
         </section>
-        
-        
+
+
         {{-- Sezione del BackGround Header --}}
         <header class="container-fluid bgHeader d-flex justify-content-center ">
             <div class="row align-items-center">
@@ -32,7 +39,7 @@
                 </div>
             </header>
             <!-- Main -->
-            
+
             <main>
                 <section class=" container-fluid ">
                     <div class="row">
@@ -54,8 +61,8 @@
                     </div>
                 </section>
             </main>
-            
-            
-            
+
+
+
             <x-footer></x-footer>
         </x-layout>
