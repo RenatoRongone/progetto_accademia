@@ -64,7 +64,7 @@
                                     <h5 class="card-title">{{$announcement->title}}</h5>
                                     <p class="card-text">{{$announcement->description}}</p>
                                     <p class="card-text">{{$announcement->category->name}}</p>
-                                    <p class="card-text">$ {{$announcement->price}}</p>
+                                    <p class="card-text">€ {{$announcement->price}}</p>
                                     <p class="card-text">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}}</p>
                                     <a href="{{route('show_announcements', compact('announcement'))}}" class="btn btn-primary">Dettaglio Prodotto</a>
                                 </div>

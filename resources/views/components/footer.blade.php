@@ -1,7 +1,7 @@
 <footer class="container-fluid">
     <div class="row">
         <div class="col-12 px-4 py-5 col-md-3 px-md-4 py-md-4">
-            <img src="https://uc874d6b20a31a09dcff000650d2.previews.dropboxusercontent.com/p/thumb/ACH5nco_YA1tktsiFMUQfBKT1uwbmNcyTKQoUttG5suRfv3DfkJxRCdo3uFUoRPfyQy8F93OEb35FhdmH8RnshwyiXvne5Spzn0v2EYeV-Qc3c4BZy3DZHo5PxrkzRrzKUwdKJDCHRixZaBkNLr4nKHeLx-PAjN_pV6XoFv0EHdzevaR8BEV1FxKyse84fcmmMeN_WxsljSz3Vso5bCSwuUyuAbM3hUtQZgO0j8VDlvWwBX5chU-9vvvACo9ncGIm909hO6RRBRp2uWwCAbbsAZuLfNVnpKAY296NY2tlLdZxMBMIdwIA2_2ZSbI501qa0FNs8VCijN-YhAoNGN7hOiNEKQ4GXmIS7AfIvEI28W78w/p.png" alt="Logo presto.it" class="logoFooter">
+            <img src="/media/logo/logo_black.png" class="logoFooter">
             <h6 class="mt-2">Presto.it</h6>
         </div>
         <div class="col-12 px-4 col-md-3 p-md-4">

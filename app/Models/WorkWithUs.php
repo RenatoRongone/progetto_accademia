@@ -14,6 +14,7 @@ class WorkWithUs extends Model
         'surname',
         'birth',
         'email',
+        'telephone',
         'inquiry'
     ];
 }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('birth');
             $table->string('email');
             $table->longText('inquiry');
+            $table->string('telephone')->nullable();
             $table->timestamps();
         });
     }

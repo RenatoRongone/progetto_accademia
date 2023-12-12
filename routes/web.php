@@ -31,4 +31,6 @@ Route::patch('/revisione/rifiutata/{announcement_to_check}', [RevisorController:
 //ROTTE LAVORA CON NOI
 Route::get('/lavora-con-noi', [RevisorController::class, 'lavora_con_noi'])->middleware('auth')->name('lavora_con_noi');
 
-Route::post('/lavora-con-no/richiesta', [RevisorController::class, 'richiesta_lavoro'])->middleware('auth')->name('richiesta_lavoro');
+Route::post('/lavora-con-noi/richiesta', [RevisorController::class, 'richiesta_lavoro'])->middleware('auth')->name('richiesta_lavoro');
+
+Route::get('/richiesta-rendi-revisor', [RevisorController::class, 'make_revisor'])->name('make_revisor');
