@@ -13,12 +13,20 @@
                 <h3>€ {{$announcement_to_check->price}}</h3>
                 <h3>Pubblicato il: {{$announcement_to_check->created_at->format('d/m/Y')}}</h3>
                 <div>
-                    <button class="btn btn-success">
-                        Accetta Annuncio
-                    </button>
-                    <button class="btn btn-danger">
-                        Rifiuta Annuncio
-                    </button>
+                    <form method="POST" action="{{route('accepted_announcement', compact('announcement_to_check'))}}">
+                        @csrf
+                        @method('PATCH')
+                        <button  type='submit' class="btn btn-success">
+                            Accetta Annuncio
+                        </button>
+                    </form> 
+                    <form method="POST" action="{{route('reject_announcement', compact('announcement_to_check'))}}">
+                        @csrf
+                        @method('PATCH')
+                        <button type='submit' class="btn btn-danger">
+                            Rifiuta Annuncio
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>

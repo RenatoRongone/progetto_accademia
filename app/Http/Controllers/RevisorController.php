@@ -12,13 +12,18 @@ class RevisorController extends Controller
         return view ('revisor.show_revisor', compact('announcement_to_check'));
     }
 
-    public function approve_announcement(Announcement $announcement){
+    public function approve_announcement($announcement){
+        
+        $announcement= Announcement::find($announcement);
         $announcement->setAccepted(true);
         return redirect()->back()->with('message', 'Annuncio approvato');
     }
 
-    public function reject_announcement(Announcement $announcement){
+    public function reject_announcement($announcement){
+
+        $announcement= Announcement::find($announcement);
         $announcement->setAccepted(false);
         return redirect()->back()->with('message', 'Annuncio non approvato');
     }
+
 }

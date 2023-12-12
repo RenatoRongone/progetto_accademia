@@ -17,7 +17,7 @@
 
                 @if(Auth::user() && Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="#">
+                    <a class="nav-link mx-md-3" href="{{route('show_revisor')}}">
                         <i class="fa-solid fa-newspaper"></i>
                         <span class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{App\Models\Announcement::toBeRevisionedCount()}}

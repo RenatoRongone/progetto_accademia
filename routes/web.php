@@ -23,3 +23,7 @@ Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category
 
 // ROTTE REVISOR
 Route::get('/revisiona', [RevisorController::class, 'show_revisor'])->name('show_revisor');
+
+Route::patch('/revisione/accettata/{announcement_to_check}', [RevisorController::class, 'approve_announcement'])->name('accepted_announcement');
+
+Route::patch('/revisione/rifiutata/{announcement_to_check}', [RevisorController::class, 'reject_announcement'])->name('reject_announcement');

@@ -31,8 +31,9 @@ class Announcement extends Model
     }
     
     public function setAccepted($value){
-        $this->is_accepted=$value;
-        $this->save();
+        $this->update([
+            'is_accepted'=> $value,
+        ]);
         return true;
     }
 
