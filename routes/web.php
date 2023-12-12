@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\AnnouncementController;
 
 
@@ -19,3 +20,6 @@ Route::get('/annuncio-categoria/{category}', [AnnouncementController::class, 'sh
 
 // ROTTA VISUALIZZAZIONE ANNUNCI PER TUTTE LE CATEGORIE
 Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category'])->name('index_category');
+
+// ROTTE REVISOR
+Route::get('/revisiona', [RevisorController::class, 'show_revisor'])->name('show_revisor');

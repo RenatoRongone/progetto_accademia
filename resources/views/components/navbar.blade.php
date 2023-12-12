@@ -15,10 +15,13 @@
                     </a>
                 </li>
 
-                @if(Auth::user() && Auth::user()->isAdmin === 1)
+                @if(Auth::user() && Auth::user()->is_revisor)
                 <li class="nav-item">
                     <a class="nav-link mx-md-3" href="#">
-                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            {{App\Models\Announcement::toBeRevisionedCount()}}
+                        </span>
                     </a>
                 </li>
                 @endif
