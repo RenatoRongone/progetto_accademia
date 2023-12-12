@@ -10,7 +10,7 @@
                 <li>Chi siamo</li>
                 <li>Come funziona</li>
                 <li>Stampa</li>
-                <li>Lavora con Noi</li>
+                <a href="{{route('lavora_con_noi')}}"><li>Lavora con Noi</li></a>
             </ul>
         </div>
         <div class="col-12 px-4 col-md-3 p-md-4">

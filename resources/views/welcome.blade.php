@@ -20,14 +20,14 @@
                         </li>
                         @endforeach
                     </ul>
-
+                    
                 </div>
             </div>
         </section>
-
-
-
-
+        
+        
+        
+        
         {{-- Sezione del BackGround Header --}}
         <header class="container-fluid bgHeader d-flex justify-content-center ">
             <div class="row align-items-center">
@@ -41,7 +41,7 @@
                 </div>
             </header>
             <!-- Main -->
-
+            
             {{-- Messaggio creazione annuncio --}}
             <div class="row py-3">
                 <div class="col-12">
@@ -52,7 +52,7 @@
                     @endif
                 </div>
             </div>
-
+            
             <main>
                 <section class=" container-fluid ">
                     <div class="row p-md-5 justify-content-center">
@@ -74,8 +74,8 @@
                     </div>
                 </section>
             </main>
-
-
-
+            
+            
+            
             <x-footer></x-footer>
         </x-layout>

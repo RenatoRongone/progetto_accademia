@@ -22,8 +22,13 @@ Route::get('/annuncio-categoria/{category}', [AnnouncementController::class, 'sh
 Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category'])->name('index_category');
 
 // ROTTE REVISOR
-Route::get('/revisiona', [RevisorController::class, 'show_revisor'])->name('show_revisor');
+Route::get('/revisiona', [RevisorController::class, 'show_revisor'])->middleware('is_revisor')->name('show_revisor');
 
-Route::patch('/revisione/accettata/{announcement_to_check}', [RevisorController::class, 'approve_announcement'])->name('accepted_announcement');
+Route::patch('/revisione/accettata/{announcement_to_check}', [RevisorController::class, 'approve_announcement'])->middleware('is_revisor')->name('accepted_announcement');
 
-Route::patch('/revisione/rifiutata/{announcement_to_check}', [RevisorController::class, 'reject_announcement'])->name('reject_announcement');
+Route::patch('/revisione/rifiutata/{announcement_to_check}', [RevisorController::class, 'reject_announcement'])->middleware('is_revisor')->name('reject_announcement');
+
+//ROTTE LAVORA CON NOI
+Route::get('/lavora-con-noi', [RevisorController::class, 'lavora_con_noi'])->middleware('auth')->name('lavora_con_noi');
+
+Route::post('/lavora-con-no/richiesta', [RevisorController::class, 'richiesta_lavoro'])->middleware('auth')->name('richiesta_lavoro');
