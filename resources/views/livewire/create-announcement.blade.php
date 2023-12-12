@@ -22,7 +22,7 @@
             @enderror
         </div>
         <div class='mb-3'>
-            <label for="category">Categoria</label>
+            <label for="category" class="mb-2" >Categoria</label>
             <select id="category" wire:model.defer='category' class='form-control @error('category') is-invalid @enderror'>
                 <option value="">Scegli la Categoria</option>
                 @foreach ($categories as $category)
