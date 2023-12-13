@@ -34,8 +34,6 @@ class AnnouncementController extends Controller
         $string = str_replace(" e ", " ", $request->searched);
         $announcements = Announcement::search($string)->where('is_accepted', true)->get();
 
-//  dump($request);
-//  dd($announcements);
         return view('announcements.search_announcements', compact('announcements'));
     }
 }
