@@ -8,10 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
+use Laravel\Scout\Searchable;
+
 class Announcement extends Model
 {
     use HasFactory;
+    use Searchable;
 
+    // public $asYouType = true;
     protected $fillable = [
         'is_accepted',
         'title',
@@ -21,6 +25,24 @@ class Announcement extends Model
         'user_id',
         'category_id',
     ];
+
+    
+    public function toSearchableArray()
+    {
+        $category=$this->category;
+        $array = [
+            'title'=>$this->title,
+            'price'=>$this->price,
+            'description'=>$this->description,
+            'category'=>$category->name,
+            'id'=>$this->id,
+        ];
+
+        return $array;
+    }
+
+
+
 
     public function category(){
         return $this->belongsTo(Category::class);

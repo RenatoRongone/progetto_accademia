@@ -34,3 +34,6 @@ Route::get('/lavora-con-noi', [RevisorController::class, 'lavora_con_noi'])->mid
 Route::post('/lavora-con-noi/richiesta', [RevisorController::class, 'richiesta_lavoro'])->middleware('auth')->name('richiesta_lavoro');
 
 Route::get('/richiesta-rendi-revisor', [RevisorController::class, 'make_revisor'])->name('make_revisor');
+
+//ROTTA PER RICERCA
+Route::get('/ricerca',[AnnouncementController::class, 'ricerca'])->name('ricerca');
