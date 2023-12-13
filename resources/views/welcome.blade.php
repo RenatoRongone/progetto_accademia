@@ -4,7 +4,7 @@
         <div class="row text-center textMyBlack fw-medium ">
             <div class="col-12 col-md-3 d-flex">
                 <div class="dropdown">
-                    <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle text-decoration-none textMyBlack" data-bs-toggle="dropdown" aria-expanded="false">
                         Mostra Categorie
                     </a>
                     <ul class="dropdown-menu bg-light">

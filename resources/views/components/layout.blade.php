@@ -16,29 +16,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     
     @vite (['resources/css/app.css' , 'resources/js/app.js'])
-
+    
     @if(Route::is('show_announcements'))
-        @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
+    @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
     @endif
-
+    
     @if(Route::is('welcome'))
-        @vite (['resources/css/app.css' , 'resources/js/main.js'])
+    @vite (['resources/css/app.css' , 'resources/js/main.js'])
     @endif
-
+    
     @if(Route::is('register'))
     @vite (['resources/css/app.css' , 'resources/js/form.js'])
     @endif
-
+    
     @if(Route::is('login'))
     @vite (['resources/css/app.css' , 'resources/js/login.js'])
     @endif
-
+    
+    @if(Route::is('show_revisor'))
+    @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
+    @endif
+    
 </head>
 <body>
     <x-navbar></x-navbar>
-
+    
     {{$slot}}
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

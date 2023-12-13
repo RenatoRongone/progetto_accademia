@@ -161,7 +161,6 @@ SETTAGGI LOGIN
     box-shadow: none;
     background-image: none !important;
 }
-
 .form-control.is-invalid:focus {
     border-color: var(--bs-form-invalid-border-color);
     box-shadow: none;
@@ -177,7 +176,6 @@ input[type="checkbox"]:checked{
     box-shadow: none;
     border-radius: 0;
 }
-
 .form-control:focus {
     color: var(--bs-body-color);
     background-color: none;
@@ -193,7 +191,6 @@ input[type="checkbox"]:checked{
 .btn{
     border-radius: 0;
 }
-
 .btnLogin:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
@@ -260,12 +257,10 @@ select:focus{
     right: 5%;
     cursor: pointer;
 }
-
 .inputContainer{
     min-height: 106px;
     max-height: 106px;
 }
-
 
 /*--------------------------------
 SETTAGGI CREATE ANNOUNCEMENTS
@@ -292,6 +287,54 @@ h5, .h5 {
 }
 
 /*--------------------------------
+SETTAGGI LAVORA CON NOI
+---------------------------------*/
+.lavoraConNoiHeight{
+    min-height: 85vh;
+}
+.textareaLavoraConNoi{
+    resize: none;
+}
+.textareaBorder{
+    border: 2px solid var(--myPurple);
+}
+
+/*--------------------------------
+SETTAGGI REVISOR
+---------------------------------*/
+.btnApprove:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1px solid var(--myPurple);
+}
+.btnReject:hover{
+    background-color: var(--myWhite);
+    color: var(--myOrange);
+    border: 1px solid var(--myOrange);
+}
+.swiperRevisorContainer{
+    height: auto;
+    width: 100%;
+}
+.swiperRevisorSlide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 27vh;
+    max-width: auto;
+}
+.swiperRevisorSlide img{
+    display: block;
+    height: auto;
+    min-width: 27vh;
+    max-width: 27vh;
+    object-fit: cover;
+}
+
+/*--------------------------------
 SETTAGGI MAIN COMPONENTS
 ---------------------------------*/
 /* SWIPER */
@@ -313,6 +356,23 @@ SETTAGGI MAIN COMPONENTS
     width: 25%;
     object-fit: cover;
 }
+.swiperRevisorSlide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25vh;
+    max-width: auto;
+}
+.swiperRevisorSlide img{
+    display: block;
+    height: auto;
+    min-width: 25vh;
+    max-width: 25vh;
+    object-fit: cover;
+}
 
 /*--------------------------------
 SETTAGGI FOOTER COMPONENTS
@@ -320,7 +380,6 @@ SETTAGGI FOOTER COMPONENTS
 footer{
     box-shadow: 1px -1px 7px 1px #000000;
 }
-
 ul{
     list-style: none;
     color: black;

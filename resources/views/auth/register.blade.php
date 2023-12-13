@@ -5,7 +5,7 @@
                 <h1 class="text-center">Registrati</h1>
             </div>
         </div>
-
+        
         <div class="row justify-content-center registerBackground p-md-5">
             <div class="col-12 col-md-8 p-3 px-5 px-md-0 p-md-0 d-flex justify-content-center ">
                 <form method="POST" action="/register" class="registerForm shadow p-md-5">
@@ -26,7 +26,7 @@
                             @enderror
                         </div>
                     </div>
-
+                    
                     <div class="row">
                         <div class="col-12 col-md-6 inputContainer">
                             <label for="birth" class="form-label">Data di nascita</label>
@@ -46,8 +46,8 @@
                             @enderror
                         </div>
                     </div>
-
-
+                    
+                    
                     <div class="row">
                         <div class="col-12 col-md-6 inputContainer">
                             <label for="email" class="form-label ">Email</label>
@@ -61,7 +61,7 @@
                             <input name="telephone" type="text" class="form-control" id="telephone" placeholder="Campo opzionale" value="{{old('telephone')}}">
                         </div>
                     </div>
-
+                    
                     <div class="row">
                         <div class="col-6 passwordContainer inputContainer position-relative">
                             <label for="password" class="form-label">Password</label>
@@ -80,7 +80,7 @@
                             @enderror
                         </div>
                     </div>
-
+                    
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-2 px-4">Registrati</button>
                     </div>
