@@ -57,16 +57,13 @@
                 <section class=" container-fluid ">
                     <div class="row p-md-5 justify-content-center">
                         @foreach ($announcements as $announcement)
-                        <div class="col-12 col-md-4 mb-5 d-flex justify-content-center">
-                            <div class="card" style="width: 18rem;">
-                                <img src="http://picsum.photos/200" class="card-img-top" alt="...">
-                                <div class="card-body">
+                        <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
+                            <div class="card border-0" style="width: 25rem;">
+                                <a href=" {{route('show_announcements', compact('announcement'))}}"><img src="http://picsum.photos/200" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-flex justify-content-between p-1 mt-1">
                                     <h5 class="card-title">{{$announcement->title}}</h5>
-                                    <p class="card-text">{{$announcement->description}}</p>
-                                    <p class="card-text">{{$announcement->category->name}}</p>
+                                    {{-- <p class="card-text">{{$announcement->category->name}}</p> --}}
                                     <p class="card-text">€ {{$announcement->price}}</p>
-                                    <p class="card-text">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}}</p>
-                                    <a href="{{route('show_announcements', compact('announcement'))}}" class="btn btn-primary">Dettaglio Prodotto</a>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +71,5 @@
                     </div>
                 </section>
             </main>
-            
-            
-            
             <x-footer></x-footer>
         </x-layout>

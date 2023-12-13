@@ -16,7 +16,7 @@ class CreateAnnouncement extends Component
     public $category;
 
     protected $rules=[
-        'title' => 'required|min:5',
+        'title' => 'required|min:5|max:15',
         'price'=>'required',
         'description'=>'required|max:500',
         'category'=>'required'
@@ -24,7 +24,8 @@ class CreateAnnouncement extends Component
 
     protected $messages=[
         'title.required'=>'Inserisci Titolo',
-        'title.min'=>'Il Titolo deve essere di almeno 5 Caratteri',
+        'title.min'=>'Il Titolo deve contenere un minimo di 5 Caratteri',
+        'title.max'=>'Il Titolo può contenere un massimo di 15 caratteri',
         'price.required'=>'Inserisci il Prezzo',
         'description.required'=>'Inserisci Descrizione',
         'description.max'=>'La Descrizione deve contenere un numero massimo di 500 Caratteri',
