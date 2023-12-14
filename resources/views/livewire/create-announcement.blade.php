@@ -33,7 +33,27 @@
             {{$message}}
             @enderror
         </div>
-        {{-- aggiungere input immagine --}}
+        <div class="mb-3">
+            <label for="images" class="form-label">Immagini</label>
+            <input multiple type="file" class="form-control @error('temporary_images.*') is-invalid @enderror" id="images" wire:model='temporary_images' name="images">
+            @error('temporary_images.*')
+            {{$message}}
+            @enderror
+        </div>
+        @if(!empty($images))
+            <div class="row">
+                <div class="col-12">
+                    <p>foto preview:</p>
+                    <div class="row border border-4" >
+                        @foreach($images as $image)
+                        <div class="imgpreview" style="background-image: url({{$image->temporaryUrl()}});">
+                            {{-- <button class="btn btn-danger" wire:click='removeImage({{$key}})'>Elimina Immagine</button> --}}
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endif
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">Crea Annuncio</button>
         </div>

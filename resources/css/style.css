@@ -453,6 +453,15 @@ MEDIA QUERIES
     }
 }
 
+
+.imgpreview{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
 /* SM Displays */
 /* @media (min-width: 576px) and (max-width:767px){
 } */

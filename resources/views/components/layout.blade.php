@@ -17,25 +17,6 @@
     
     @vite (['resources/css/app.css' , 'resources/js/app.js'])
     
-    @if(Route::is('show_announcements'))
-    @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
-    @endif
-    
-    @if(Route::is('welcome'))
-    @vite (['resources/css/app.css' , 'resources/js/main.js'])
-    @endif
-    
-    @if(Route::is('register'))
-    @vite (['resources/css/app.css' , 'resources/js/form.js'])
-    @endif
-    
-    @if(Route::is('login'))
-    @vite (['resources/css/app.css' , 'resources/js/login.js'])
-    @endif
-    
-    @if(Route::is('show_revisor'))
-    @vite (['resources/css/app.css' , 'resources/js/show_announcements.js'])
-    @endif
     
 </head>
 <body>

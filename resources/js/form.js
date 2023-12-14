@@ -22,7 +22,7 @@ function passwordVisibility(){
     }
 }
 
-eyeIcon.addEventListener('click',()=>{
+eyeIcon?.addEventListener('click',()=>{
     
     passwordVisibility();
 });
@@ -44,7 +44,7 @@ function passwordConfirmationVisibility(){
     }
 }
 
-eyeIcon_confirmation.addEventListener('click',()=>{
+eyeIcon_confirmation?.addEventListener('click',()=>{
     
     passwordConfirmationVisibility();
 });
