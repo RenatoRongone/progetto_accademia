@@ -1,15 +1,11 @@
-<x-layout>    
+<x-layout>
     <div class="swiper mySwiper py-5">
         <div class="swiper-wrapper">
+            @foreach ($announcement->images as $image)
             <div class="swiper-slide">
-                <img src="https://picsum.photos/1000" alt="">
+                <img src="{{$image->getUrl(327 , 327)}}" alt="">
             </div>
-            <div class="swiper-slide">
-                <img src="https://picsum.photos/1001" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://picsum.photos/1002" alt="">
-            </div>
+            @endforeach
         </div>
         {{-- <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>

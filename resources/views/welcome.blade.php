@@ -60,8 +60,7 @@
                         <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
                             <div class="card border-0" style="width: 25rem;">
                                 <a href=" {{route('show_announcements', compact('announcement'))}}">
-                                    {{-- @dd($announcement->images()->first()->getUrl(100 , 100)) --}}
-                                    <img src="{{$announcement->images()->first()->getUrl(100 , 100)}}"
+                                    <img src="{{$announcement->images()->first()->getUrl(327 , 327)}}"
                                      class="card-img-top" alt="...">
                                 </a>
                                 <div class="card-body d-flex justify-content-between p-1 mt-1">

@@ -32,8 +32,8 @@ class CreateAnnouncement extends Component
         'price'=>'required',
         'description'=>'required|max:500',
         'category'=>'required',
-        'temporary_images.*'=>'image|required|max:5000|dimensions:min_width=1024,min_height=800',
-        'images.*'=>'image|required|max:5000|dimensions:min_width=1024,min_height=800',
+        'temporary_images.*'=>'image|required|max:5000|dimensions:min_width=800,min_height=800',
+        'images.*'=>'image|required|max:5000|dimensions:min_width=800,min_height=800',
 
     ];
 
@@ -49,11 +49,11 @@ class CreateAnnouncement extends Component
         'temporary_images.*.request'=>'Inserisci una Immagine',
         'temporary_images.*.images*'=>'I file da inserire devono essere immagini',
         'temporary_images.*.max'=>'I file immagine non devono essere superare i 5MB',
-        'temporary_images.*.dimensions'=>'Le immagini devono avere una risoluzione minima di: 1024x800',
+        'temporary_images.*.dimensions'=>'Le immagini devono avere una risoluzione minima di: 800x800',
         'images.request'=>'Inserisci una Immagine',
         'images.images*'=>'I file da inserire devono essere immagini',
         'images.max'=>'I file immagine non devono essere superare i 5MB',
-        'images.dimensions'=>'Le immagini devono avere una risoluzione minima di: 1024x800'
+        'images.dimensions'=>'Le immagini devono avere una risoluzione minima di: 800x800'
     ];
 
     //Funzione delle validazioni Live.
@@ -64,7 +64,7 @@ class CreateAnnouncement extends Component
     //Funzione che ci inserisce un immagine nell'array image se $this->validate della temporary images è true.
     public function updatedTemporaryImages(){
         if($this->validate([
-            'temporary_images.*'=>'image|required|max:5000|dimensions:min_width=1024,min_height=800',
+            'temporary_images.*'=>'image|required|max:5000|dimensions:min_width=800,min_height=800',
             ])){
                 foreach($this->temporary_images as $image){
                     $this->images[]= $image;

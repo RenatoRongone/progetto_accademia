@@ -9,7 +9,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Prezzo <span>€</span></label>
-            <input type="number" class="form-control @error('price') is-invalid @enderror" id="price" wire:model='price'>
+            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" wire:model='price'>
             @error('price')
             {{$message}}
             @enderror
