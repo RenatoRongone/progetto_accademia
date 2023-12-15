@@ -44,10 +44,12 @@
             <div class="row">
                 <div class="col-12">
                     <p>foto preview:</p>
-                    <div class="row border border-4" >
-                        @foreach($images as $image)
-                        <div class="imgpreview" style="background-image: url({{$image->temporaryUrl()}});">
-                            {{-- <button class="btn btn-danger" wire:click='removeImage({{$key}})'>Elimina Immagine</button> --}}
+                    <div class="row" >
+                        @foreach($images as $key => $image)
+                        <div class="col-4 imgpreview" style="background-image: url({{$image->temporaryUrl()}}); background-size:cover; background-repeat: no-repeat;">
+                             <button type="button" class="btn btn-danger" wire:click='removeImage({{$key}})'>
+                                Elimina Immagine
+                            </button>
                         </div>
                         @endforeach
                     </div>

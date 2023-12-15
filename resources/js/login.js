@@ -19,6 +19,6 @@ function passwordVisibility(){
 }
 
 eyeIcon?.addEventListener('click',()=>{
-    
+
     passwordVisibility();
 });

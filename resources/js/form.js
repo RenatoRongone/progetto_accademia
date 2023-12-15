@@ -22,10 +22,12 @@ function passwordVisibility(){
     }
 }
 
-eyeIcon?.addEventListener('click',()=>{
-    
-    passwordVisibility();
-});
+if(eyeIcon != null){
+    eyeIcon.addEventListener('click',()=>{
+
+        passwordVisibility();
+    });
+}
 
 
 function passwordConfirmationVisibility(){
@@ -43,9 +45,9 @@ function passwordConfirmationVisibility(){
         }
     }
 }
+if (eyeIcon_confirmation != null) {
+    eyeIcon_confirmation?.addEventListener('click',()=>{
 
-eyeIcon_confirmation?.addEventListener('click',()=>{
-    
-    passwordConfirmationVisibility();
-});
-
+        passwordConfirmationVisibility();
+    });
+}
