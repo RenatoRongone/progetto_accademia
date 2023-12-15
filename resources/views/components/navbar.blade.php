@@ -1,4 +1,4 @@
-<nav class="navbar navbarCustom navbar-expand-sm navbar-dark bgNavbar p-3">
+<nav class="navbar navbarCustom navbar-expand-sm navbar-dark bgNavbar p-3 fixed-top">
     <div class="container-fluid ms-md-0">
         <a class="navbar-brand textMyWhite" href="{{route('welcome')}}">
             <img src="/media/logo/logo_purple.png" alt="Logo" class="logoNavbar">

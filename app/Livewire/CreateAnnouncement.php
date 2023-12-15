@@ -46,11 +46,11 @@ class CreateAnnouncement extends Component
         'description.required'=>'Inserisci Descrizione',
         'description.max'=>'La Descrizione deve contenere un numero massimo di 500 Caratteri',
         'category.required'=>'Seleziona una Categoria',
-        'temporary_images.*.request'=>'Inserisci una Immagine',
+        'temporary_images.*.request'=>"Inserisci un'immagine",
         'temporary_images.*.images*'=>'I file da inserire devono essere immagini',
         'temporary_images.*.max'=>'I file immagine non devono essere superare i 5MB',
         'temporary_images.*.dimensions'=>'Le immagini devono avere una risoluzione minima di: 800x800',
-        'images.request'=>'Inserisci una Immagine',
+        'images.request'=>"Inserisci un' Immagine",
         'images.images*'=>'I file da inserire devono essere immagini',
         'images.max'=>'I file immagine non devono essere superare i 5MB',
         'images.dimensions'=>'Le immagini devono avere una risoluzione minima di: 800x800'
@@ -109,7 +109,8 @@ class CreateAnnouncement extends Component
             $announcement->user()->associate(Auth::user());
             $announcement->save();
             $this->reset();
-            return redirect(route('welcome'))->with('message' ,'Annuncio pubblicato correttamente' );
+            return redirect(route('welcome'))
+            ->with('message' ,'Annuncio caricato correttamente. In fase di revisione.');
         }
 
         public function render()
