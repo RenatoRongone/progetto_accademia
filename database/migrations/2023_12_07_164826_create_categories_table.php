@@ -23,12 +23,14 @@ return new class extends Migration
             'Musica',
             'Arredamento',
             'Collezionismo',
-            'Informatica ed Elettronica',
-            'Casa e Giardinaggio',
+            'Informatica',
+            'Casa',
             'Auto e Moto',
             'Sport e Tempo libero',
             'Wellness',
             'Console e Videogiochi',
+            'Giardinaggio',
+            'Elettronica',
         ];
 
         foreach($categories as $category){

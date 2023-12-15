@@ -1,17 +1,17 @@
 <x-layout>
     {{-- Sezione del BackGround Header --}}
     <header class="container-fluid bgHeader d-flex flex-column align-items-center justify-content-center position-relative ">
-
+        
         {{-- Messaggio creazione annuncio --}}
         @if (session()->has('message'))
-
+        
         <div class="alert textMyWhite text-center bgMyOrange position-absolute top-0 " id="successMessage">
             {{ session('message') }}
         </div>
-
+        
         @endif
-
-
+        
+        
         <div class="row align-items-center">
             <div class="col-12">
                 <h1 class="display-1 text-center textMyWhite fw-bold">Presto.it</h1>
@@ -23,61 +23,35 @@
             </div>
         </header>
         <!-- Main -->
-
+        
         <main>
-
-            {{-- Sezione della SubNavbar --}}
+            
+            {{-- Sezione della Categorie --}}
             <section class="container-fluid p-3">
-                <div class="row textMyBlack fw-medium bg-info ">
-                    <div class="col-12 col-md-6 d-flex text-center bg-danger">
-                        <p class="btn btn-info" id="allCategories">Tutte le categorie</p>
+                <div class="row textMyBlack fw-medium">
+                    <div class="col-12 col-md-6 d-flex text-center">
+                        <p class="d-block" id="allCategories">Tutte le categorie</p>
                     </div>
                     @foreach ($categoriesByPop as $category)
-                    <div class="col-12 col-md-2">
-                        {{$category->name}}
+                    <div class="col-12 col-md-2 d-block topCategories">
+                        <a class="textMyBlack text-decoration-none" href="{{route('show_category', compact('category'))}}">
+                            {{$category->name}}
+                        </a>
                     </div>
                     @endforeach
                 </div>
-
-                <div class="row bg-warning ">
+                
+                <div class="row d-none" id="categories">
                     @foreach ($categories as $category)
-                    @if ($loop->iteration <= 5)
-                    <div class="col-12 col-md-3 justify-content-md-start">
-                        {{$category->name}}
+                    <div class="col-12 col-md-3 ">
+                        <a class="textMyBlack text-decoration-none" href="{{route('show_category', compact('category'))}}">
+                            {{$category->name}}
+                        </a>
                     </div>
-                    @endif
-
-                    @if ($loop->iteration > 5)
-                    <div class="col-12 col-md-3 justify-content-md-start mt-5">
-                        {{$category->name}}
-                    </div>
-                    @endif
                     @endforeach
                 </div>
-            </section>
-
-
-
-            {{-- <div class="dropdown">
-                <a class="dropdown-toggle text-decoration-none textMyBlack" data-bs-toggle="dropdown" aria-expanded="false">
-                    Mostra Categorie
-                </a>
-                <ul class="dropdown-menu bg-light">
-                    <li>
-                        <a class="textMyBlack text-decoration-none" href="{{route('index_category')}}">
-                            Tutte le categorie
-                        </a>
-                    </li>
-                    @foreach($categories as $category)
-                    <li>
-                        <a class="textMyBlack text-decoration-none " href="{{route('show_category', compact('category'))}}">{{$category->name}}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div> --}}
-
-
+            </section>            
+            
             <section class=" container-fluid ">
                 <div class="row p-md-5 justify-content-center">
                     @foreach ($announcements as $announcement)

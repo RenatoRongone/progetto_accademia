@@ -142,6 +142,9 @@ SETTAGGI HEADER WELCOME
     transition: opacity 1s ease-in-out;
 }
 
+#allCategories{
+    cursor: pointer;
+}
 /*--------------------------------
 SETTAGGI LOGIN
 ---------------------------------*/
