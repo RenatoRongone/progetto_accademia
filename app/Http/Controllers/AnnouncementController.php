@@ -42,9 +42,9 @@ class AnnouncementController extends Controller
         return view('announcements.search_announcements', compact('announcements'));
     }
     
-/*     public function user_announcements(User $user){
-        $announcements = $user->announcements->orderBy('created_at', 'desc')->get();
-
+    public function user_announcements(User $user){
+        $announcements = $user->announcements()->orderBy('created_at', 'desc')->get();
+        
         return view('announcements.user_announcements', compact('announcements', 'user'));
-    } */
+    } 
 }

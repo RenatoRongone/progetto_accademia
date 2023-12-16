@@ -19,10 +19,10 @@
                 <p>€ {{$announcement->price}}</p>
             </div>
             <div class="col-12 col-md-6 px-4 px-md-5 pb-2 px-sm-3">
-                <a href="{{-- {{route('user_announcements', $announcement->user->id)}} --}}" class="text-decoration-none textMyBlack">
+                <a href="{{ route('user_announcements', ['user' => $announcement->user->id]) }}" class="text-decoration-none textMyBlack">
                     <h5 class="d-inline">{{$announcement->user->name}}</h5>
                 </a>
-                <a href="{{-- {{route('user_announcements', $announcement->user->id)}} --}}" class="text-decoration-none textMyBlack">
+                <a href="{{ route('user_announcements', ['user' => $announcement->user->id]) }}" class="text-decoration-none textMyBlack">
                     <h5 class="d-inline">{{$announcement->user->surname}}</h5>
                 </a>
                 <p>{{$announcement->user->email}}</p>

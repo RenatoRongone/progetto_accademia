@@ -21,8 +21,8 @@ Route::get('/annuncio-categoria/{category}', [AnnouncementController::class, 'sh
 // ROTTA VISUALIZZAZIONE ANNUNCI PER TUTTE LE CATEGORIE
 Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category'])->name('index_category');
 
-/* // ROTTA VISUALIZAZZIONE ANNUNCI PER UTENTE
-Route::get('/annuncio-utente/{user}', [AnnouncementController::class, 'user_announcements'])->name('user_announcements'); */
+// ROTTA VISUALIZAZZIONE ANNUNCI PER UTENTE
+Route::get('/annuncio-utente/{user}', [AnnouncementController::class, 'user_announcements'])->name('user_announcements');
 
 // ROTTE REVISOR
 Route::get('/revisiona', [RevisorController::class, 'show_revisor'])->middleware('is_revisor')->name('show_revisor');
