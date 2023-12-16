@@ -105,6 +105,18 @@ button.nav-link{
     font-size: 100%;
     color:white;
 }
+
+.searchInput{
+    max-width: 25vw;
+    min-width: 25vw;
+}
+
+.searchButtonPosition{
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
 /*--------------------------------
 SETTAGGI SEZIONE LISTA CATEGORIE
 ---------------------------------*/
@@ -257,13 +269,17 @@ select:focus{
     background-image: url(/public/media/eye-slash-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 75%;
+    top: 50%;
     right: 5%;
     cursor: pointer;
 }
 .inputContainer{
     min-height: 106px;
     max-height: 106px;
+}
+
+.checkBoxDati{
+    font-size: 75%;
 }
 
 /*--------------------------------
@@ -320,7 +336,7 @@ SETTAGGI REVISOR
     height: auto;
     width: 100%;
 }
-.swiperRevisorSlide{
+/* .swiperRevisorSlide{
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -336,7 +352,7 @@ SETTAGGI REVISOR
     min-width: 27vh;
     max-width: 27vh;
     object-fit: cover;
-}
+} */
 
 /*--------------------------------
 SETTAGGI MAIN COMPONENTS
@@ -377,6 +393,21 @@ SETTAGGI MAIN COMPONENTS
     max-width: 25vh;
     object-fit: cover;
 }
+
+/*--------------------------------
+SETTAGGI SHOW CATEGORY
+---------------------------------*/
+
+.btnNessunAnn{
+    color: var(--myWhite);
+}
+
+.btnNessunAnn:hover{
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1px solid var(--myPurple);
+}
+
 
 /*--------------------------------
 SETTAGGI FOOTER COMPONENTS
@@ -447,13 +478,29 @@ MEDIA QUERIES
         position: relative;
         right: 0%;
     }
-    .formNavbar{
-        position: relative;
-        left: 0%
-    }
+
     .navbar-brand {
         position: relative;
         left: 0%;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        height: 50vh;
+        width: 50vw;
+        object-fit: cover;
+
     }
 }
 
@@ -466,9 +513,47 @@ MEDIA QUERIES
 
 
 /* SM Displays */
-/* @media (min-width: 576px) and (max-width:767px){
-} */
+@media (min-width: 576px) and (max-width:767px){
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        height: 50vh;
+        width: 50vw;
+        object-fit: cover;
+
+    }
+}
 
 /* XS Displays */
-/*  @media (min-width: 0px) and (max-width:575px){
-}  */
+@media (min-width: 0px) and (max-width:575px){
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide img {
+        display: block;
+        height: 50vh;
+        width: 50vw;
+        object-fit: cover;
+
+    }
+}  

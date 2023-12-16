@@ -40,3 +40,28 @@ function showCategories() {
         categories.classList.add('d-none');
     }
 }
+
+// Evento Searchbar
+
+let searchButton= document.querySelector('#searchButton');
+let searchBar= document.querySelector('#searchBar');
+let iconSearch=document.querySelector('#iconSearch');
+
+iconSearch?.addEventListener('click', ()=>{
+    showSearchbar();
+})
+
+function showSearchbar(){
+    if(searchBar.classList.contains('d-none')){
+        searchBar.classList.remove('d-none');
+        searchBar.classList.add('d-block');
+        // iconSearch.classList.remove('textMyWhite');
+        // iconSearch.classList.add('textMyBlack');
+
+    }else{
+        searchBar.classList.add('d-none');
+        searchBar.classList.remove('d-block');
+        // iconSearch.classList.add('textMyWhite');
+        // iconSearch.classList.remove('textMyBlack');
+    }
+}

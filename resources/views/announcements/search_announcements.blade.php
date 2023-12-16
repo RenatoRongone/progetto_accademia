@@ -1,25 +1,29 @@
 <x-layout>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid mt-5 ">
+        <div class="row align-items-center pt-3">
             @forelse ($announcements as $announcement)
-            <div class="col-12 col-md-4 mb-5 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="http://picsum.photos/200" class="card-img-top" alt="...">
-                    <div class="card-body">
+            <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center align-items-center py-4">
+                <div class="card border-0" style="width: 18rem;">
+                    <a href=" {{route('show_announcements', compact('announcement'))}}">
+                        <img src="{{$announcement->images()->first()->getUrl(327 , 327)}}"
+                        class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body d-flex justify-content-between p-1 mt-1">
                         <h5 class="card-title">{{$announcement->title}}</h5>
-                        <p class="card-text">{{$announcement->description}}</p>
-                        <p class="card-text">{{$announcement->category->name}}</p>
+                        {{-- <p class="card-text">{{$announcement->category->name}}</p> --}}
                         <p class="card-text">€ {{$announcement->price}}</p>
-                        <p class="card-text">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}}</p>
-                        <a href="{{route('show_announcements', compact('announcement'))}}" class="btn btn-primary">Dettaglio Prodotto</a>
                     </div>
                 </div>
             </div>
             @empty
-                <div class="col-12">
-                    <h3>Annuncio non trovato</h3>
+            <div class="row vh-100 ">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <h3 class="text-center">Annuncio non trovato</h3>
+                    <a href="{{route('create_announcements')}}" class="btn btnNessunAnn bgMyPurple mt-3 ">Crea Annuncio</a>
                 </div>
+            </div>
             @endforelse
         </div>
     </div>
+    <x-footer/>
 </x-layout>
