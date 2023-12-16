@@ -45,6 +45,11 @@ class AnnouncementController extends Controller
     public function user_announcements(User $user){
         $announcements = $user->announcements()->orderBy('created_at', 'desc')->get();
         
+        // Raggruppare gli annunci dell'utente per categoria attraverso il metodo groupBy
+        /*         $groupedAnnouncements = $announcements->groupBy(function($item) {
+            return $item->category->name;
+        }); */
+        
         return view('announcements.user_announcements', compact('announcements', 'user'));
     } 
 }

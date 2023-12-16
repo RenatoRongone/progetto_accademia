@@ -64,7 +64,6 @@
                             </a>
                             <div class="card-body d-flex justify-content-between p-1 mt-1">
                                 <h5 class="card-title">{{$announcement->title}}</h5>
-                                {{-- <p class="card-text">{{$announcement->category->name}}</p> --}}
                                 <p class="card-text">€ {{$announcement->price}}</p>
                             </div>
                         </div>
