@@ -1,6 +1,6 @@
 <x-layout>
     {{-- Sezione del BackGround Header --}}
-    <header class="container-fluid bgHeader d-flex flex-column align-items-center justify-content-center position-relative ">
+    <header class="container-fluid bgHeader d-flex flex-column align-items-center justify-content-center position-relative">
 
         {{-- Messaggio creazione annuncio --}}
         @if (session()->has('message'))

@@ -8,7 +8,7 @@
                 </div>
             </div>
             
-            <div class="row justify-content-center">
+            <div class="row justify-content-center px-5 px-md-0">
                 <livewire:create-announcement/>
             </div>
         </section>

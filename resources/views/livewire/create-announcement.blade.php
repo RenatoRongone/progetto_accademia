@@ -33,28 +33,35 @@
             {{$message}}
             @enderror
         </div>
-        <div class="mb-3">
-            <label for="images" class="form-label">Immagini</label>
-            <input multiple type="file" class="form-control @error('temporary_images.*') is-invalid @enderror" id="images" wire:model='temporary_images' name="images">
+        <div class="mb-3 d-flex flex-column">
+            <label for="images" class="form-label">Carica Immagini</label>
+            <input multiple type="file" class="d-none @error('temporary_images.*') is-invalid @enderror" id="images" wire:model='temporary_images' name="images">
+            <label for="images" class="customFileUpload textMyBlack">
+                <i class="fa-solid fa-file-arrow-up fs-4 pt-3 me-3"></i>
+            </label>
             @error('temporary_images.*')
             {{$message}}
             @enderror
         </div>
         @if(!empty($images))
-            <div class="row">
-                <div class="col-12">
-                    <p>foto preview:</p>
-                    <div class="row" >
-                        @foreach($images as $key => $image)
-                        <div class="col-4 imgpreview" style="background-image: url({{$image->temporaryUrl()}}); background-size:cover; background-repeat: no-repeat;">
-                             <button type="button" class="btn btn-danger" wire:click='removeImage({{$key}})'>
-                                Elimina Immagine
+        <div class="row mb-5 pt-3">
+            <div class="col-12">
+                {{-- <p>preview:</p> --}}
+                <div class="row" >
+                    @foreach($images as $key => $image)
+                    <div class="col-4" > 
+                        <div class="imgpreview" style="background-image: url({{$image->temporaryUrl()}}); background-size:cover; background-repeat: no-repeat;">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btnEliminaPreview bgMyOrange textMyWhite px-2 py-1 mt-2" wire:click='removeImage({{$key}})'>
+                                <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>
-                        @endforeach
                     </div>
+                    @endforeach
                 </div>
             </div>
+        </div>
         @endif
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">Crea Annuncio</button>

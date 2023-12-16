@@ -105,12 +105,10 @@ button.nav-link{
     font-size: 100%;
     color:white;
 }
-
 .searchInput{
     max-width: 25vw;
     min-width: 25vw;
 }
-
 .searchButtonPosition{
     position: absolute;
     top: 0;
@@ -153,7 +151,6 @@ SETTAGGI HEADER WELCOME
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
-
 #allCategories{
     cursor: pointer;
 }
@@ -219,8 +216,11 @@ input[type="checkbox"]:checked{
 /*--------------------------------
 SETTAGGI REGISTER
 ---------------------------------*/
+.registerSection{
+    height: 90vh;
+}
 .registerHeight{
-    min-height: 100%
+    min-height: 100% 
 }
 .registerBackground{
     background-color: var(--myWhite);
@@ -277,7 +277,6 @@ select:focus{
     min-height: 106px;
     max-height: 106px;
 }
-
 .checkBoxDati{
     font-size: 75%;
 }
@@ -286,7 +285,7 @@ select:focus{
 SETTAGGI CREATE ANNOUNCEMENTS
 ---------------------------------*/
 .createAnnouncementsHeight{
-    min-height: 80vh;
+    min-height: 90vh;
 }
 .createAnnouncementsBackground{
     background-color: var(--myWhite);
@@ -296,6 +295,26 @@ SETTAGGI CREATE ANNOUNCEMENTS
     max-width: 45vh;
     border: 2.5px solid var(--myPurple);
     padding: 2.5vh;
+}
+.customFileUpload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: var(--myWhite);
+    border: none;
+}
+.btnEliminaPreview{
+    border: 1px solid var(--myOrange);
+    border-radius: 50%;
+    font-size: 65%;
+    font-weight: bolder;
+}
+.btnEliminaPreview:hover{
+    border: 1px solid var(--myOrange);
+    color: var(--myOrange);
+    border-radius: 50%;
+    font-size: 65%;
+    font-weight: bolder;
 }
 
 /*--------------------------------
@@ -336,23 +355,6 @@ SETTAGGI REVISOR
     height: auto;
     width: 100%;
 }
-/* .swiperRevisorSlide{
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 27vh;
-    max-width: auto;
-}
-.swiperRevisorSlide img{
-    display: block;
-    height: auto;
-    min-width: 27vh;
-    max-width: 27vh;
-    object-fit: cover;
-} */
 
 /*--------------------------------
 SETTAGGI MAIN COMPONENTS
@@ -397,17 +399,14 @@ SETTAGGI MAIN COMPONENTS
 /*--------------------------------
 SETTAGGI SHOW CATEGORY
 ---------------------------------*/
-
 .btnNessunAnn{
     color: var(--myWhite);
 }
-
 .btnNessunAnn:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
     border: 1px solid var(--myPurple);
 }
-
 
 /*--------------------------------
 SETTAGGI FOOTER COMPONENTS
@@ -425,6 +424,7 @@ ul{
 .logoFooter{
     height: 5vh;
 }
+
 /*--------------------------------
 MEDIA QUERIES
 --------------------------------*/
@@ -462,20 +462,14 @@ MEDIA QUERIES
         position: relative;
         right: 0%;
     }
-
     .navbar-brand {
         position: relative;
         left: 0%;
     }
 }
-
-
 .imgpreview{
     height: 100px;
 }
-
-
-
 
 /* SM Displays */
 @media (min-width: 576px) and (max-width:767px){
@@ -486,10 +480,10 @@ MEDIA QUERIES
 
 /* XS Displays */
 @media (min-width: 0px) and (max-width:575px){
-.countRevision{
-    position: absolute;
-    top:45% !important;
-    left: 6% !important;
-    font-size: 50%;
-}
+    .countRevision{
+        position: absolute;
+        top:45% !important;
+        left: 6% !important;
+        font-size: 50%;
+    }
 }

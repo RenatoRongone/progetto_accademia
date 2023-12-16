@@ -2,10 +2,10 @@
 
 let eyeIcon= document.querySelector('#eyeIcon');
 let password= document.querySelector('#password');
-
 let eyeIcon_confirmation=document.querySelector('#eyeIcon_confirmation');
 let password_confirmation=document.querySelector('#password_confirmation');
 
+// Evento eyecon
 function passwordVisibility(){
     if (password.type==='password') {
         password.type= 'text';
@@ -24,11 +24,10 @@ function passwordVisibility(){
 
 if(eyeIcon != null){
     eyeIcon.addEventListener('click',()=>{
-
+        
         passwordVisibility();
     });
 }
-
 
 function passwordConfirmationVisibility(){
     if (password_confirmation.type==='password') {
@@ -45,9 +44,10 @@ function passwordConfirmationVisibility(){
         }
     }
 }
+
 if (eyeIcon_confirmation != null) {
     eyeIcon_confirmation?.addEventListener('click',()=>{
-
+        
         passwordConfirmationVisibility();
     });
 }
