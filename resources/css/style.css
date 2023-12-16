@@ -438,14 +438,6 @@ MEDIA QUERIES
         position: relative;
         right: 8%;
     }
-    .itemLang{
-        position: relative;
-        right: 1%;
-    }
-    .formNavbar{
-        position: relative;
-        left: 6%;
-    }
     .navbar-brand {
         position: relative;
         left: 6%;
@@ -457,14 +449,6 @@ MEDIA QUERIES
     .linkContainer{
         position: relative;
         right: 8%;
-    }
-    .itemLang{
-        position: relative;
-        right: 7%;
-    }
-    .formNavbar{
-        position: relative;
-        left: 6%;
     }
     .navbar-brand {
         position: relative;
@@ -483,25 +467,6 @@ MEDIA QUERIES
         position: relative;
         left: 0%;
     }
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .swiper-slide img {
-        display: block;
-        height: 50vh;
-        width: 50vw;
-        object-fit: cover;
-
-    }
 }
 
 
@@ -514,46 +479,17 @@ MEDIA QUERIES
 
 /* SM Displays */
 @media (min-width: 576px) and (max-width:767px){
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .swiper-slide img {
-        display: block;
-        height: 50vh;
-        width: 50vw;
-        object-fit: cover;
-
+    .nav-link{
+        margin: 0 1vh;
     }
 }
 
 /* XS Displays */
 @media (min-width: 0px) and (max-width:575px){
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .swiper-slide img {
-        display: block;
-        height: 50vh;
-        width: 50vw;
-        object-fit: cover;
-
-    }
-}  
+.countRevision{
+    position: absolute;
+    top:45% !important;
+    left: 6% !important;
+    font-size: 50%;
+}
+}

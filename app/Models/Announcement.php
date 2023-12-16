@@ -26,7 +26,7 @@ class Announcement extends Model
         'category_id',
     ];
 
-    
+
     public function toSearchableArray()
     {
         $category=$this->category;
@@ -51,7 +51,7 @@ class Announcement extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
-    
+
     public function setAccepted($value){
         $this->update([
             'is_accepted'=> $value,

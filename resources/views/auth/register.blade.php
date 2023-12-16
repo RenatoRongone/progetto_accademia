@@ -5,7 +5,7 @@
                 <h1 class="text-center">Registrati</h1>
             </div>
         </div>
-        
+
         <div class="row justify-content-center registerBackground p-md-5">
             <div class="col-12 col-md-8 p-3 px-5 px-md-0 p-md-0 d-flex justify-content-center ">
                 <form method="POST" action="/register" class="registerForm shadow p-md-5">
@@ -26,7 +26,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-12 col-md-6 inputContainer">
                             <label for="birth" class="form-label">Data di nascita *</label>
@@ -47,8 +47,8 @@
                             @enderror
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="row">
                         <div class="col-12 col-md-6 inputContainer">
                             <label for="email" class="form-label ">Email *</label>
@@ -62,7 +62,7 @@
                             <input name="telephone" type="text" class="form-control" id="telephone" placeholder="Campo opzionale" value="{{old('telephone')}}">
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="col-6 passwordContainer inputContainer position-relative">
                             <label for="password" class="form-label">Password *</label>
@@ -82,14 +82,14 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <input name="privacy" type="checkbox" class="@error('password') is-invalid @enderror d-inline" id="privacy">
+                        <input name="privacy" type="checkbox" class="@error('privacy') is-invalid @enderror d-inline" id="privacy" value="true">
                         <label for="privacy" class="form-label mb-0 d-inline checkBoxDati">Acconsento al trattamento dei dati personali *</label>
-                        @error('password')
+                        @error('privacy')
                         <p class="textMyPurple errorRegister">{{$message}}</p>
                         @enderror
                     </div>
                     <div class="col-12">
-                        <input name="marketing" type="checkbox" class="d-inline" id="marketing">
+                        <input name="marketing" type="checkbox" class="d-inline" id="marketing" value="1">
                         <label for="marketing" class="form-label mb-0 d-inline checkBoxDati">Acconsento al trattamento dei dati per fini commerciali</label>
                     </div>
                     <div class="d-flex justify-content-center">

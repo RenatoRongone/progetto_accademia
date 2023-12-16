@@ -14,7 +14,22 @@
 
         <div class="container-fluid mb-6">
             <div class="row border-bottom">
-                <div class="col-12 col-md-6 p-5">
+
+                <div class="col-12 col-md-6 p-5 d-flex flex-column justify-content-center order-md-last">
+                    <div class="swiperRevisorContainer">
+                        <div class="swiper mySwiper py-0">
+                            <div class="swiper-wrapper">
+                                @foreach ($announcement_to_check->images as $image)
+                                <div class="swiper-slide swiperRevisorSlide">
+                                    <img src="{{$image->getUrl(327 , 327)}}" alt="">
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-0 px-3 p-md-5">
                     <h1 class="pb-2">{{$announcement_to_check->title}}</h1>
                     <p class="fs-5">{{$announcement_to_check->description}}</p>
                     <p class="fs-6">{{$announcement_to_check->category->name}}</p>
@@ -42,25 +57,10 @@
                         </form>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 p-5 d-flex flex-column justify-content-center">
-                    <div class="swiperRevisorContainer">
-                        <div class="swiper mySwiper py-5">
-                            <div class="swiper-wrapper">
-                                @foreach ($announcement_to_check->images as $image)
-                                <div class="swiper-slide swiperRevisorSlide">
-                                    <img src="{{$image->getUrl(327 , 327)}}" alt="">
-                                </div>
-                                @endforeach
-                            </div>
-                            {{-- <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div> --}}
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     @endif
+
+    <x-footer></x-footer>
 </x-layout>

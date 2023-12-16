@@ -12,22 +12,6 @@ class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
 
-    protected $messages = [
-        'name.required' => 'Il campo Nome è obbligatorio.',
-        'name.string' => 'Il campo Cognome è obbligatorio.',
-        'name.max' => 'Il campo Cognome è obbligatorio.',
-        'surname.required' => 'Il campo Nome è obbligatorio.',
-        'surname.string' => 'Il campo Cognome è obbligatorio.',
-        'surname.max' => 'Il campo Cognome è obbligatorio.',
-        'birth.required' => 'Il campo Cognome è obbligatorio.',
-        'birth.string' => 'Il campo Cognome è obbligatorio.',
-        'email.required' => 'Il campo Cognome è obbligatorio.',
-        'email.string' => 'Il campo Cognome è obbligatorio.',
-        'email.email' => 'Il campo Cognome è obbligatorio.',
-        'email.max' => 'Il campo Cognome è obbligatorio.',
-        // Aggiungi altri messaggi personalizzati per le regole di validazione necessarie.
-    ];
-
     /**
     * Validate and create a newly registered user.
     *
@@ -48,7 +32,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-
+            'privacy' => ['required' ,'in:true,1'],
 
         ])->validate();
 
@@ -63,6 +47,8 @@ class CreateNewUser implements CreatesNewUsers
                 'telephone' => $input['telephone'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
+                'privacy' => true,
+                'marketing' => $input['marketing'],
             ]);
         }
     }

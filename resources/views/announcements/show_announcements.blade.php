@@ -8,15 +8,15 @@
             @endforeach
         </div>
     </div>
-    <div class="container-fluid mb-6">
+    <div class="container-fluid mb-5 px-md-5">
         <div class="row flex-column">
-            <div class="col-12 col-md-6 p-5 p-sm-3 ">
+            <div class="col-12 col-md-6 px-4 p-md-5 p-sm-3 mb-4 mb-md-0 ">
                 <h1>{{$announcement->title}}</h1>
                 <p class="fs-5">{{$announcement->description}}</p>
                 <p class="fs-6">{{$announcement->category->name}}</p>
                 <p>€ {{$announcement->price}}</p>
             </div>
-            <div class="col-12 col-md-6 px-5 pb-5 px-sm-3">
+            <div class="col-12 col-md-6 px-4 px-md-5 pb-2 px-sm-3">
                 <h5 class="d-inline">{{$announcement->user->name}}</h5>
                 <h5 class="d-inline">{{$announcement->user->surname}}</h5>
                 <p>{{$announcement->user->email}}</p>

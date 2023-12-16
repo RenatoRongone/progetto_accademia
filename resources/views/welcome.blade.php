@@ -1,17 +1,17 @@
 <x-layout>
     {{-- Sezione del BackGround Header --}}
     <header class="container-fluid bgHeader d-flex flex-column align-items-center justify-content-center position-relative ">
-        
+
         {{-- Messaggio creazione annuncio --}}
         @if (session()->has('message'))
-        
+
         <div class="alert textMyWhite text-center bgMyOrange position-absolute top-0 " id="successMessage">
             {{ session('message') }}
         </div>
-        
+
         @endif
-        
-        
+
+
         <div class="row align-items-center">
             <div class="col-12">
                 <h1 class="display-1 text-center textMyWhite fw-bold">Presto.it</h1>
@@ -23,14 +23,15 @@
             </div>
         </header>
         <!-- Main -->
-        
+
         <main>
-            
+
             {{-- Sezione della Categorie --}}
             <section class="container-fluid p-3">
                 <div class="row textMyBlack fw-medium">
-                    <div class="col-12 col-md-6 d-flex text-center">
-                        <p class="d-block" id="allCategories">Tutte le categorie</p>
+                    <div class="col-12 col-md-6 d-flex text-center  align-items-center " id="allCategories">
+                        <i class="fa-solid fa-bars h-50"></i>
+                        <p class="d-block mb-0 p-1  ">Tutte le categorie</p>
                     </div>
                     @foreach ($categoriesByPop as $category)
                     <div class="col-12 col-md-2 d-block topCategories">
@@ -40,7 +41,7 @@
                     </div>
                     @endforeach
                 </div>
-                
+
                 <div class="row d-none" id="categories">
                     @foreach ($categories as $category)
                     <div class="col-12 col-md-3 ">
@@ -50,8 +51,8 @@
                     </div>
                     @endforeach
                 </div>
-            </section>            
-            
+            </section>
+
             <section class=" container-fluid ">
                 <div class="row p-md-5 justify-content-center">
                     @foreach ($announcements as $announcement)
