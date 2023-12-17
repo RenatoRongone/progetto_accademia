@@ -19,7 +19,7 @@ Route::get('/dettaglio-annuncio/{announcement}', [AnnouncementController::class,
 Route::get('/annuncio-categoria/{category}', [AnnouncementController::class, 'show_category'])->name('show_category');
 
 // ROTTA VISUALIZZAZIONE ANNUNCI PER TUTTE LE CATEGORIE
-Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category'])->name('index_category');
+/* Route::get('/tutti-gli-annunci', [AnnouncementController::class, 'index_category'])->name('index_category'); */
 
 // ROTTA VISUALIZAZZIONE ANNUNCI PER UTENTE
 Route::get('/annuncio-utente/{user}', [AnnouncementController::class, 'user_announcements'])->name('user_announcements');

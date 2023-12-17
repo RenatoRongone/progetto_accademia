@@ -14,14 +14,11 @@
         
         <section class=" container-fluid ">
             <div class="row p-md-5 justify-content-center">
-                @foreach ($announcements as $announcement)
-                
-                @if ($loop->iteration)
+                @foreach ($groupedAnnouncements as $categoryName => $announcementsInCategory)
                 <div class="col-12 text-center">
-                    <h3>{{$announcement->category->name}}</h3>
+                    <h3>{{$categoryName}}</h3>
                 </div>
-                @endif
-                
+                @foreach ($announcementsInCategory as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center border-bottom">
                     <div class="card border-0" style="width: 25rem;">
                         <a href=" {{route('show_announcements', compact('announcement'))}}">
@@ -35,10 +32,9 @@
                     </div>
                 </div>
                 @endforeach
+                @endforeach
             </div>
         </section>
-        
     </div>
-    
     <x-footer/>
 </x-layout>

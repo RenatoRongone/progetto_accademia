@@ -28,11 +28,11 @@ class AnnouncementController extends Controller
         return view ('announcements.show_category', compact('category'));
     }
     
-    public function index_category(){
+    /*     public function index_category(){
         $announcements = Announcement::orderBy('created_at', 'desc')->get();
         
         return view('announcements.index_category', compact('announcements'));
-    }
+    } */
     
     //Funzione per la ricerca con TNTSearch
     public function ricerca(Request $request){
@@ -46,10 +46,10 @@ class AnnouncementController extends Controller
         $announcements = $user->announcements()->orderBy('created_at', 'desc')->get();
         
         // Raggruppare gli annunci dell'utente per categoria attraverso il metodo groupBy
-        /*         $groupedAnnouncements = $announcements->groupBy(function($item) {
+        $groupedAnnouncements = $announcements->groupBy(function($item) {
             return $item->category->name;
-        }); */
+        });
         
-        return view('announcements.user_announcements', compact('announcements', 'user'));
+        return view('announcements.user_announcements', compact('groupedAnnouncements', 'user'));
     } 
 }
