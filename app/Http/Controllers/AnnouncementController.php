@@ -52,4 +52,18 @@ class AnnouncementController extends Controller
         
         return view('announcements.user_announcements', compact('groupedAnnouncements', 'user'));
     } 
+    
+    // Questo metodo restituisce la vista degli annunci per categoria specifica pubblicati da uno specifico utente
+    public function userCategoryAnnouncements(User $user, $categoryName) {
+        
+        $category = Category::where('name', $categoryName)->first();
+        
+        if (!$category) {
+            return redirect(route('announcements.user_announcements_per_category'))->with('message', 'Nessun annuncio trovato in questa Categoria');
+        }
+        
+        $announcements = $user->announcements()->where('category_id', $category->id)->get();
+        
+        return view('announcements.user_announcements_per_category', compact('announcements', 'user', 'category'));
+    }
 }

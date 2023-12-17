@@ -8,29 +8,27 @@
         
         <div class="row my-3">
             <div class="col-12">
-                <h1 class="text-center">Vetrina di  {{$user->name}} {{$user->surname}}</h1>
+                <h1 class="text-center pb-5">Vetrina di {{$user->name}} {{$user->surname}}</h1>
+                <h2 class="text-center"> {{$category->name}}</h2>
             </div>
         </div>
         
-        <section class=" container-fluid ">
+        <section class="container-fluid">
             <div class="row p-md-5 justify-content-center">
-                @foreach ($groupedAnnouncements as $categoryName => $announcementsInCategory)
 
-                @php
-                    $category = $announcementsInCategory->first()->category;
-                @endphp
-
+                {{-- Se l'utente specifico non ha pubblicato alcun annuncio per una determinata categoria --}}
+                @if ($announcements->isEmpty())
                 <div class="col-12">
-                    <h5 class="py-2 border bgMyBlack textMyWhite text-center">
-                        <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyWhite">{{$categoryName}}</a>
-                    </h5>
+                    <h1 class="text-center">Nessun annuncio per questa categoria</h1>
                 </div>
+                @else
 
-                @foreach ($announcementsInCategory as $announcement)
+                {{-- Altrimenti, parte un'iterazione che restituisce le cards relative agli annunci dell'utente X per la categoria Y --}}
+                @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
                     <div class="card border-0" style="width: 25rem;">
-                        <a href=" {{route('show_announcements', compact('announcement'))}}">
-                            <img src="{{$announcement->images()->first()->getUrl(327 , 327)}}"
+                        <a href="{{ route('show_announcements', ['announcement' => $announcement->id]) }}">
+                            <img src="{{$announcement->images()->first()->getUrl(327, 327)}}"
                             class="card-img-top" alt="...">
                         </a>
                         <div class="card-body d-flex justify-content-between p-1 mt-1">
@@ -40,7 +38,7 @@
                     </div>
                 </div>
                 @endforeach
-                @endforeach
+                @endif
             </div>
         </section>
     </div>
