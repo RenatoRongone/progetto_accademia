@@ -1,11 +1,19 @@
-// CATTURA ELEMENTO
+// ELEMENTI CATTURATI
 
+//Register Form
 let eyeIcon= document.querySelector('#eyeIcon');
 let password= document.querySelector('#password');
 let eyeIcon_confirmation=document.querySelector('#eyeIcon_confirmation');
 let password_confirmation=document.querySelector('#password_confirmation');
 
-// Evento eyecon
+//Login Form
+let eyeIconLogin= document.querySelector('#eyeIconLogin');
+let passwordLogin= document.querySelector('#passwordLogin');
+
+
+//EVENTI
+
+// Evento Eyecon Form Register
 function passwordVisibility(){
     if (password.type==='password') {
         password.type= 'text';
@@ -49,5 +57,29 @@ if (eyeIcon_confirmation != null) {
     eyeIcon_confirmation?.addEventListener('click',()=>{
         
         passwordConfirmationVisibility();
+    });
+}
+
+// Evento Eyecon Form Login
+function passwordLoginVisibility(){
+    if (passwordLogin.type==='password') {
+        passwordLogin.type= 'text';
+        if (eyeIconLogin.classList.contains('openEyeIconLogin')) {
+            eyeIconLogin.classList.remove('openEyeIconLogin');
+            eyeIconLogin.classList.add('closedEyeIconLogin');
+        }
+    }else{
+        passwordLogin.type='password';
+        if (eyeIconLogin.classList.contains('closedEyeIconLogin')) {
+            eyeIconLogin.classList.add('openEyeIconLogin');
+            eyeIconLogin.classList.remove('closedEyeIconLogin');
+        }
+    }
+}
+
+if(eyeIconLogin != null){
+    eyeIconLogin.addEventListener('click',()=>{
+        
+        passwordLoginVisibility();
     });
 }

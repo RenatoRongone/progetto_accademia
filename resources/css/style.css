@@ -259,7 +259,7 @@ select:focus{
     background-image: url(/public/media/eye-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 50%;
+    top: 49%;
     right: 5%;
     cursor: pointer;
 }
@@ -269,8 +269,28 @@ select:focus{
     background-image: url(/public/media/eye-slash-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    top: 50%;
+    top: 49%;
     right: 5%;
+    cursor: pointer;
+}
+.openEyeIconLogin{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 77%;
+    right: 1%;
+    cursor: pointer;
+}
+.closedEyeIconLogin{
+    height: 3vh;
+    width: 3vh;
+    background-image: url(/public/media/eye-slash-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 77%;
+    right: 1%;
     cursor: pointer;
 }
 .inputContainer{
