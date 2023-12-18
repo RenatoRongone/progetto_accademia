@@ -86,4 +86,6 @@ return [
 
     // Messages
     'message-success' => "Ad successfully uploaded. Under review.",
+
+    /* 'message-revision-approval' => 'Add approved', */
 ];

@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-12 col-md-2 text-center">
                     <x-_locale lang="en"/>
-                    <h6 class="mt-1">English</h6>
+                    <h6>English</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
                     <x-_locale lang="fr"/>

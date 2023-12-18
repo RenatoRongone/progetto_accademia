@@ -74,7 +74,7 @@ return [
     'rifiuta-annuncio' => 'Rechazar Anuncio',
     'pubblicato-il' => 'Publicado el',
     'miei-annunci' => 'Tus anuncios pendientes de revisión son:',
-
+    
     
     // show category
     'nessun-annuncio-trovato' => 'Ningún Anuncio Encontrado',
@@ -89,4 +89,6 @@ return [
     
     // Messages
     'message-success' => "Anuncio cargado correctamente. En proceso de revisión.",
+    
+   /*  'message-revision-approval' => 'Anuncio aprobado', */
 ];

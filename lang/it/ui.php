@@ -88,4 +88,6 @@ return [
 
     // Messaggi
     'message-success' => 'Annuncio caricato correttamente. In fase di revisione.',
+
+  /*   'message-revision-approval' => 'Annuncio approvato', */
 ];

@@ -21,7 +21,7 @@ class RevisorController extends Controller
                 $count++;
             }
         }
-
+        
         return view ('revisor.show_revisor', compact('announcement_to_check', 'count'));
     }
     
@@ -52,20 +52,20 @@ class RevisorController extends Controller
             'email'=> Auth::user()->email,
             'inquiry'=> $request->inquiry
         ]);
-
+        
         if(Auth::user()->telephone){
             $inquiries->telephone = Auth::user()->telephone;
             $inquiries->save();
         }
         
-
+        
         $adminMail = 'admin@presto.it';
         Mail::to($adminMail)->send(new BecomeRevisor($inquiries));
-
-
+        
+        
         return redirect (route('welcome'))->with('message', 'la richiesta è stata inoltrata');
     }
-
+    
     public function make_revisor(){
         Artisan::call('presto:makeUserRevisor', ['email'=>Auth::user()->email]);
         return redirect(route('welcome'))->with('message', 'Utente reso revisore con successo');

@@ -86,4 +86,6 @@ return [
 
         // Messages
         'message-success' => "Annonce téléchargée avec succès. En cours de révision.",
+
+       /*  'message-revision-approval' => 'Annonce approuvée', */
 ];

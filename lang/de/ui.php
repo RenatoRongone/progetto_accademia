@@ -88,4 +88,6 @@ return [
 
     // Messages
     'message-success' => "Anzeige erfolgreich hochgeladen. In Überprüfung.",
+
+    /* 'message-revision-approval' => 'Anzeige genehmigt', */
 ];
