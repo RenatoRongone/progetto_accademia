@@ -1,6 +1,8 @@
 // ELEMENTI CATTURATI
 
 //Register Form
+/* let gender_options = document.querySelectorAll('.gender_options'); */
+
 let eyeIcon= document.querySelector('#eyeIcon');
 let password= document.querySelector('#password');
 let eyeIcon_confirmation=document.querySelector('#eyeIcon_confirmation');
@@ -12,6 +14,12 @@ let passwordLogin= document.querySelector('#passwordLogin');
 
 
 //EVENTI
+
+// Evento Select Form Register
+/* gender_options.forEach(function(option) {
+    option.style.color = 'black'; 
+    option.style.backgroundColor = 'white'; 
+}); */
 
 // Evento Eyecon Form Register
 function passwordVisibility(){

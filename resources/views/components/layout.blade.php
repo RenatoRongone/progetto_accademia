@@ -25,6 +25,7 @@
 
     {{$slot}}
 
+    <x-language_modal></x-language_modal>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

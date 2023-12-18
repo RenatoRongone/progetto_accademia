@@ -32,7 +32,7 @@
             </ul>
         </div>
     </div>
-
+    
     <div class="row ">
         <div class="col-12 px-4 pt-3 pb-2 col-md-4 px-md-4 pt-md-0 pb-md-0">
             <i class="fa-brands fa-apple textMyBlack"></i>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="row">
         <div class="col-12 col-md-6 px-4 py-3 px-md-4 py-md-3">
             <i class="fa-brands fa-cc-paypal textMyBlack"></i>

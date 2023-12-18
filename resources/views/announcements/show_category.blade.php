@@ -29,6 +29,5 @@
             </div>
         </section>
     </main>
-    
     <x-footer/>
 </x-layout>

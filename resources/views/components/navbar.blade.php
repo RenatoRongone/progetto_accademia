@@ -12,25 +12,25 @@
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-md-0 linkContainer">
                 
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="{{route('welcome')}}">
+                    <a class="nav-link  mt-md-0 mx-md-3" href="{{route('welcome')}}">
                         <i class="fa-solid fa-house"></i>
                     </a>
                 </li>
                 
                 <form method="GET" action="{{route('ricerca')}}" class="nav-item d-flex" role="search">
                     @csrf
-                    <button class="nav-link btn p-md-2 p-0 my-2 my-md-0" type="button" id="searchBotton">
-                        <i class="fa-solid fa-magnifying-glass textMyWhite" id="iconSearch"></i>
+                    <button class="nav-link btn p-md-2 p-0 my-2 my-md-0 mx-md-3" type="button" id="searchBotton">
+                        <i class="fa-solid fa-magnifying-glass textMyWhite me-2 me-md-0" id="iconSearch"></i>
                     </button>
                     <input class="form-control me-2 searchInput d-none" type="search" placeholder="Cerca" aria-label="Search" name='searched' id="searchBar">
                 </form>
                 
                 @if(Auth::user() && Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a class="nav-link ms-md-3 position-relative counterRevisionWrapper " href="{{route('show_revisor')}}">
+                    <a class="nav-link mx-md-3 position-relative counterRevisionWrapper " href="{{route('show_revisor')}}">
                         <i class="fa-solid fa-newspaper"></i>
                         @if(App\Models\Announcement::toBeRevisionedCount() > 0)
-                        <span class=" position-absolute top-0 start-100 countRevision translate-middle badge rounded-pill bgMyOrange">
+                        <span class=" position-absolute top-0 start-100 countRevision translate-middle badge rounded-pill bgMyOrange revisorBadge">
                             {{App\Models\Announcement::toBeRevisionedCount()}}
                         </span>
                         @endif
@@ -50,7 +50,7 @@
                 
                 @auth
                 <li class="nav-item">
-                    <a class="nav-link ms-md-3" href="#">
+                    <a class="nav-link mx-md-3" href="#">
                         <i class="fa-solid fa-user"></i>
                     </a>
                 </li>
@@ -64,6 +64,12 @@
                     </form>
                 </li>
                 @endauth
+                
+                <li>
+                    <button type="button" class="btn nav-link ms-md-3" id="language_icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
+                </li>
             </ul>
         </li>
         

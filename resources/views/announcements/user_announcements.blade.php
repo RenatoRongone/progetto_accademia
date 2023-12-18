@@ -15,17 +15,17 @@
         <section class=" container-fluid ">
             <div class="row p-md-5 justify-content-center">
                 @foreach ($groupedAnnouncements as $categoryName => $announcementsInCategory)
-
+                
                 @php
-                    $category = $announcementsInCategory->first()->category;
+                $category = $announcementsInCategory->first()->category;
                 @endphp
-
+                
                 <div class="col-12">
                     <h5 class="py-2 border bgMyBlack textMyWhite text-center">
                         <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyWhite">{{$categoryName}}</a>
                     </h5>
                 </div>
-
+                
                 @foreach ($announcementsInCategory as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
                     <div class="card border-0" style="width: 25rem;">

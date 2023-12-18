@@ -1,17 +1,17 @@
 <x-layout>
     {{-- Sezione del BackGround Header --}}
     <header class="container-fluid bgHeader d-flex flex-column align-items-center justify-content-center position-relative">
-
+        
         {{-- Messaggio creazione annuncio --}}
         @if (session()->has('message'))
-
+        
         <div class="alert textMyWhite text-center bgMyOrange position-absolute top-0 " id="successMessage">
             {{ session('message') }}
         </div>
-
+        
         @endif
-
-
+        
+        
         <div class="row align-items-center">
             <div class="col-12">
                 <h1 class="display-1 text-center textMyWhite fw-bold">Presto.it</h1>
@@ -23,38 +23,38 @@
             </div>
         </header>
         <!-- Main -->
-
+        
         <main>
-
+            
             {{-- Sezione della Categorie --}}
-            <section class="container-fluid p-3">
+            <section class="container-fluid px-3 py-4 border-bottom">
                 <div class="row textMyBlack fw-medium">
-                    <div class="col-12 col-md-6 d-flex text-center  align-items-center " id="allCategories">
-                        <i class="fa-solid fa-bars h-50"></i>
+                    <div class="col-12 col-md-6 d-flex text-center  align-items-center pb-2 pb-md-3" id="allCategories">
+                        <i class="fa-solid fa-bars h-50 ms-2"></i>
                         <p class="d-block mb-0 p-1  ">Tutte le categorie</p>
                     </div>
                     @foreach ($categoriesByPop as $category)
                     <div class="col-12 col-md-2 d-block topCategories">
-                        <a class="textMyBlack text-decoration-none" href="{{route('show_category', compact('category'))}}">
+                        <a class="textMyBlack text-decoration-none ms-4 ms-md-0" href="{{route('show_category', compact('category'))}}">
                             {{$category->name}}
                         </a>
                     </div>
                     @endforeach
                 </div>
-
+                
                 <div class="row d-none" id="categories">
                     @foreach ($categories as $category)
                     <div class="col-12 col-md-3 ">
-                        <a class="textMyBlack text-decoration-none" href="{{route('show_category', compact('category'))}}">
+                        <a class="textMyBlack text-decoration-none ms-4" href="{{route('show_category', compact('category'))}}">
                             {{$category->name}}
                         </a>
                     </div>
                     @endforeach
                 </div>
             </section>
-
+            
             <section class=" container-fluid ">
-                <div class="row p-md-5 justify-content-center">
+                <div class="row py-5 p-md-5 justify-content-center">
                     @foreach ($announcements as $announcement)
                     <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
                         <div class="card border-0" style="width: 25rem;">
@@ -71,6 +71,7 @@
                     @endforeach
                 </div>
             </section>
+            
         </main>
         <x-footer></x-footer>
     </x-layout>

@@ -1,7 +1,7 @@
 <x-layout>
     <section class="container-fluid registerSection">
         <div class="container-fluid registerBackground d-flex flex-column justify-content-center registerHeight">
-            <div class="row">
+            <div class="row mt-3 mt-md-0">
                 <div class="col-12 d-flex flex-column justify-content-center mb-md-0 py-2">
                     <h1 class="text-center">Registrati</h1>
                 </div>
@@ -38,10 +38,10 @@
                             </div>
                             <div class="col-6 inputContainer">
                                 <label class="d-block mb-2" for="gender">Genere *</label>
-                                <select name="gender" id="gender" class="@error('gender') is-invalid  @enderror w-100 rounded-2 ">
-                                    <option value="X">Non specificato</option>
-                                    <option value="M">Uomo</option>
-                                    <option value="F">Donna</option>
+                                <select name="gender" id="gender" class="@error('gender') is-invalid  @enderror form-control w-100">
+                                    <option value="X" class="gender_options">Non specificato</option>
+                                    <option value="M" class="gender_options">Uomo</option>
+                                    <option value="F" class="gender_options">Donna</option>
                                 </select>
                                 @error('gender')
                                 <p class="textMyPurple errorRegister">{{$message}}</p>
@@ -60,7 +60,7 @@
                             </div>
                             <div class="col-12 col-md-6 inputContainer">
                                 <label for="telephone" class="form-label">Telefono</label>
-                                <input name="telephone" type="text" class="form-control" id="telephone" placeholder="Campo opzionale" value="{{old('telephone')}}">
+                                <input name="telephone" type="text" class="form-control" id="telephone" value="{{old('telephone')}}">
                             </div>
                         </div>
                         
@@ -94,7 +94,7 @@
                             <label for="marketing" class="form-label mb-0 d-inline checkBoxDati">Acconsento al trattamento dei dati per fini commerciali</label>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-5 px-4">Registrati</button>
+                            <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-5 mb-3 mb-md-0 px-4">Registrati</button>
                         </div>
                     </form>
                 </div>

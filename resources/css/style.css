@@ -66,6 +66,11 @@ SETTAGGI NAVBAR
 .logoNavbar{
     height: 8vh;
 }
+.revisorBadge:hover{
+    background-color: var(--myWhite);
+    color: var(--myOrange);
+    border: 1.5px solid var(--myOrange);
+}
 .dropdown-menu{
     background-color: transparent;
     border: none;
@@ -92,9 +97,21 @@ SETTAGGI NAVBAR
     color: rgb(255, 255, 255);
     background-color: var(--myPurple);
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
-    border-radius: var(--bs-navbar-toggler-border-radius);
+    /* border-radius: var(--bs-navbar-toggler-border-radius); */
+    border-radius: 0;
     transition: var(--bs-navbar-toggler-transition);
 }
+
+/* .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid var(--myWhite);
+}
+.navbar-toggler[aria-expanded="false"] {
+    border: none; 
+}
+.navbar-toggler.menu-open {
+    border: 2px solid transparent;
+} */
+
 a.nav-link{
     font-weight: 500;
     font-size: 100%;
@@ -106,13 +123,67 @@ button.nav-link{
     color:white;
 }
 .searchInput{
-    max-width: 25vw;
     min-width: 25vw;
+    max-width: 25vw;
 }
 .searchButtonPosition{
     position: absolute;
     top: 0;
     right: 3%;
+}
+
+/*--------------------------------
+MODAL SELEZIONE LINGUE
+---------------------------------*/
+.modal {
+    display: none; 
+    /* position: fixed;  */
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.modalHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.modal-content {
+    height: auto;
+    width: 60vw; 
+    background-color: var(--myWhite);
+    margin: 15% auto; 
+    padding: 1.5rem;
+    border: 2.5px solid var(--myPurple);
+    border-radius: 0%;
+}
+.close {
+    width: 1.5vw;
+    color: var(--myPurple);
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: var(--myOrange);
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal button {
+    background-color: var(--myPurple);
+    color: var(--myWhite);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal button:hover {
+    background-color: var(--myOrange);
 }
 
 /*--------------------------------
@@ -154,6 +225,7 @@ SETTAGGI HEADER WELCOME
 #allCategories{
     cursor: pointer;
 }
+
 /*--------------------------------
 SETTAGGI LOGIN
 ---------------------------------*/
@@ -207,10 +279,13 @@ input[type="checkbox"]:checked{
 .btnLogin:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
-    border: 1px solid var(--myPurple);
+    border: 1.5px solid var(--myPurple);
 }
 .fs-7{
     font-size: 80%;
+}
+input[type="checkbox"]{
+    cursor: pointer;
 }
 
 /*--------------------------------
@@ -232,12 +307,14 @@ SETTAGGI REGISTER
     background-color: rgb(255, 255, 255);
 }
 select{
+    height: 3.5vh;
     border-color:none;
-    height: 5vh;
+    cursor: pointer;
 }
 select:focus{
+    height: 3.5vh;
     border-color: none;
-    height: 5vh;
+    outline: none;
 }
 .error{
     position:relative;
@@ -257,29 +334,38 @@ select:focus{
     height: 3vh;
     width: 3vh;
     background-image: url(/public/media/eye-solid.svg);
-    background-size: contain;
+    /*  background-size: contain; */
+    background-size: 2vh;
     background-repeat: no-repeat;
-    top: 49%;
-    right: 5%;
+    /* top: 50%;
+    right: 5%; */
+    top: 56%;
+    right: 1%;
     cursor: pointer;
 }
 .closedEyeIcon{
     height: 3vh;
     width: 3vh;
     background-image: url(/public/media/eye-slash-solid.svg);
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: 2vh;
     background-repeat: no-repeat;
-    top: 49%;
-    right: 5%;
+    /*  top: 50%;
+    right: 5%; */
+    top: 56%;
+    right: 1%;
     cursor: pointer;
 }
 .openEyeIconLogin{
     height: 3vh;
     width: 3vh;
     background-image: url(/public/media/eye-solid.svg);
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: 2vh;
     background-repeat: no-repeat;
-    top: 77%;
+    /*  top: 75%;
+    right: 1%; */
+    top: 84%;
     right: 1%;
     cursor: pointer;
 }
@@ -287,9 +373,12 @@ select:focus{
     height: 3vh;
     width: 3vh;
     background-image: url(/public/media/eye-slash-solid.svg);
-    background-size: contain;
+    /* background-size: contain; */
+    background-size: 2vh;
     background-repeat: no-repeat;
-    top: 77%;
+    /*  top: 75%;
+    right: 1%; */
+    top: 84%;
     right: 1%;
     cursor: pointer;
 }
@@ -323,6 +412,10 @@ SETTAGGI CREATE ANNOUNCEMENTS
     background-color: var(--myWhite);
     border: none;
 }
+.imgpreview{
+    height: 9.3rem;
+    width: 9.3rem;
+}
 .btnEliminaPreview{
     border: 1px solid var(--myOrange);
     border-radius: 50%;
@@ -330,7 +423,7 @@ SETTAGGI CREATE ANNOUNCEMENTS
     font-weight: bolder;
 }
 .btnEliminaPreview:hover{
-    border: 1px solid var(--myOrange);
+    border: 1.5px solid var(--myOrange);
     color: var(--myOrange);
     border-radius: 50%;
     font-size: 65%;
@@ -364,12 +457,12 @@ SETTAGGI REVISOR
 .btnApprove:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
-    border: 1px solid var(--myPurple);
+    border: 1.5px solid var(--myPurple);
 }
 .btnReject:hover{
     background-color: var(--myWhite);
     color: var(--myOrange);
-    border: 1px solid var(--myOrange);
+    border: 1.5px solid var(--myOrange);
 }
 .swiperRevisorContainer{
     height: auto;
@@ -425,7 +518,7 @@ SETTAGGI SHOW CATEGORY
 .btnNessunAnn:hover{
     background-color: var(--myWhite);
     color:var(--myPurple);
-    border: 1px solid var(--myPurple);
+    border: 1.5px solid var(--myPurple);
 }
 
 /*--------------------------------
@@ -440,6 +533,11 @@ ul{
 }
 .flags{
     height: 2.5vh;
+    cursor: pointer;
+}
+.ukFlag{
+    height: 1.8vh;
+    cursor: pointer;
 }
 .logoFooter{
     height: 5vh;
@@ -487,9 +585,6 @@ MEDIA QUERIES
         left: 0%;
     }
 }
-.imgpreview{
-    height: 100px;
-}
 
 /* SM Displays */
 @media (min-width: 576px) and (max-width:767px){
@@ -502,8 +597,12 @@ MEDIA QUERIES
 @media (min-width: 0px) and (max-width:575px){
     .countRevision{
         position: absolute;
-        top:45% !important;
+        top:49% !important;
         left: 6% !important;
         font-size: 50%;
+    }
+    .searchInput{
+        min-width: 40vw;
+        max-width: 40vw;
     }
 }

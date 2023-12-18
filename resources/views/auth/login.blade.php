@@ -22,7 +22,7 @@
         
         <div class="row justify-content-center loginBackground mt-2">
             <div class="col-6 py-0 d-flex justify-content-center">
-                <form method="POST" action="/login" class="loginForm shadow">
+                <form method="POST" action="/login" class="loginForm shadow p-md-5">
                     @csrf
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-3 px-4">Accedi</button>
+                        <button type="submit" class="btn btnLogin bgMyPurple textMyWhite mt-4 mb-1 px-4">Accedi</button>
                     </div>
                 </form>
             </div>

@@ -15,22 +15,31 @@
                 <li>
                     <div class="mt-4">
                         <h6 class="pb-2">Lingua</h6>
-                        <div class="ms-1">
+                        <div>
                             <a href="" class="text-decoration-none">
-                                <img src="https://cdn.icon-icons.com/icons2/45/PNG/64/italy_flags_flag_8964.png" class="flags" alt="italian flag">
+                                <img src="/media/flags/italy_flag.png" class="flags" alt="Italian flag">
                             </a>
                             <a href="" class="text-decoration-none">
-                                <img src="https://cdn.icon-icons.com/icons2/45/PNG/64/uk_flags_flag_8834.png" class="flags" alt="english flag">
+                                <img src="/media/flags/uk_flag.png" class="ukFlag" alt="English flag">
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <img src="/media/flags/france_flag.png" class="flags" alt="France flag">
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <img src="/media/flags/germany_flag.png" class="flags" alt="Germany flag">
+                            </a>
+                            <a href="" class="text-decoration-none">
+                                <img src="/media/flags/spain_flag.png" class="flags" alt="Spain flag">
                             </a>
                         </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-12 px-4 col-md-4 p-md-4">
+                <h6 class="textMyBlack">Azienda certificata B Corporation®</h6>
+                <p class="textMyBlack">Questa azienda rispetta i più alti standard verificati di performance sociale e ambientale, trasparenza e responsabilità.</p>
+                <p class="textMyBlack">Copyright • DevelQuack 2023</p>
+            </div>
         </div>
-
-        <div class="col-12 px-4 col-md-4 p-md-4">
-            <h6 class="textMyBlack">Azienda certificata B Corporation®</h6>
-            <p class="textMyBlack">Questa azienda rispetta i più alti standard verificati di performance sociale e ambientale, trasparenza e responsabilità.</p>
-            <p class="textMyBlack">Copyright • DevelQuack 2023</p>
-        </div>
-    </div>
-</footer>
+    </footer>
