@@ -11,23 +11,23 @@
             </div>
             <div class="row justify-content-center pb-5">
                 <div class="col-12 col-md-2 text-center">
-                    <img src="/media/flags/italy_flag.png" alt="Italian flag" class="img-fluid flags">
+                    <x-_locale lang="it" nation="it"/>
                     <h6>Italian</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <img src="/media/flags/uk_flag.png" alt="English flag" class="img-fluid ukFlag mt-1">
+                    <x-_locale lang="en" nation="gb"/>
                     <h6 class="mt-1">English</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <img src="/media/flags/France_flag.png" alt="France flag" class="img-fluid flags">
+                    <x-_locale lang="fr" nation="fr"/>
                     <h6>Français</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <img src="/media/flags/germany_flag.png" alt="Germany flag" class="img-fluid flags">
+                    <x-_locale lang="de" nation="de"/>
                     <h6>Deutsch</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <img src="/media/flags/spain_flag.png" alt="Spain flag" class="img-fluid flags">
+                    <x-_locale lang="es" nation="es"/>
                     <h6>Español</h6>
                 </div>
             </div>

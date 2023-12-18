@@ -23,7 +23,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->boolean('privacy');
-            $table->boolean('marketing');
+            $table->boolean('marketing')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

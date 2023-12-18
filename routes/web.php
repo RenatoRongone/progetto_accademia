@@ -44,3 +44,6 @@ Route::get('/richiesta-rendi-revisor', [RevisorController::class, 'make_revisor'
 
 //ROTTA PER RICERCA
 Route::get('/ricerca',[AnnouncementController::class, 'ricerca'])->name('ricerca');
+
+// ROTTA LINGUE
+Route::post('/lingua/{lang}', [PublicController::class, 'setLocale'])->name('setLocale');

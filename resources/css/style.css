@@ -531,14 +531,14 @@ ul{
     list-style: none;
     color: black;
 }
-.flags{
+/* .flags{
     height: 2.5vh;
     cursor: pointer;
 }
 .ukFlag{
     height: 1.8vh;
     cursor: pointer;
-}
+} */
 .logoFooter{
     height: 5vh;
 }

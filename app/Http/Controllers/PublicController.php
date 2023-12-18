@@ -11,6 +11,13 @@ class PublicController extends Controller
     public function welcome() {
         $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->take(6)->get();
         $categoriesByPop = Category::withCount('announcements')->take(3)->get();
+
         return view('welcome', compact('announcements' , 'categoriesByPop'));
+    }
+
+    public function setLocale($lang){
+        session()->put('locale', $lang);
+
+        return redirect()->back();
     }
 }

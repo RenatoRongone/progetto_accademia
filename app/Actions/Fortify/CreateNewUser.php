@@ -19,7 +19,7 @@ class CreateNewUser implements CreatesNewUsers
     */
     public function create(array $input): User
     {
-          Validator::make($input, [
+        Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'surname' => ['required', 'string', 'max:255'],
             'birth' => ['required', 'string'],
@@ -33,10 +33,11 @@ class CreateNewUser implements CreatesNewUsers
             ],
             'password' => $this->passwordRules(),
             'privacy' => ['required' ,'in:true,1'],
+            // 'marketing' => ['boolean'],
 
         ])->validate();
 
-
+            $marketing= isset($input['marketing'])?$input['marketing']:false;
 
 
             return User::create([
@@ -48,7 +49,7 @@ class CreateNewUser implements CreatesNewUsers
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),
                 'privacy' => true,
-                'marketing' => $input['marketing'],
+                'marketing' => $marketing,
             ]);
         }
     }

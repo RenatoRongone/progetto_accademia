@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.2",
+        "outhebox/blade-flags": "^1.2",
         "spatie/image": "*",
         "teamtnt/laravel-scout-tntsearch-driver": "^13.2"
     },
