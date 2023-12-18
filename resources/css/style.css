@@ -179,11 +179,13 @@ MODAL SELEZIONE LINGUE
     border: none;
     padding: 10px 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 0%;
     cursor: pointer;
 }
 .modal button:hover {
-    background-color: var(--myOrange);
+    background-color: var(--myWhite);
+    color:var(--myPurple);
+    border: 1.5px solid var(--myPurple);
 }
 
 /*--------------------------------
@@ -307,12 +309,12 @@ SETTAGGI REGISTER
     background-color: rgb(255, 255, 255);
 }
 select{
-    height: 3.5vh;
+    min-height: 3vh;
     border-color:none;
     cursor: pointer;
 }
 select:focus{
-    height: 3.5vh;
+    min-height: 3vh;
     border-color: none;
     outline: none;
 }
@@ -531,14 +533,6 @@ ul{
     list-style: none;
     color: black;
 }
-/* .flags{
-    height: 2.5vh;
-    cursor: pointer;
-}
-.ukFlag{
-    height: 1.8vh;
-    cursor: pointer;
-} */
 .logoFooter{
     height: 5vh;
 }
