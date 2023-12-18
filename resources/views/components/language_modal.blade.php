@@ -7,6 +7,7 @@
             <div class="row py-3">
                 <div class="col-12">
                     <h3 class="text-center pb-4">Lingua</h3>
+                    <img src="/media/eye-slash-solid.svg" alt="" height="10" width="10">
                 </div>
             </div>
             <div class="row justify-content-center pb-5">
