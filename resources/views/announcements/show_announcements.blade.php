@@ -13,8 +13,11 @@
             <div class="col-12 col-md-6 px-4 p-md-5 p-sm-3 mb-4 mb-md-0 ">
                 <h1>{{$announcement->title}}</h1>
                 <p class="fs-5">{{$announcement->description}}</p>
+                @php
+                    $category=$announcement->category->name;
+                @endphp
                 <a href="{{route('show_category', $announcement->category->id)}}" class="text-decoration-none textMyBlack">
-                    <p class="fs-6">{{$announcement->category->name}}</p>
+                    <p class="fs-6">{{__("ui.$category")}}</p>
                 </a>
                 <p>{{__('ui.€')}} {{$announcement->price}}</p>
             </div>

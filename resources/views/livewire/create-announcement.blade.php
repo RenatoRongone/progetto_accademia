@@ -27,7 +27,6 @@
                 <option value="">{{__('ui.scegli-categoria')}}</option>
                 @foreach ($categories as $category)
                 <option value="{{$category->id}}">
-                    {{$category->name}}
                     {{__("ui.$category->name")}}
                 </option>
                 @endforeach

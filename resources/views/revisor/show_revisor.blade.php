@@ -32,7 +32,10 @@
                 <div class="col-12 col-md-6 p-0 px-3 p-md-5">
                     <h1 class="pb-2">{{$announcement_to_check->title}}</h1>
                     <p class="fs-5">{{$announcement_to_check->description}}</p>
-                    <p class="fs-6">{{$announcement_to_check->category->name}}</p>
+                    @php
+                        $category=$announcement_to_check->category->name;
+                    @endphp
+                    <p class="fs-6">{{__("ui.$category")}}</p>
                     <h6 class="pb-5">{{__('ui.€')}} {{$announcement_to_check->price}}</h6>
                     
                     <h5 class="d-inline">{{$announcement_to_check->user->name}}</h5>

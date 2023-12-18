@@ -14,24 +14,15 @@
                 </li>
                 <li>
                     <div class="mt-4">
-                        <h6 class="pb-2">Lingua</h6>
-                        <div>
-                            <a href="" class="text-decoration-none">
-                                <img src="/media/flags/italy_flag.png" class="flags" alt="Italian flag">
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <img src="/media/flags/uk_flag.png" class="ukFlag" alt="English flag">
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <img src="/media/flags/france_flag.png" class="flags" alt="France flag">
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <img src="/media/flags/germany_flag.png" class="flags" alt="Germany flag">
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <img src="/media/flags/spain_flag.png" class="flags" alt="Spain flag">
-                            </a>
+                        <h6 class="pb-2">{{__('ui.lingua')}}</h6>
+                        <div class="d-flex justify-content-start">
+                            <x-_locale lang="it"/>
+                            <x-_locale lang="en"/>
+                            <x-_locale lang="fr"/>
+                            <x-_locale lang="de"/>
+                            <x-_locale lang="es"/>
                         </div>
+                    </div>
                     </li>
                 </ul>
             </div>
