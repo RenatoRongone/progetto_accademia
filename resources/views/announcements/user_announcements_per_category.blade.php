@@ -1,14 +1,20 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row pt-4">
-            <div class="col-12 bg-danger">
+            <div class="col-12">
                 <h3 class="text-center">{{__('ui.immagine-profilo')}}</h3>
             </div>
         </div>
         
         <div class="row my-3">
             <div class="col-12">
-                <h1 class="text-center pb-5">{{__('ui.vetrina-di')}} {{$user->name}} {{$user->surname}}</h1>
+                <h1 class="text-center pb-5">
+                    @if(session('locale') == 'en')
+                        {{$user->name}} {{$user->surname}}{{__('ui.vetrina-di')}}
+                    @else
+                        {{__('ui.vetrina-di')}}  {{$user->name}} {{$user->surname}}
+                    @endif
+                </h1>
                 <h2 class="text-center"> {{__("ui.$category->name")}}</h2>
             </div>
         </div>
@@ -32,7 +38,7 @@
                             class="card-img-top" alt="...">
                         </a>
                         <div class="card-body d-flex justify-content-between p-1 mt-1">
-                            <h5 class="card-title">{{$announcement->title}}</h5>
+                            <h5 class="card-title">{{Str::limit($announcement->title, 15)}}</h5>
                             <p class="card-text">{{__('ui.€')}} {{$announcement->price}}</p>
                         </div>
                     </div>

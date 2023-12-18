@@ -13,8 +13,16 @@ use Illuminate\Support\Facades\Mail;
 class RevisorController extends Controller
 {
     public function show_revisor(){
-        $announcement_to_check= Announcement::where('is_accepted', null)->first();
-        return view ('revisor.show_revisor', compact('announcement_to_check'));
+        $count = 0;
+        $announcement_to_check = Announcement::where('is_accepted', null)->first();
+        $announcements_to_check_limit = Announcement::where('is_accepted', null)->get();
+        foreach($announcements_to_check_limit as $announcement){
+            if($announcement->user->id == Auth::user()->id){
+                $count++;
+            }
+        }
+
+        return view ('revisor.show_revisor', compact('announcement_to_check', 'count'));
     }
     
     public function approve_announcement($announcement){

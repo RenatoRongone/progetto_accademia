@@ -9,8 +9,7 @@
                         class="card-img-top" alt="...">
                     </a>
                     <div class="card-body d-flex justify-content-between p-1 mt-1">
-                        <h5 class="card-title">{{$announcement->title}}</h5>
-                        {{-- <p class="card-text">{{$announcement->category->name}}</p> --}}
+                        <h5 class="card-title">{{Str::limit($announcement->title, 15)}}</h5>
                         <p class="card-text">€ {{$announcement->price}}</p>
                     </div>
                 </div>

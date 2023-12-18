@@ -2,15 +2,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center pt-5">
-                @if ($announcement_to_check)
+                @if ($announcement_to_check && $announcement_to_check->user->id != Auth::user()->id)
                 <h1>{{__('ui.annunci-da-revisionare')}}</h1>
                 @else
                 <h3>{{__('ui.nessun-annuncio')}}</h3>
                 @endif
             </div>
+            @if($count > 0)
+                <div class="col-12">
+                    <h5 class="text-center">{{__('ui.miei-annunci')}} {{$count}}</h5>
+                </div>
+            @endif
         </div>
         
-        @if ($announcement_to_check)
+        @if ($announcement_to_check && $announcement_to_check->user->id != Auth::user()->id)
         
         <div class="container-fluid mb-6">
             <div class="row border-bottom">

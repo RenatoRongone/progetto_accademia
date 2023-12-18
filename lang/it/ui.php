@@ -73,6 +73,7 @@ return [
     'accetta-annuncio' => 'Accetta Annuncio',
     'rifiuta-annuncio' => 'Rifiuta Annuncio',
     'pubblicato-il' => 'Pubblicato il',
+    'miei-annunci' => 'I tuoi annunci in attesa di essere revisionati sono:',
 
     // show category
     'nessun-annuncio-trovato' => 'Nessun annuncio trovato',

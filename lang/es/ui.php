@@ -72,8 +72,9 @@ return [
     'annunci-da-revisionare' => 'Anuncios para Revisar',
     'accetta-annuncio' => 'Aceptar Anuncio',
     'rifiuta-annuncio' => 'Rechazar Anuncio',
-    'pubblicato-il' => 'Publicado el
-    ',
+    'pubblicato-il' => 'Publicado el',
+    'miei-annunci' => 'Tus anuncios pendientes de revisión son:',
+
     
     // show category
     'nessun-annuncio-trovato' => 'Ningún Anuncio Encontrado',

@@ -74,6 +74,7 @@ return [
     'accetta-annuncio' => 'Anzeige annehmen ',
     'rifiuta-annuncio' => 'Anzeige ablehnen',
     'pubblicato-il' => 'Veröffentlicht am',
+    'miei-annunci' => 'Ihre Anzeigen, die auf Überprüfung warten, sind:',
     
     // show category
     'nessun-annuncio-trovato' => 'keine Anzeige vorhanden ',
@@ -85,6 +86,6 @@ return [
     'perche' => 'Warum möchtest du mit uns arbeiten?',
     'invia-richiesta' => 'Sende eine Bewerbung',
 
-       // Messages
-       'message-success' => "Anzeige erfolgreich hochgeladen. In Überprüfung.",
+    // Messages
+    'message-success' => "Anzeige erfolgreich hochgeladen. In Überprüfung.",
 ];

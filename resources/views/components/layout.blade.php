@@ -21,7 +21,7 @@
 </head>
 <body>
     <x-navbar class=""></x-navbar>
-    <div style="height: 10vh"></div>
+    <div style="height: 5.6rem"></div>
 
     {{$slot}}
 

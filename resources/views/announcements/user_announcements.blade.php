@@ -1,14 +1,20 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row pt-4">
-            <div class="col-12 bg-danger">
+            <div class="col-12">
                 <h3 class="text-center">{{__('ui.immagine-profilo')}}</h3>
             </div>
         </div>
         
         <div class="row my-3">
             <div class="col-12">
-                <h1 class="text-center">{{__('vetrina-di')}}  {{$user->name}} {{$user->surname}}</h1>
+                <h1 class="text-center">
+                    @if(session('locale') == 'en')
+                        {{$user->name}} {{$user->surname}}{{__('ui.vetrina-di')}}
+                    @else
+                        {{__('ui.vetrina-di')}}  {{$user->name}} {{$user->surname}}
+                    @endif
+                </h1>
             </div>
         </div>
         
@@ -21,8 +27,8 @@
                 @endphp
                 
                 <div class="col-12">
-                    <h5 class="py-2 border bgMyBlack textMyWhite text-center">
-                        <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyWhite">{{__("ui.$categoryName")}}</a>
+                    <h5 class="py-2 border textMyBlack text-center">
+                        <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyBlack">{{__("ui.$categoryName")}}</a>
                     </h5>
                 </div>
                 
@@ -34,7 +40,7 @@
                             class="card-img-top" alt="...">
                         </a>
                         <div class="card-body d-flex justify-content-between p-1 mt-1">
-                            <h5 class="card-title">{{$announcement->title}}</h5>
+                            <h5 class="card-title">{{Str::limit($announcement->title, 15)}}</h5>
                             <p class="card-text">{{__('ui.€')}} {{$announcement->price}}</p>
                         </div>
                     </div>

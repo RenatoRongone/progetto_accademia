@@ -71,6 +71,7 @@ return [
     'accetta-annuncio' => 'Accept Ad',
     'rifiuta-annuncio' => 'Reject Ad',
     'pubblicato-il' => 'Published on',
+    'miei-annunci' => 'Your ads awaiting review are:',
 
     // show category
     'nessun-annuncio-trovato' => 'No Ads found',
