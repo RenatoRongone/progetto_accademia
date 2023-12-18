@@ -17,7 +17,7 @@
                 <h1 class="display-1 text-center textMyWhite fw-bold">Presto.it</h1>
                 <h2 class="fs-4 text-uppercase  text-center textMyWhite  fw-normal">Compra, a casa tua, presto.</h1>
                     <div class="col-12 d-flex justify-content-center mt-4">
-                        <a href="{{route('create_announcements')}}" class="btn myBtnWelcome rounded-0 ">Crea Annunci</a>
+                        <a href="{{route('create_announcements')}}" class="btn myBtnWelcome rounded-0 ">{{__('ui.crea-annuncio')}}</a>
                     </div>
                 </div>
             </div>
@@ -31,12 +31,12 @@
                 <div class="row textMyBlack fw-medium">
                     <div class="col-12 col-md-6 d-flex text-center  align-items-center pb-2 pb-md-3" id="allCategories">
                         <i class="fa-solid fa-bars h-50 ms-2"></i>
-                        <p class="d-block mb-0 p-1  ">Tutte le categorie</p>
+                        <p class="d-block mb-0 p-1">{{__('ui.tutte-le-categorie')}}</p>
                     </div>
                     @foreach ($categoriesByPop as $category)
                     <div class="col-12 col-md-2 d-block topCategories">
                         <a class="textMyBlack text-decoration-none ms-4 ms-md-0" href="{{route('show_category', compact('category'))}}">
-                            {{$category->name}}
+                            {{__("ui.$category->name")}}
                         </a>
                     </div>
                     @endforeach
@@ -46,7 +46,7 @@
                     @foreach ($categories as $category)
                     <div class="col-12 col-md-3 ">
                         <a class="textMyBlack text-decoration-none ms-4" href="{{route('show_category', compact('category'))}}">
-                            {{$category->name}}
+                            {{__("ui.$category->name")}}
                         </a>
                     </div>
                     @endforeach

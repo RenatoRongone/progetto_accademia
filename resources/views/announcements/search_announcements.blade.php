@@ -18,8 +18,8 @@
             @empty
             <div class="row vh-100 ">
                 <div class="col-12 d-flex flex-column align-items-center">
-                    <h3 class="text-center">Annuncio non trovato</h3>
-                    <a href="{{route('create_announcements')}}" class="btn btnNessunAnn bgMyPurple mt-3 ">Crea Annuncio</a>
+                    <h3 class="text-center">{{__('ui.annuncio-non-trovato')}}</h3>
+                    <a href="{{route('create_announcements')}}" class="btn btnNessunAnn bgMyPurple mt-3 ">{{__('ui.crea-annuncio')}}</a>
                 </div>
             </div>
             @endforelse

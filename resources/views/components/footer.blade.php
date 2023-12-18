@@ -9,7 +9,7 @@
             <ul class="px-0">
                 <li>
                     <a class="text-decoration-none textMyBlack" href="{{route('lavora_con_noi')}}">
-                        Lavora con Noi
+                        {{__('ui.lavora-con-noi')}}
                     </a>
                 </li>
                 <li>
@@ -37,8 +37,8 @@
             </div>
             
             <div class="col-12 px-4 col-md-4 p-md-4">
-                <h6 class="textMyBlack">Azienda certificata B Corporation®</h6>
-                <p class="textMyBlack">Questa azienda rispetta i più alti standard verificati di performance sociale e ambientale, trasparenza e responsabilità.</p>
+                <h6 class="textMyBlack">{{__('ui.azienda-cert')}}</h6>
+                <p class="textMyBlack">{{__('ui.questa-az')}}</p>
                 <p class="textMyBlack">Copyright • DevelQuack 2023</p>
             </div>
         </div>

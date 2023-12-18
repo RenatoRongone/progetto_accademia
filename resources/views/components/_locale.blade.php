@@ -1,6 +1,6 @@
 <form method="POST" action="{{route('setLocale', $lang)}}">
     @csrf
     <button type="submit" >
-        <img src="{{asset("/vendor/blade-flags/language-it.svg")}}" alt="">
+        <img src="{{asset('vendor/blade-flags/language-' . $lang . '.svg')}}" alt="" width="28" height="28">
     </button>
 </form>

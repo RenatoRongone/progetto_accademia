@@ -22,7 +22,7 @@
                     <button class="nav-link btn p-md-2 p-0 my-2 my-md-0 mx-md-3" type="button" id="searchBotton">
                         <i class="fa-solid fa-magnifying-glass textMyWhite me-2 me-md-0" id="iconSearch"></i>
                     </button>
-                    <input class="form-control me-2 searchInput d-none" type="search" placeholder="Cerca" aria-label="Search" name='searched' id="searchBar">
+                    <input class="form-control me-2 searchInput d-none" type="search" placeholder="{{__('ui.cerca')}}" aria-label="Search" name='searched' id="searchBar">
                 </form>
                 
                 @if(Auth::user() && Auth::user()->is_revisor)
@@ -40,11 +40,11 @@
                 
                 @guest
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="{{route('register')}}">REGISTRATI</a>
+                    <a class="nav-link mx-md-3" href="{{route('register')}}">{{__('ui.registratiNav')}}</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="{{route('login')}}">ACCEDI</a>
+                    <a class="nav-link mx-md-3" href="{{route('login')}}">{{__('ui.accediNav')}}</a>
                 </li>
                 @endguest
                 

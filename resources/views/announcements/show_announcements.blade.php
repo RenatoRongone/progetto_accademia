@@ -16,7 +16,7 @@
                 <a href="{{route('show_category', $announcement->category->id)}}" class="text-decoration-none textMyBlack">
                     <p class="fs-6">{{$announcement->category->name}}</p>
                 </a>
-                <p>€ {{$announcement->price}}</p>
+                <p>{{__('ui.€')}} {{$announcement->price}}</p>
             </div>
             <div class="col-12 col-md-6 px-4 px-md-5 pb-2 px-sm-3">
                 <a href="{{ route('user_announcements', ['user' => $announcement->user->id]) }}" class="text-decoration-none textMyBlack">
@@ -26,7 +26,7 @@
                     <h5 class="d-inline">{{$announcement->user->surname}}</h5>
                 </a>
                 <p>{{$announcement->user->email}}</p>
-                <p class="fs-7">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}}</p>
+                <p class="fs-7">{{__('ui.pubblicato-il')}}: {{$announcement->created_at->format('d/m/Y')}}</p>
             </div>
         </div>
     </div>

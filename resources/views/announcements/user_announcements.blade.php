@@ -2,13 +2,13 @@
     <div class="container-fluid">
         <div class="row pt-4">
             <div class="col-12 bg-danger">
-                <h3 class="text-center">immagine profilo</h3>
+                <h3 class="text-center">{{__('ui.immagine-profilo')}}</h3>
             </div>
         </div>
         
         <div class="row my-3">
             <div class="col-12">
-                <h1 class="text-center">Vetrina di  {{$user->name}} {{$user->surname}}</h1>
+                <h1 class="text-center">{{__('vetrina-di')}}  {{$user->name}} {{$user->surname}}</h1>
             </div>
         </div>
         
@@ -22,7 +22,7 @@
                 
                 <div class="col-12">
                     <h5 class="py-2 border bgMyBlack textMyWhite text-center">
-                        <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyWhite">{{$categoryName}}</a>
+                        <a href="{{ route('user.category.announcements', ['user' => $user->id, 'categoryName' => $categoryName]) }}" class="text-decoration-none textMyWhite">{{__("ui.$categoryName")}}</a>
                     </h5>
                 </div>
                 
@@ -35,7 +35,7 @@
                         </a>
                         <div class="card-body d-flex justify-content-between p-1 mt-1">
                             <h5 class="card-title">{{$announcement->title}}</h5>
-                            <p class="card-text">€ {{$announcement->price}}</p>
+                            <p class="card-text">{{__('ui.€')}} {{$announcement->price}}</p>
                         </div>
                     </div>
                 </div>

@@ -7,28 +7,27 @@
             <div class="row py-3">
                 <div class="col-12">
                     <h3 class="text-center pb-4">Lingua</h3>
-                    <img src="/media/eye-slash-solid.svg" alt="" height="10" width="10">
                 </div>
             </div>
             <div class="row justify-content-center pb-5">
                 <div class="col-12 col-md-2 text-center">
-                    <x-_locale lang="it" nation="it"/>
+                    <x-_locale lang="it"/>
                     <h6>Italian</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <x-_locale lang="en" nation="gb"/>
+                    <x-_locale lang="en"/>
                     <h6 class="mt-1">English</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <x-_locale lang="fr" nation="fr"/>
+                    <x-_locale lang="fr"/>
                     <h6>Français</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <x-_locale lang="de" nation="de"/>
+                    <x-_locale lang="de"/>
                     <h6>Deutsch</h6>
                 </div>
                 <div class="col-12 col-md-2 text-center">
-                    <x-_locale lang="es" nation="es"/>
+                    <x-_locale lang="es"/>
                     <h6>Español</h6>
                 </div>
             </div>
