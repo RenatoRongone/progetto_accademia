@@ -82,4 +82,7 @@ return [
     // lavora con noi
     'perche' => 'Why do you want to work with us?',
     'invia-richiesta' => 'Submit Inquiry',
+
+    // Messages
+    'message-success' => "Ad successfully uploaded. Under review.",
 ];

@@ -84,4 +84,7 @@ return [
     // lavora con noi
     'perche' => 'Perché vuoi lavorare con noi?',
     'invia-richiesta' => 'Invia Richiesta',
+
+    // Messaggi
+    'message-success' => 'Annuncio caricato correttamente. In fase di revisione.',
 ];
