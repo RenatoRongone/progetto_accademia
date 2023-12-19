@@ -4,17 +4,20 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Category;
+use App\Jobs\RemoveFaces;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use App\Jobs\GoogleVisionLabelImage;
+use App\Jobs\GoogleVisionSafeSearch;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class CreateAnnouncement extends Component
 {
-    
+
     //Tratto che ci permette di caricare dei file, ricordarsi di importarlo.
     use WithFileUploads;
-    
+
     //Inizializzazione di attributi pubblici.
     public $title;
     public $price;
@@ -25,7 +28,7 @@ class CreateAnnouncement extends Component
     public $category;
     public $announcement;
     public $image;
-    
+
     //Regole dei nostri attributi pubblici.
     protected $rules=[
         'title' => 'required|min:5',
@@ -35,7 +38,7 @@ class CreateAnnouncement extends Component
         'temporary_images.*'=>'image|required|max:5000|dimensions:min_width=800,min_height=800',
         'images.*'=>'image|required|max:5000|dimensions:min_width=800,min_height=800',
     ];
-    
+
     //Messaggi degli errori per le validazioni.
     protected $messages=[
         'title.required'=>'Inserisci Titolo',
@@ -54,12 +57,12 @@ class CreateAnnouncement extends Component
         'images.max'=>'I file immagine non devono essere superare i 5MB',
         'images.dimensions'=>'Le immagini devono avere una risoluzione minima di: 800x800'
     ];
-    
+
     //Funzione delle validazioni Live.
     public function updated($property){
         $this->validateOnly($property);
     }
-    
+
     //Funzione che ci inserisce un immagine nell'array image se $this->validate della temporary images è true.
     public function updatedTemporaryImages(){
         if($this->validate([
@@ -70,21 +73,21 @@ class CreateAnnouncement extends Component
                 }
             }
         }
-        
+
         //Funzione per rimuovere l'immagine da richiamare nel bottone "Elimina"
         public function removeImage($key){
-            
+
             if(in_array($key, array_keys($this->images))){
                 unset($this->images[$key]);
             }
         }
-        
-        
+
+
         //Funzione delle store dell'annuncio
         public function store(){
             //Dopo aver superato le validazioni:
             $this->validate();
-            
+
             //Entriamo nella categoria dell'annuncia che stiamo creando, entriamo nel suo annuncio e creiamo:
             $announcement = Category::find($this->category)->announcements()->create([
                 'title'=>$this->title,
@@ -97,24 +100,28 @@ class CreateAnnouncement extends Component
                     //Per ogni immagine dell'array images:
                     foreach($this->images as $image){
                         //Storiamo all'interno di Storage, Public una nuova cartella che è la varibaile $newFileName che corrisponde ad una cartella announcements che contiene una cartella nominata "id_titolo articolo";
-                        $newFileName = "announcements/{$announcement->id}_{$announcement->title}";
+                        $newFileName = "announcements/{$announcement->id}";
                         $newImage = $announcement->images()->create(['path'=>$image->store($newFileName , 'public')]);
-                        
-                        dispatch(new ResizeImage($newImage->path , 327 , 327));
+
+
+                        RemoveFaces::withChain([
+                            new ResizeImage($newImage->path , 327 , 327),
+                            new GoogleVisionSafeSearch($newImage->id),
+                            new GoogleVisionLabelImage($newImage->id),
+                            ])->dispatch($newImage->id);
                     }
                     File::deleteDirectory(storage_path('/app/livewire-tmp'));
                 }
                 //Associamo User a Auth::user e salviamo:
                 $announcement->user()->associate(Auth::user());
                 $announcement->save();
-                $this->reset();
+
                 return redirect(route('welcome'))
                 ->with('message' , __('ui.message-success'));
             }
-            
+
             public function render()
             {
                 return view('livewire.create-announcement');
             }
         }
-        
