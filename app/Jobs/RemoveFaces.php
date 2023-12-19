@@ -53,8 +53,6 @@ class RemoveFaces implements ShouldQueue
             $bounds = [];
             foreach($vertices as $vertex){
             $bounds[] = [$vertex->getX(), $vertex->getY()];
-            }
-
             $w = $bounds[2][0] - $bounds [0][0];
             $h = $bounds[2][1] - $bounds [0][1];
 
@@ -68,6 +66,7 @@ class RemoveFaces implements ShouldQueue
             ->watermarkFit(Manipulations::FIT_STRETCH);
 
             $image->save($srcPath);
+            }
         }
         $imageAnnotator->close();
     }
