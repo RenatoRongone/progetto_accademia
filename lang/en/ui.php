@@ -72,6 +72,7 @@ return [
     'rifiuta-annuncio' => 'Reject Ad',
     'pubblicato-il' => 'Published on',
     'miei-annunci' => 'Your ads awaiting review are:',
+    'vedi_revisor' => 'Reviewer Area',
 
     // show category
     'nessun-annuncio-trovato' => 'No Ads found',

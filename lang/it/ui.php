@@ -74,6 +74,7 @@ return [
     'rifiuta-annuncio' => 'Rifiuta Annuncio',
     'pubblicato-il' => 'Pubblicato il',
     'miei-annunci' => 'I tuoi annunci in attesa di essere revisionati sono:',
+    'vedi_revisor' => 'Zona revisore',
 
     // show category
     'nessun-annuncio-trovato' => 'Nessun annuncio trovato',

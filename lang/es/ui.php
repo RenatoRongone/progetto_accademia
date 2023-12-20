@@ -74,7 +74,7 @@ return [
     'rifiuta-annuncio' => 'Rechazar Anuncio',
     'pubblicato-il' => 'Publicado el',
     'miei-annunci' => 'Tus anuncios pendientes de revisión son:',
-    
+    'vedi_revisor' => 'Zona de revisión',
     
     // show category
     'nessun-annuncio-trovato' => 'Ningún Anuncio Encontrado',

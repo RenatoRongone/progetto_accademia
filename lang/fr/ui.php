@@ -72,7 +72,7 @@ return [
     'rifiuta-annuncio' => 'Refuser l\'Annonce',
     'pubblicato-il' => 'Publié le',
     'miei-annunci' => 'Vos annonces en attente de révision sont :',
-
+    'vedi_revisor' => 'Zone de révision',
     
     // show category
     'nessun-annuncio-trovato' => 'Aucune annonce trouvée',

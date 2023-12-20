@@ -51,11 +51,11 @@
                 {{-- <p>preview:</p> --}}
                 <div class="row" >
                     @foreach($images as $key => $image)
-                    <div class="col-4" > 
-                        <div class="imgpreview" style="background-image: url({{$image->temporaryUrl()}}); background-size:cover; background-repeat: no-repeat;">
+                    <div class="col-12 d-flex flex-column align-items-center"> 
+                        <div class="imgpreview mt-2" style="background-image: url({{$image->temporaryUrl()}}); background-size:cover; background-repeat: no-repeat;">
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btnEliminaPreview bgMyOrange textMyWhite px-2 py-1 mt-2" wire:click='removeImage({{$key}})'>
+                        <div class="d-flex mt-2">
+                            <button type="button" class="btn btnEliminaPreview bgMyOrange textMyWhite px-2 py-1" wire:click='removeImage({{$key}})'>
                                 <i class="fa-solid fa-xmark"></i>
                             </button>
                         </div>

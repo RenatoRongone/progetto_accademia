@@ -205,20 +205,27 @@ SETTAGGI HEADER WELCOME
 ---------------------------------*/
 .bgHeader{
     padding: 10%;
-    min-height: 80vh;
-    max-height: 80vh;
-    background: linear-gradient(rgba(160, 0, 240, 0.37) , rgba(0, 0, 0, 0.404)) ,  url('https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    min-height: 90vh;
+    max-height: 90vh;
+    background: linear-gradient(rgba(160, 0, 240, 0.1) , rgba(0, 0, 0, 0.404)) , url('/public/media/logo/header.png');
     background-position: center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
     background-size: cover;
+}
+.letterSpacing{
+    letter-spacing: 1.5px;
 }
 .myBtnWelcome{
     background-color: var(--myOrange);
     color: white;
-    font-weight:500;
+    font-weight:530;
     padding: 2% 5%;
 }
 .myBtnWelcome:hover{
-    background-color: rgb(219, 159, 5);
+    background-color: var(--myWhite);
+    border: 2.5px solid var(--myOrange);
+    color: var(--myOrange);
 }
 .hiddenAnimation{
     opacity: 0;
@@ -398,12 +405,16 @@ SETTAGGI CREATE ANNOUNCEMENTS
 .createAnnouncementsHeight{
     min-height: 90vh;
 }
+.mainCreateAnnouncements{
+    min-height: 100vh;
+}
 .createAnnouncementsBackground{
     background-color: var(--myWhite);
 }
 .createAnnouncementsForm{
+    /* min-height: 90vh; */
     min-width: 45vh;
-    max-width: 45vh;
+    max-width: 100%;
     border: 2.5px solid var(--myPurple);
     padding: 2.5vh;
 }
@@ -416,7 +427,7 @@ SETTAGGI CREATE ANNOUNCEMENTS
 }
 .imgpreview{
     height: 9.3rem;
-    width: 9.3rem;
+    width: 100%;
 }
 .btnEliminaPreview{
     border: 1px solid var(--myOrange);

@@ -1,5 +1,5 @@
 <x-layout>
-    <main>
+    <main class="mainCreateAnnouncements p-4">
         <section class="container-fluid createAnnouncementsBackground d-flex flex-column justify-content-center createAnnouncementsHeight">
             
             <div class="row">

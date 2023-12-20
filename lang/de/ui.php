@@ -75,6 +75,7 @@ return [
     'rifiuta-annuncio' => 'Anzeige ablehnen',
     'pubblicato-il' => 'Veröffentlicht am',
     'miei-annunci' => 'Ihre Anzeigen, die auf Überprüfung warten, sind:',
+    'vedi_revisor' => 'Prüfungsbereich',
     
     // show category
     'nessun-annuncio-trovato' => 'keine Anzeige vorhanden ',

@@ -15,7 +15,7 @@
         <div class="row align-items-center">
             <div class="col-12">
                 <h1 class="display-1 text-center textMyWhite fw-bold">Presto.it</h1>
-                <h2 class="fs-4 text-uppercase  text-center textMyWhite  fw-normal">Compra, a casa tua, presto.</h1>
+                <h2 class="fs-4 text-uppercase text-center textMyWhite fw-normal letterSpacing">Compra, a casa tua, presto.</h1>
                     <div class="col-12 d-flex justify-content-center mt-4">
                         <a href="{{route('create_announcements')}}" class="btn myBtnWelcome rounded-0 ">{{__('ui.crea-annuncio')}}</a>
                     </div>
