@@ -9,6 +9,7 @@ use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\Watermark;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 

@@ -45,6 +45,8 @@ class ResizeImage implements ShouldQueue
         //Nella croppedImage andiamo salvare la manipolazione dell'immagine che vogliamo richiamare;
         $croppedImage = Image::load($srcPath)
                         ->crop(Manipulations::CROP_CENTER , $w , $h)
+                        ->watermark(base_path('resources/img/watermark.png'))->watermarkOpacity(50)->watermarkHeight(50, Manipulations::UNIT_PIXELS)
+                        ->watermarkWidth(50, Manipulations::UNIT_PIXELS)
                         ->save($destPath);
     }
 }
