@@ -2,6 +2,13 @@
     
     <main class="mt-5">
         <section class=" container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center textMyBlack">
+                        {{$category->name}}
+                    </h1>
+                </div>
+            </div>
             <div class="row align-items-center pt-3">
                 @forelse ($category->announcements as $announcement)
                 <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex justify-content-center align-items-center py-4">

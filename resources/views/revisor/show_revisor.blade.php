@@ -35,23 +35,81 @@
                     </div>
                     
                     
-                    <div class="row">
-                        <div class="col-6">
-                            <h5>Revisione Immagini</h5>
-                            <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                            <p>Medicine: <span class="{{$image->medical}}"></span></p>
-                            <p>Hoax: <span class="{{$image->spoof}}"></span></p>
-                            <p>Violenza: <span class="{{$image->violency}}"></span></p>
-                            <p>Osé: <span class="{{$image->racy}}"></span></p>
+                    <div class="row justify-content-center p-3 p-md-5 mb-5 mb-md-0">
+                        <div class="col-12 col-md-6">
+                            <h5 class="pb-2">Sicurezza</h5>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Adulti</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->adult}}">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Medicine</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->medical}}">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Medicine</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->medical}}">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Hoax</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->spoof}}">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Violenza</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->violency}}">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2 mb-md-0">
+                                <div class="col-12 col-md-3">
+                                <p>Osé</p>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <span class="{{$image->racy}}">
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-3 mt-md-0">
                             <h5>Labels</h5>
-                            @if ($image->labels)
+                            <div>
+                                @if ($image->labels)
                             @foreach ($image->labels as $label)
                             <p class="d-inline">{{$label}},</p>
                             @endforeach
                             @endif
+                            </div>
+                            
                         </div>
                     </div>
                     

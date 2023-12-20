@@ -70,4 +70,9 @@ class RevisorController extends Controller
         Artisan::call('presto:makeUserRevisor', ['email'=>Auth::user()->email]);
         return redirect(route('welcome'))->with('message', 'Utente reso revisore con successo');
     }
+
+    public function remove_revisor(){
+        Artisan::call('presto:removeUserRevisor', ['email'=>Auth::user()->email]);
+        return redirect(route('welcome'))->with('message', 'L\'utente non è più un revisore');
+    }
 }

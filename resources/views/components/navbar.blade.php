@@ -48,28 +48,27 @@
                 </li>
                 @endguest
                 
-                @auth
-                <li class="nav-item">
-                    <a class="nav-link mx-md-3" href="#">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </li>
-                
+
                 <li>
+                    @guest
+                    <li>
+                        <button type="button" class="btn nav-link ms-md-3" id="language_icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </button>
+                    </li>
+                    @endguest
+                    @auth
                     <form method="POST" action="/logout">
                         @csrf
                         <button type="submit" class="nav-link mx-md-3">
                             <i class="fa-solid fa-right-from-bracket"></i>
                         </button>
                     </form>
+                    @endauth
                 </li>
-                @endauth
+  
                 
-                <li>
-                    <button type="button" class="btn nav-link ms-md-3" id="language_icon">
-                        <i class="fa-solid fa-globe"></i>
-                    </button>
-                </li>
+                
             </ul>
         </li>
         

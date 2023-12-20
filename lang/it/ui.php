@@ -61,7 +61,7 @@ return [
     // accedi
     'ricordami' => 'Ricordami',
     'non-registrato' => 'Non sei registrato?',
-    'crea-account' => 'Crea un account !',
+    'crea-account' => 'Crea un account',
     'accedi' => 'Accedi',
 
     // cerca annuncio

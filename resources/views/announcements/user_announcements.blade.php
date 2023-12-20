@@ -1,8 +1,10 @@
 <x-layout>
     <div class="container-fluid">
         <div class="row pt-4">
-            <div class="col-12">
-                <h3 class="text-center">{{__('ui.immagine-profilo')}}</h3>
+            <div class="col-12 px-4">
+                <a href="{{url()->previous()}}">
+                    <i class="fa-solid fa-backward-step textMyBlack"></i>
+                </a>
             </div>
         </div>
         
