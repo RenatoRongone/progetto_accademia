@@ -7,16 +7,16 @@
         <div class="col-12 px-4 col-md-4 p-md-4">
             <h6 class="textMyBlack">Presto</h6>
             <ul class="px-0">
-                @if(!Auth::user()->is_revisor)
+                @if(Auth::user() && Auth::user()->is_revisor)
                 <li>
-                    <a class="text-decoration-none textMyBlack" href="{{route('lavora_con_noi')}}">
-                        {{__('ui.lavora-con-noi')}}
+                    <a class="text-decoration-none textMyBlack" href="{{route('show_revisor')}}">
+                        {{__('ui.vedi_revisor')}}
                     </a>
                 </li>
                 @else
                 <li>
-                    <a class="text-decoration-none textMyBlack" href="{{route('show_revisor')}}">
-                        {{__('ui.vedi_revisor')}}
+                    <a class="text-decoration-none textMyBlack" href="{{route('lavora_con_noi')}}">
+                        {{__('ui.lavora-con-noi')}}
                     </a>
                 </li>
                 @endif
@@ -31,14 +31,14 @@
                             <x-_locale lang="es"/>
                         </div>
                     </div>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="col-12 px-4 col-md-4 p-md-4">
-                <h6 class="textMyBlack">{{__('ui.azienda-cert')}}</h6>
-                <p class="textMyBlack">{{__('ui.questa-az')}}</p>
-                <p class="textMyBlack">Copyright • DevelQuack 2023</p>
-            </div>
+                </li>
+            </ul>
         </div>
-    </footer>
+        
+        <div class="col-12 px-4 col-md-4 p-md-4">
+            <h6 class="textMyBlack">{{__('ui.azienda-cert')}}</h6>
+            <p class="textMyBlack">{{__('ui.questa-az')}}</p>
+            <p class="textMyBlack">Copyright • DevelQuack 2023</p>
+        </div>
+    </div>
+</footer>
