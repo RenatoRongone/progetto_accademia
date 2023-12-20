@@ -6,7 +6,7 @@
             </div>
         </div>
         
-        <div class="row justify-content-center text-center error align-items-center ">
+        <div class="row justify-content-center text-center error align-items-center">
             <div class="col-12">
                 @if ($errors->any())
                 <div class="">
